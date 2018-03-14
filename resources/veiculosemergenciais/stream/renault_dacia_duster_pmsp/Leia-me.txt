@@ -1,0 +1,25 @@
+-------------------------------------------LEIA-ME (pt-br) ---------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Renault Dacia Duster PMSP
+--------------------------------------------------------------------------------------------------------
+Você pode usar este mod em seu vídeo, mas você deve incluir o seguinte na descrição de seu vídeo:
+ 
+* Convertido para GTA V por: Vagner-zn
+ 
+IMPORTANTE
+ * Antes de instalar faça um backup dos arquivos originais!!! 
+
+INSTALAÇÃO
+1° Primeiro; Ctrl+f3
+
+2° Digite: police2.yft e clique Search para encontrar o arquivo.
+
+3° Localizar e substituir os arquivos police2.yft, police2.ytd e police2.yft.
+
+LOCAL DE INSTALAÇÃO
+
+Grand Theft Auto V\update\x64\dlcpacks\patchday1ng\dlc.rpf\x64\levels\gta5\vehicles.rpf\
+
+Grand Theft Auto V\update\x64\dlcpacks\patchday3ng\dlc.rpf\x64\levels\gta5\vehicles.rpf\
+
+Grand Theft Auto V\x64e.rpf\levels\gta5\vehicles.rpf\

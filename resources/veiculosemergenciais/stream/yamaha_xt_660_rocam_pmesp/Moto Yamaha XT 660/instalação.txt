@@ -1,0 +1,12 @@
+Local da Handling: Grand Theft Auto V\update\update.rpf\common\data 
+
+Créditos: Battata3D 
+Créditos: MotorsGarage 
+Car model: https://www.gta5-mods.com/vehicles/yamaha-xt660-pmerj
+
+Link do Mod:
+https://pt.gta5-mods.com/users/mixwin12
+
+Instalação:
+Grand Theft Auto V\update\x64\dlcpacks\patchday1ng\dlc.rpf\x64\levels\gta5\vehicles.rpf\
+Grand Theft Auto V\Mods\x64e.rpf\levels\gta5\vehicles.rpf\

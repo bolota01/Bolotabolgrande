@@ -1,0 +1,23 @@
+Busscar Micruss Chassi Volks Policia Militar
+
+
+Você pode usar este mod em seu vídeo, mas você deve incluir o seguinte na descrição de seu vídeo:
+
+* Modelado por: Paulo Henrique
+Canal: https://www.youtube.com/channel/UCFH9WiEjjhCrh6CFVLF_e7w
+
+* Skin: Vagner-Zn
+
+* Convertido por: Vagner-Zn
+Canal: https://www.youtube.com/vagnerzn
+
+
+Importante
+* Antes de instalar faça um bakcup dos arquivos orignais!!! 
+
+LOCAL DE INSTALAÇÃO
+1° update\x64\dlcpacks\patchday2ng\dlc.rpf\x64\levels\gta5\vehicles.rpf\
+
+2° x64e.rpf\levels\gta5\vehicles.rpf\
+
+Tutorial de instalação do mod: https://www.youtube.com/watch?v=pd2joiSCJgs&feature=youtu.be
