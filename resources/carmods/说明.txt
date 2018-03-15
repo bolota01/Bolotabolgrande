@@ -1,0 +1,57 @@
+2014 迈凯轮P1 (V2)[替换版]
+
+模型来自:神力科莎，赛车计划
+模型编辑和转换到GTA5：AIGE
+测试截图：Martin_xpl，Vsoreny
+
+2017/4/30(V2)更新内容:
+支持自动雨刮器
+增加引擎细节
+
+2016/7/18 更新内容：
+-优化碳纤维
+-修复玻璃
+-添加新的gameconfig支持到版本1.0.791
+
+2016/7/5 更新内容：
+-新的模型细节
+-更好的后视镜
+-新的镀铬质地
+-新的玻璃质地
+-新的碳纤维质地
+
+安装：
+使用OpenIV进入编辑模式覆盖以下文件
+
+t20_hi.yft，t20.yft，t20.ytd 
+
+覆盖到：Grand Theft Auto V\update\x64\dlcpacks\mpluxe2\dlc.rpf\x64\levels\gta5\vehicles\mpluxe2vehicles.rpf
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+vehicles.meta 
+
+覆盖到：Grand Theft Auto V\update\update.rpf\dlc_patch\mpluxe2\common\data\levels\gta5\
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+carcols.meta ，carvariations.meta
+
+覆盖到：Grand Theft Auto V\update\update.rpf\dlc_patch\mpluxe2\common\data
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+雨刮器需要搭配该脚本使用: https://www.gta5-mods.com/scripts/car-wipers
+
+----------------------------------------------------------------
+
+YCA百度贴吧：http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&ie=utf-8&kw=yca
+
+Facebook交流组：https://www.facebook.com/groups/ycamods/
+
+AIGE百度贴吧：http://tieba.baidu.com/f?fp=0&fr=index&ie=utf-8&kw=aige
+
+[YCA Modder Group]
+
