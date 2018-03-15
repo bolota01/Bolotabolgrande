@@ -1,7 +1,7 @@
 INTERIORS = {
     -- HOPITAL
     [1] = {id = 1, x = 253.95764160156, y = -1372.2917480469, z = 24.537784576416,  name = "Entrar no Hospital", destination = {2}},
-	[2] = {id = 2, x = 1150.9924316406, y = -1529.7290039063, z = 35.371543884277,  name = "Sair do Hospital", destination = {1}},
+	[2] = {id = 2, x = 343.51895141602, y = -1398.6724853516, z = 32.509265899658,  name = "Sair do Hospital", destination = {1}},
     
     -- FIB
     [4] = {id = 4, x = 138.18788146973, y = -764.86633300781, z = 45.75199508667,  name = "Sair do FIB", destination = {5}},
@@ -17,9 +17,18 @@ INTERIORS = {
 	
 	--	Police Gun
     [14] = {id = 14, x = 451.93670654297, y = -982.72686767578, z = 30.68957901001,  name = "Sair do Arsenal", destination = {15}},
-    [15] = {id = 15,x = 454.02560424805, y = -982.55749511719, z = 30.689580917358,  name = "Entrar no Arsenal", destination = {14}},
+    [15] = {id = 15, x = 454.02560424805, y = -982.55749511719, z = 30.689580917358,  name = "Entrar no Arsenal", destination = {14}},
 		
 	-- Business
     [18] = {id = 18, x =  3562.8259277344, y = 3690.3332519531, z = 28.121658325195,  name = "Entrar Empresa", destination = {19}},
-    [19] = {id = 19,x = 3526.3579101563, y = 3673.7409667969, z = 28.121139526367,  name = "Sair da Empresa", destination = {18}},	
+    [19] = {id = 19, x = 3526.3579101563, y = 3673.7409667969, z = 28.121139526367,  name = "Sair da Empresa", destination = {18}},	
+	
+	-- Heliponto
+	[20] = {id = 20, x = 279.75527954102, y = -1349.0079345703, z = 24.537794113159,  name = "Voltar ao Hospital", destination = {21}},
+    [21] = {id = 21, x = 335.42684936523, y = -1431.8175048828, z = 46.511493682861,  name = "Ir para Heliponto SAMU", destination = {20}},	
+	
+	-- Veículos Emergenciais SAMU
+	[22] = {id = 22, x = 275.24313354492, y = -1361.2371826172, z = 24.537805557251,  name = "Voltar para o Hospital", destination = {23}},
+	[23] = {id = 23, x = 307.41171264648, y = -1433.6192626953, z = 29.932350158691,  name = "Ir para Veículos SAMU", destination = {22}},
+	
 }

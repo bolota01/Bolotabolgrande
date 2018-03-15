@@ -3,7 +3,36 @@
 local lang = vRP.lang
 local cfg = module("cfg/police")
 
+MySQL.createCommand("vRP/set_license","UPDATE vrp_users SET DmvTest = @dmvtest WHERE id = @user_id")
+MySQL.createCommand("vRP/set_licensearm","UPDATE vrp_users SET GunLicense = @gunlicense WHERE id = @user_id")
+
 -- police records
+
+-- Driverslicense Function
+function vRP.setLicense(user_id,dmvtest)
+  MySQL.execute("vRP/set_license", {user_id = user_id, dmvtest = dmvtest})
+end
+
+function vRP.license(source)
+  local user_id = vRP.getUserId(source)
+
+  if user_id ~= nil then
+    vRP.setLicense(user_id,"Required")
+  end
+end
+
+-- Driverslicensearm Function
+function vRP.setLicensearm(user_id,gunlicense)
+  MySQL.execute("vRP/set_licensearm", {user_id = user_id, gunlicense = gunlicense})
+end
+
+function vRP.licensearm(source)
+  local user_id = vRP.getUserId(source)
+
+  if user_id ~= nil then
+    vRP.setLicensearm(user_id,"Required")
+  end
+end
 
 -- insert a police record for a specific user
 --- line: text for one line (can be html)
@@ -14,6 +43,34 @@ function vRP.insertPoliceRecord(user_id, line)
       vRP.setUData(user_id, "vRP:police_records", records)
     end)
   end
+end
+
+-- Hotkey Open Police PC 1/2
+function vRP.openPolicePC(source)
+  vRP.buildMenu("police_pc", {player = source}, function(menudata)
+    menudata.name = "Police PC"
+    menudata.css = {top="75px",header_color="rgba(0,125,255,0.75)"}
+    vRP.openMenu(source,menudata)
+  end)
+end
+
+-- Hotkey Open Police PC 2/2
+function tvRP.openPolicePC()
+  vRP.openPolicePC(source)
+end
+
+-- Hotkey Open Police Menu 1/2
+function vRP.openPoliceMenu(source)
+  vRP.buildMenu("police", {player = source}, function(menudata)
+    menudata.name = "Police"
+    menudata.css = {top="75px",header_color="rgba(0,125,255,0.75)"}
+    vRP.openMenu(source,menudata)
+  end)
+end
+
+-- Hotkey Open Police Menu 2/2
+function tvRP.openPoliceMenu()
+  vRP.openPoliceMenu(source)
 end
 
 -- police PC
@@ -506,6 +563,37 @@ local choice_store_weapons = {function(player, choice)
   end
 end, lang.police.menu.store_weapons.description()}
 
+-- Remove License (UserID)
+local choice_license = {function(player, choice)
+  local user_id = vRP.getUserId(player)
+   if user_id ~= nil then
+    vRP.prompt(player,"UserID: ","",function(player,id)
+      id = parseInt(id)
+        local source = vRP.getUserSource(id)
+        if source ~= nil then
+          vRP.license(source)
+              vRPclient.notify(source,"You took the driverslicense from" ..id)
+        end
+    end)
+  end
+end, lang.police.menu.license.description()}
+
+-- Remove Licensearm (UserID)
+local choice_licensearm = {function(player, choice)
+  local user_id = vRP.getUserId(player)
+   if user_id ~= nil then
+    vRP.prompt(player,"UserID: ","",function(player,id)
+      id = parseInt(id)
+        local source = vRP.getUserSource(id)
+        if source ~= nil then
+          vRP.licensearm(source)
+              vRPclient.notify(source,"You took the gunlicense from" ..id)
+        end
+    end)
+  end
+end, lang.police.menu.licensearm.description()}
+
+
 -- add choices to the menu
 vRP.registerMenuBuilder("main", function(add, data)
   local player = data.player
@@ -552,8 +640,16 @@ vRP.registerMenuBuilder("main", function(add, data)
           if vRP.hasPermission(user_id,"police.fine") then
             menu[lang.police.menu.fine.title()] = choice_fine
           end
-
-          vRP.openMenu(player,menu)
+		  
+		  if vRP.hasPermission(user_id,"police.license") then
+            menu[lang.police.menu.license.title()] = choice_license
+          end
+		  
+          if vRP.hasPermission(user_id,"police.licensearm") then
+            menu[lang.police.menu.licensearm.title()] = choice_licensearm
+          end
+          
+		  vRP.openMenu(player,menu)
         end)
       end}
     end

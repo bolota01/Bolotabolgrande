@@ -11,117 +11,112 @@ local cfg = {}
 cfg.gunshop_types = {
   ["melees"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_BOTTLE"] = {"Bottle",10000,0,""},
-    ["WEAPON_BAT"] = {"Bat",15000,0,""},
-    ["WEAPON_KNUCKLE"] = {"Knuckle",15000,0,""},
-    ["WEAPON_KNIFE"] = {"Knife",20000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["sidearms"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_MARKSMANPISTOL"] = {"Marksman Pistol",15000,0,""},
-    ["WEAPON_SNSPISTOL"] = {"Pistol",25000,0,""},
-    ["WEAPON_VINTAGEPISTOL"] = {"Vintage Pistol",25000,0,""},
-    ["WEAPON_PISTOL"] = {"Pistol",25000,0,""},
-    ["WEAPON_COMBATPISTOL"] = {"Combat Pistol",50000,0,""},
-    ["WEAPON_HEAVYPISTOL"] = {"Heavy Pistol",50000,0,""},
-    ["WEAPON_REVOLVER"] = {"Heavy Revolver",50000,0,""},
-    ["WEAPON_APPISTOL"] = {"Ap Pistol",75000,0,""},
-    ["WEAPON_DAGGER"] = {"Dagger",20000,0,""},
-    ["WEAPON_HAMMER"] = {"Hammer",25000,0,""},
-    ["WEAPON_HATCHET"] = {"Hatchet",30000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["submachineguns"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_MICROSMG"] = {"Mini SMG",150000,0,""},
-    ["WEAPON_SMG"] = {"SMG",200000,0,""},
-    ["WEAPON_ASSAULTSMG"] = {"Assault SMG",550000,0,""},
-    ["WEAPON_COMBATPDW"] = {"Combat PDW",750000,0,""},
-    ["WEAPON_MACHINEPISTOL"] = {"Machine Pistol",75000,0,""},
-    ["WEAPON_NIGHTSTICK"] = {"Nighstick",30000,0,""},
-    ["WEAPON_CROWBAR"] = {"Crowwbar",30000,0,""},
-    ["WEAPON_GOLFCLUB"] = {"Golf club",35000,0,""},
-    ["WEAPON_SWITCHBLADE"] = {"Blade",40000,0,""},
-    ["WEAPON_MACHETE"] = {"Machete",45000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["rifles"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_MARKSMANPISTOL"] = {"Marksman Pistol",15000,0,""},
-    ["WEAPON_SNSPISTOL"] = {"Pistol",25000,0,""},
-    ["WEAPON_COMPACTRIFLE"] = {"Mini SMG",200000,0,""},
-    ["WEAPON_ASSAULTRIFLE"] = {"Assault Rifle",200000,0,""},
-    ["WEAPON_CARBINERIFLE"] = {"Carabine Rifle",200000,0,""},
-    ["WEAPON_GRENADE"] = {"Grenade",500000,0,""},
-    ["WEAPON_MOLOTOV"] = {"Molotv",150000,0,""},
-    ["WEAPON_FLARE"] = {"Flare",20000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["heavymachineguns"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_GUSENBERG"] = {"Gusenberg MG",200000,0,""},
-    ["WEAPON_MG"] = {"MG",250000,0,""},
-    ["WEAPON_COMBATMG"] = {"Combat MG",500000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["snipers"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_MARKSMANPISTOL"] = {"Marksman Pistol",15000,0,""},
-    ["WEAPON_SNSPISTOL"] = {"Pistol",25000,0,""},
-    ["WEAPON_MARKSMANRIFLE"] = {"Marksman Rifle",150000,0,""},
-    ["WEAPON_SNIPERRIFLE"] = {"Sniper Rifle",200000,0,""},
-    ["WEAPON_HEAVYSNIPER"] = {"Heavy Rifle",500000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["carabines"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_BULLPUPRIFLE"] = {"Bullpup Rifle",200000,0,""},
-    ["WEAPON_ADVANCEDRIFLE"] = {"Carabine",250000,0,""},
-    ["WEAPON_SPECIALCARBINE"] = {"Special Carabine",300000,0,""},
-    ["WEAPON_GRENADE"] = {"Grenade",500000,0,""},
-    ["WEAPON_MOLOTOV"] = {"Molotv",150000,0,""},
-    ["WEAPON_FLARE"] = {"Flare",20000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["shotguns"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_SAWNOFFSHOTGUN"] = {"Saw Shotgun",350000,0,""},
-    ["WEAPON_PUMPSHOTGUN"] = {"Pump Shotgun",500000,0,""},
-    ["WEAPON_BULLPUPSHOTGUN"] = {"BullUp Shotgun",650000,0,""},
-    ["WEAPON_HEAVYSHOTGUN"] = {"Heavy Shotgun",750000,0,""},
-    ["WEAPON_ASSAULTSHOTGUN"] = {"Assault Shotgun",1000000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["explosives"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_GRENADELAUNCHER_SMOKE"] = {"Grenade Launcher",1000000,100,""},
-    ["WEAPON_FIREEXTINGUISHER"] = {"Fire Extinguisher",1000,0,""},
-    ["WEAPON_FIREWORK"] = {"Firework",1000000,0,""},
-    ["WEAPON_SNOWBALL"] = {"SnowBall",30,0,""},
-    ["WEAPON_FLASHLIGHT"] = {"FlashLight",500,0,""},
-    ["WEAPON_STUNGUN"] = {"Stungun",10000,0,""},
-    ["WEAPON_MUSKET"] = {"Musket",150000,0,""},
-    ["WEAPON_FLAREGUN"] = {"Flaregun",50000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   },
 
   ["basic"] = {
     _config = {blipid=110,blipcolor=75},
-    ["WEAPON_MARKSMANPISTOL"] = {"Marksman Pistol",15000,0,""},
-    ["WEAPON_SNSPISTOL"] = {"SNS Pistol",25000,0,""},
-    ["WEAPON_GRENADE"] = {"Grenade",500000,0,""},
-    ["WEAPON_SMOKEGRENADE"] = {"Smoke Grenade",50000,0,""},
-    ["WEAPON_PETROLCAN"] = {"Petrol",5000,0,""},
-    ["ARMOR"] = {"Body Armor",10000,0,""}
+    ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
+    ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
+    ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
+    ["WEAPON_PISTOL"] = {"Pistola",30000,15,""},
+    ["WEAPON_FLASHLIGHT"] = {"Lanterna",1000,0,""},
+    ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""}
   }
 }
 

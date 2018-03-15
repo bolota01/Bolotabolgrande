@@ -19,9 +19,9 @@ cfg.garage_types = {
   
   ["pm"] = {
     _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
-    ["police"] = {"Police Car",0, ""},
-	["police3"] = {"Police Car3",0, ""},
-	["police2"] = {"Police Car2",0, ""},
+    ["police"] = {"Fiesta Sedan",0, ""},
+	["police3"] = {"Corsa Hatch",0, ""},
+	["sheriff"] = {"Trailblazer",0, ""},
   },    
   
   ["heliponto PM"] = {
@@ -39,9 +39,14 @@ cfg.garage_types = {
   
   ["hospital"] = {
     _config = {vtype="car",blipcolor=4,permissions={"hospital.garagem"}},
-    ["ambulance"] = {"Ambulancia",0, ""},
+	["sw4samu"] = {"SW4 Samu",0, ""},
+    ["ambulance"] = {"Ambulancia",0, ""}
   },
-  
+  ["heliponto SAMU"] = {
+    _config = {vtype="car",blipcolor=4,permissions={"hospital.garagem"}},
+    ["samumav"] = {"Helicóptero Samu",0, ""},
+
+  },   
   ["Taxi"] = {
     _config = {vtype="car",blipid=198,blipcolor=5,permissions={"taxi.garagem"}},
     ["taxi"] = {"Taxi",0, ""},
@@ -62,12 +67,13 @@ cfg.garage_types = {
 cfg.garages = {
   {"pm",453.24819946289,-1019.3926391602,28.396326065063},
   {"heliponto PM",449.32727050781,-981.21728515625,43.691673278809},
+  {"heliponto SAMU",313.24923706055,-1465.1434326172,46.509502410889},
   {"Taxi",-339.02719116211,-1023.7808837891,30.380908966064},
   {"Delivery",141.74586486816,-1458.0601806641,29.141620635986},
   {"Mecanico",401.42602539063,-1631.7053222656,29.291942596436},
   {"Transporte de Valores",232.78034973145,117.23257446289,102.60144042969},
   {"Veículos Aéreos",-991.98779296875,-2990.5654296875,13.945069313049},
-  {"hospital",1121.8719482422,-1517.0825195313,34.692562103271}
+  {"hospital",299.75296020508,-1442.3692626953,29.79154586792}
   --{"planes",1640, 3236, 40.4},
   --{"planes",2123, 4805, 41.19},
   --{"planes",-1348, -2230, 13.9},

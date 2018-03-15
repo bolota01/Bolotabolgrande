@@ -2,7 +2,7 @@
 local cfg = {}
 
 -- minimum capital to open a business
-cfg.minimum_capital = 100000
+cfg.minimum_capital = 1500000
 
 -- capital transfer reset interval in minutes
 -- default: reset every 24h

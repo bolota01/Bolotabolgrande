@@ -32,18 +32,25 @@ end)
   local speed = GetEntitySpeed(pP)
   local vehicle = GetVehiclePedIsIn(pP, false)
   local driver = GetPedInVehicleSeat(vehicle, -1)
-  local maxspeed = 100
+  local maxspeed = 80
 	local kmhspeed = math.ceil(speed*3.6)
 		if kmhspeed > maxspeed and driver == pP then
 			Citizen.Wait(250)
-			TriggerServerEvent('cobrarMulta')
-			exports.pNotify:SetQueueMax("left", 1)
-            exports.pNotify:SendNotification({
-            text = "Você foi multado em R$300,00 por excesso de velocidade.",
-            type = "error",
-            timeout = 5000,
-            layout = "centerLeft",
-            queue = "left"
-          })
-	end
+      TriggerServerEvent('cobrarMulta')
+	  end
 end
+
+
+-- Display a notification above the minimap.
+function ShowNotification(text, blink)
+  if blink == nil then blink = false end
+  SetNotificationTextEntry("STRING")
+  AddTextComponentSubstringPlayerName(text)
+  DrawNotification(blink, false)
+end
+
+RegisterNetEvent('Radar:notify')
+AddEventHandler('Radar:notify', function(message, blink)
+  ShowNotification(message, blink)
+end)
+

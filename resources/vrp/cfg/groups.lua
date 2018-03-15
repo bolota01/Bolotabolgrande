@@ -120,6 +120,12 @@ cfg.groups = {
 	"mission.emergency.transfer",
 	"samu.cloakroom"
   },
+    ["ems"] = {
+	"ems.whitelisted"
+  },
+    ["cop"] = {
+	"cop.whitelisted"
+  },
   ["Mecânico"] = {
     _config = { gtype = "job"},
     "vehicle.repair",
@@ -240,15 +246,12 @@ cfg.selectors = {
 	"Entregador",
     "Desempregado"
   },
-  ["Emprego Samu"] = {
-    _config = {x = 275.19491577148, y = -1361.23828125, z = 24.537799835205},
-	"Paramédico",
-  },  	
   ["Empregos Ilegais"] = {
     _config = {x = 707.324462890625, y = -966.986511230469, z = 30.4128551483154, blipid = 351, blipcolor = 49},
 	"Ladrão de Carros",
 	"Traficante de Metanfetamina",
 	"Traficante de Maconha",
+	"Traficante de Tartaruga",
 	"Traficante de Cocaina",	
 	"Traficante de Armas"
   } 

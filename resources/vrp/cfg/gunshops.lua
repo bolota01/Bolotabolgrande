@@ -12,7 +12,7 @@ cfg.gunshop_types = {
   [""] = {
     _config = {blipid=110,blipcolor=75},
     ["WEAPON_BOTTLE"] = {"Garrafa",600,0,""},
-    ["WEAPON_BAT"] = {"Taco de beisebol",1500,0,""},
+    ["WEAPON_BAT"] = {"Taco de Beisebol",1500,0,""},
     ["WEAPON_KNUCKLE"] = {"Soco-Ingles",1000,0,""},
     ["WEAPON_KNIFE"] = {"Faca",1500,0,""},
     ["WEAPON_SNSPISTOL"] = {"Pistola Fajuta",6500,15,""},
@@ -30,7 +30,8 @@ cfg.gunshop_types = {
 -- list of gunshops positions
 
 cfg.gunshops = {
---[[  {"", 1692.41, 3758.22, 34.7053},
+ -- [[  
+  {"", 1692.41, 3758.22, 34.7053},
   {"", 252.696, -48.2487, 69.941},
   {"", 844.299, -1033.26, 28.1949},
   {"Loja da Biqueira", -781.89617919922, 572.82379150391, 126.11553192139},
@@ -43,7 +44,9 @@ cfg.gunshops = {
   {"", 2569.62, 294.453, 108.735},
   {"", -3172.60375976563,1085.74816894531,20.8387603759766},
   {"", 21.70, -1107.41, 29.79},
-  {"", 810.15, -2156.88, 29.61}]]--
+  {"", 810.15, -2156.88, 29.61}]]
+
+  --
 }
 
 return cfg

@@ -9,9 +9,9 @@ cfg.voice_proximity_vehicle = 5.0
 cfg.voice_proximity_inside = 9.0
 
 cfg.gui = {
-  anchor_minimap_width = 270,
-  anchor_minimap_left = 30,
-  anchor_minimap_bottom = 235
+  anchor_minimap_width = 300,
+  anchor_minimap_left = 35,
+  anchor_minimap_bottom = 230
 }
 
 -- gui controls (see https://wiki.fivem.net/wiki/Controls)
@@ -25,11 +25,11 @@ cfg.controls = {
     right = {3,175},
     select = {3,176},
     cancel = {3,177},
-    open = {3,311} -- INPUT_PHONE, open general menu (K)
+    open = {3,311}, -- K to open the menu
   },
   request = {
-    yes = {1,166}, -- Michael, F5
-    no = {1,167} -- Franklin, F6
+    yes = {1,166}, -- f5
+    no = {1,167} -- f6
   }
 }
 
@@ -38,10 +38,10 @@ cfg.handcuff_disable_menu = true
 
 -- when health is under the threshold, player is in coma
 -- set to 0 to disable coma
-cfg.coma_threshold = 100
+cfg.coma_threshold = 120
 
 -- maximum duration of the coma in minutes
-cfg.coma_duration = 10
+cfg.coma_duration = 5
 
 -- if true, a player in coma will not be able to open the main menu
 cfg.coma_disable_menu = false

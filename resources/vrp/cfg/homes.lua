@@ -640,8 +640,6 @@ cfg.homes = {
     buy_price = 35000,
     sell_price = 26250,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Clube"] = {
     slot = "clube",
@@ -676,8 +674,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Barraco 3"] = {
     slot = "barraco3",
@@ -685,8 +681,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Barraco 4"] = {
     slot = "barraco4",
@@ -694,8 +688,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Barraco 5"] = {
     slot = "barraco5",
@@ -703,8 +695,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Barraco 6"] = {
     slot = "barraco6",
@@ -712,8 +702,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Barraco 7"] = {
     slot = "barraco7",
@@ -721,8 +709,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 8"] = {
     slot = "barraco8",
@@ -730,8 +716,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 9"] = {
     slot = "barraco9",
@@ -739,8 +723,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 10"] = {
     slot = "barraco10",
@@ -748,8 +730,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 11"] = {
     slot = "barraco11",
@@ -757,8 +737,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 12"] = {
     slot = "barraco12",
@@ -766,8 +744,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 13"] = {
     slot = "barraco13",
@@ -775,8 +751,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 14"] = {
     slot = "barraco14",
@@ -784,8 +758,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 15"] = {
     slot = "barraco15",
@@ -793,8 +765,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 16"] = {
     slot = "barraco16",
@@ -802,8 +772,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 17"] = {
     slot = "barraco17",
@@ -811,8 +779,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["barraco 18"] = {
     slot = "barraco18",
@@ -820,8 +786,6 @@ cfg.homes = {
     buy_price = 30000,
     sell_price = 25000,
     max = 1,
-    blipid=374,
-    blipcolor=2
   },
   ["Casa #06"] = {
     slot = "franklin_house",
@@ -836,15 +800,6 @@ cfg.homes = {
     slot = "beach_bungalo",
     entry_point = {1245.6123046875,-2686.2346191406,2.4227623939514},
     buy_price = 350000,
-    sell_price = 30000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
-  },
-  ["Casa #04"] = {
-    slot = "beach_house",
-    entry_point = {-1384.8225097656,-975.95910644531,8.9470081329346},
-    buy_price = 400000,
     sell_price = 30000,
     max = 1,
     blipid=374,
@@ -873,108 +828,84 @@ cfg.homes = {
     entry_point = {1368.9050292969,-596.74865722656,74.337715148926},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
     ["Barraco Helipa 3"] = {
     slot = "helipa3",
     entry_point = {1309.0915527344,-541.64324951172,71.257713317871},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
     ["Barraco Helipa 4"] = {
     slot = "helipa4",
     entry_point = {1337.0686035156,-743.58239746094,66.896667480469},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
     ["Barraco Helipa 5"] = {
     slot = "helipa5",
     entry_point = {1372.0064697266,-757.55908203125,67.190277099609},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
     ["Barraco Helipa 6"] = {
     slot = "helipa6",
     entry_point = {1346.8712158203,-721.78070068359,66.987609863281},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 7"] = {
     slot = "helipa7",
     entry_point = {1315.1602783203,-711.81213378906,65.016632080078},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 8"] = {
     slot = "helipa8",
     entry_point = {1134.4449462891,-679.53234863281,56.743728637695},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 9"] = {
     slot = "helipa9",
     entry_point = {1282.3365478516,-653.77374267578,67.473915100098},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 10"] = {
     slot = "helipa10",
     entry_point = {1365.5888671875,-782.32000732422,67.177703857422},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 11"] = {
     slot = "helipa11",
     entry_point = {1388.2696533203,-794.68029785156,67.428787231445},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 12"] = {
     slot = "helipa12",
     entry_point = {1414.0897216797,-779.65924072266,66.454849243164},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Barraco Helipa 13"] = {
     slot = "helipa13",
     entry_point = {1083.1240234375,-690.49304199219,57.780662536621},
     buy_price = 300000,
     sell_price = 150000,
-    max = 1,
-    blipid=374,
-    blipcolor=2
+    max = 1
   },
   ["Apartamento Basico #01"] = {
     slot = "basic_flat",
@@ -1053,108 +984,84 @@ cfg.homes = {
     entry_point = {1454.4614257813,-1651.6026611328,66.99479675293},
     buy_price = 50000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 02"] = { --Maconha
     slot = "galpao02",
     entry_point = {2846.6674804688,4449.4375,48.518280029297},
     buy_price = 1000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 03"] = { --Cocaina
     slot = "galpao03",
     entry_point = {-1461.5863037109,-382.83508300781,38.745960235596},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 04"] = {
     slot = "galpao04",
     entry_point = {939.76989746094,-1490.833984375,30.092649459839},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 05"] = {
     slot = "galpao05",
     entry_point = {759.47930908203,-909.537109375,25.280485153198},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 06"] = {
     slot = "galpao06",
     entry_point = {714.00598144531,-716.97760009766,26.128541946411},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 07"] = { --Metafetamina
     slot = "galpao01",
     entry_point = {53.095752716064,6487.84765625,31.426488876343},
     buy_price = 50000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 08"] = { --Maconha
     slot = "galpao02",
     entry_point = {-174.7043762207,217.1598815918,89.504409790039},
     buy_price = 1000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 09"] = { --Cocaina
     slot = "galpao03",
     entry_point = {670.56146240234,-2667.63671875,6.081184387207},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 10"] = { --Metafetamina
     slot = "galpao01",
     entry_point = {-984.54089355469,-2227.4636230469,8.8616952896118},
     buy_price = 50000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 11"] = { --Maconha
     slot = "galpao02",
     entry_point = {968.03076171875,-1810.7879638672,31.213417053223},
     buy_price = 1000000,
     sell_price = 500000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Galpao 12"] = { --Cocaina
     slot = "galpao03",
     entry_point = {387.69692993164,3585.9638671875,33.2922706604},
     buy_price = 50000000,
     sell_price = 5000000,
-    max = 1,
-    blipid=374,
-    blipcolor=55
+    max = 1
   },
   ["Maior Casa De Luxo"] = {
     slot = "luxo2",

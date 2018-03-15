@@ -1,4 +1,3 @@
-
 local vehicles = {}
 
 AddEventHandler('vrp_garages:setVehicle', function(vtype, vehicle)
