@@ -36,6 +36,7 @@ cfg.groups = {
 	"admin.spawnveh",
 	"admin.godmode",
 	"player.tptowaypoint",
+	"player.cmd_mask",
 	"admin.easy_unjail",
 	"admin.spikes",
     "player.tpto"

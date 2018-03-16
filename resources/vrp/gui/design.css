@@ -80,9 +80,11 @@ html, body {
 /* progress bar */
 .progressbar{
   position: absolute;
+  border: solid 1px black;	
 }
 
 .progressbar .inner{
+  position: absolute;	
 }
 
 .progressbar .label{

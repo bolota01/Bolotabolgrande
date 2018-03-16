@@ -9,6 +9,7 @@ Gclient = Tunnel.getInterface("vRP_garages","vRP_showroom")
 
 -- vehicle db / garage and lscustoms compatibility
 MySQL.createCommand("vRP/showroom_columns", [[
+ALTER TABLE vrp_user_vehicles ADD veh_type varchar(255) NOT NULL DEFAULT 'default' ;
 ALTER TABLE vrp_user_vehicles ADD vehicle_plate varchar(255) NOT NULL;
 ]])
 --MySQL.query("vRP/showroom_columns")

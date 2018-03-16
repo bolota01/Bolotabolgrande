@@ -16,7 +16,7 @@ cfg.repair = {
   ["mission.repair.satellite_dishes"] = { -- permissao
     chance = 5, -- quantidade de lados do dado 1
     title = "Antenas parabólicas", -- nome
-    steps = 1,
+    steps = 3,
     positions = {
       {1985.55017089844,2929.42211914063,46.5480003356934},
       {1965.38012695313,2917.47241210938,56.1684608459473},
@@ -46,7 +46,7 @@ cfg.repair = {
   },
   ["mission.repair.wind_turbines"] = {
     chance = 5,
-    steps = 1,
+    steps = 3,
     title = "Turbinas eólicas",
     positions = {
       {2363.77880859375,2288.63891601563,94.252693176269},
@@ -227,7 +227,7 @@ cfg.delivery = {
   }
 }
 
- GUNRUNNER
+-- GUNRUNNER
 
 local gun_shipment_positions = {
   {-280.666381835938,6634.96728515625,7.54050254821777},
@@ -262,7 +262,7 @@ cfg.carjack = {
   }
 }
 
- EMERGENCY
+-- EMERGENCY
 
 cfg.emergency = {
   ["mission.emergency.transfer"] = {
@@ -281,7 +281,7 @@ cfg.emergency = {
   },
 }
 
- TAXI
+-- TAXI
 cfg.taxi = {
   ["mission.taxi.passenger"] = {
     chance = 10,
@@ -293,7 +293,7 @@ cfg.taxi = {
   },
 }
  
- POLICE 
+-- POLICE 
 cfg.police = {
   ["mission.police.transfer"] = {
     chance = 10,

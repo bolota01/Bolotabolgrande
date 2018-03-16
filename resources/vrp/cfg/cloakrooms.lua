@@ -10,7 +10,6 @@ local uniforme_pm = { model = "s_m_y_hwaycop_01" }
 local uniforme_pmf = { model = "s_m_m_armoured_01" }
 local uniforme_capitao = { model = "s_m_m_armoured_02" }
 local uniforme_aguia = { model = "s_m_y_cop_01" }
-local uniforme_rota = { model = "s_m_y_sheriff_01" }
 local uniforme_rocam = { model = "s_m_y_pilot_01" }
 local uniforme_bope = { model = "s_m_y_ranger_01" }
 local uniforme_tatica = { model = "s_m_y_sheriff_01" }
@@ -29,7 +28,6 @@ for i=0,19 do
   uniforme_rocam[i] = {0,0}
   uniforme_bope[i] = {0,0}
   uniforme_tatica[i] = {0,0}
-  uniforme_rota[i] = {0,0}
   surgery_female[i] = {0,0}
   surgery_male[i] = {0,0}
 end

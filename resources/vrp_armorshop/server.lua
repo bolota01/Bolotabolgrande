@@ -1,3 +1,21 @@
+--[[
+    FiveM Scripts
+    Copyright C 2018  Sighmir
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    at your option any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
 -- a basic gunshop implementation
 local Tunnel = module("vrp", "lib/Tunnel")
 local Proxy = module("vrp", "lib/Proxy")
@@ -48,9 +66,9 @@ for gtype,weapons in pairs(gunshop_types) do
         -- payment
         if user_id ~= nil and vRP.tryFullPayment({user_id,price}) then
           ASclient.setArmour(player,{100,true})
-          TriggerClientEvent("pNotify:SendNotification",player,{text = "Pagou <span color='red'>" ..price.. "R$</span>", type = "success", timeout = (3000),layout = "centerLeft"})
+          vRPclient.notify(player,{lang.money.paid({price})})
         else
-          TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Você não tem dinheiro suficiente</span>", type = "error", timeout = (3000),layout = "centerLeft"})
+          vRPclient.notify(player,{lang.money.not_enough()})
         end
 	  else
         -- get player weapons to not rebuy the body
@@ -71,12 +89,12 @@ for gtype,weapons in pairs(gunshop_types) do
                   [weapon] = {ammo=amount}
                 }})
 
-               TriggerClientEvent("pNotify:SendNotification",player,{text = "Pagou <span color='red'>" ..total.. "R$</span>", type = "success", timeout = (3000),layout = "centerLeft"})
+                vRPclient.notify(player,{lang.money.paid({total})})
               else
-               TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Você não tem dinheiro suficiente</span>", type = "error", timeout = (3000),layout = "centerLeft"})
+                vRPclient.notify(player,{lang.money.not_enough()})
               end
             else
-              TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Valor inválido</span>", type = "error", timeout = (3000),layout = "centerLeft"})
+              vRPclient.notify(player,{lang.common.invalid_value()})
             end
           end})
         end)

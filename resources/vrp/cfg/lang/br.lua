@@ -207,6 +207,14 @@ local lang = {
         info = "<em>Dinheiro: </em>{1} $<br /><br /><em>inventario: </em>{2}<br /><br /><em>Armas: </em>{3}",
         checked = "Voce está sendo Revistado por um jogador."
       },
+	  license = {
+        title = "Remover CNH",
+        description = "Remover CNH do jogador."
+      },
+      licensearm = {
+        title = "Remover Porte de Arma",
+        description = "Remover o porte de arma do jogador."
+      },
       seize = {
         seized = "Apreendido {2} ~r~{1}",
         weapons = {

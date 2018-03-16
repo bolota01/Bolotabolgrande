@@ -37,14 +37,14 @@ Citizen.CreateThread(function()
 		local object = closest.object
 
 		if distance < cfg.distance and not sitting and DoesEntityExist(object) then
-			headsUp('You are close to an object on which you can sit! Press ~INPUT_CONTEXT~ to sit!')
+			headsUp('Você está perto de um banco, pressione ~INPUT_CONTEXT~ para sentar!')
 			DrawMarker(0, GetEntityCoords(object).x, GetEntityCoords(object).y, GetEntityCoords(object).z+1.5, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.5, 0.5, 0.5, 0, 255, 0, 100, false, true, 2, false, false, false, false)
 			if IsControlJustPressed(0, 38) then
 				sit(object)
 			end
 		end
 		if sitting then
-			headsUp('Press ~INPUT_ENTER~ to get up.')
+			headsUp('Pressione ~INPUT_ENTER~ para levantar.')
 			if IsControlJustPressed(0, 23) then
 				ClearPedTasks(ped)
 				sitting = false

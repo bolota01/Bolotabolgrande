@@ -11,6 +11,7 @@ function ProgressBar(data)
 
   this.div = document.createElement("div");
   this.div.classList.add("progressbar");
+  this.div.style.position = "absolute";
 
   this.div_label = document.createElement("div");
   this.div_label.classList.add("label");
@@ -25,9 +26,8 @@ function ProgressBar(data)
   this.div_inner.style.zIndex = 1;
   this.div_label.style.zIndex = 2;
 
-  this.div.style.backgroundColor = "rgba("+data.r+","+data.g+","+data.b+",0.3)";
+  this.div.style.backgroundColor = "rgba(35, 40, 46, 0.5)";
   this.div_inner.style.backgroundColor = "rgba("+data.r+","+data.g+","+data.b+",0.7)";
-
 }
 
 ProgressBar.prototype.setValue = function(val)
@@ -52,20 +52,33 @@ ProgressBar.prototype.frame = function(time)
         var width = cfg.anchor_minimap_width/anchor.length; //divide horizontal map space by number of pbars
 
         //set size
-        this.div.style.width = this.div_label.style.width = (195)+"px";
-        this.div_inner.style.height = this.div.style.height = this.div_label.style.height = (7)+"px";
+        this.div.style.width = this.div_label.style.width = (200)+"px";
+        this.div_inner.style.height = this.div.style.height = this.div_label.style.height = (15)+"px";
         this.div_label.style.lineHeight = this.div_label.style.height;
 
         //set label font size
         this.div_label.style.fontSize = "0.5em";
 
         //set position
-        this.div.style.right = (document.body.offsetWidth-this.div.offsetWidth-19)+"px";
-        this.div.style.top = (document.body.offsetHeight-190-anchor_index*15)+"px";
+        this.div.style.right = (document.body.offsetWidth-this.div.offsetWidth-30)+"px";
+        this.div.style.top = (document.body.offsetHeight-250-anchor_index*16)+"px";
       }
       else if(anchor_name == "botright"){ //BOTRIGHT
         //set size
         this.div.style.width = this.div_label.style.width = (200)+"px";
+        this.div_inner.style.height = this.div.style.height = this.div_label.style.height = (15)+"px";
+        this.div_label.style.lineHeight = this.div_label.style.height;
+
+        //set label font size
+        this.div_label.style.fontSize = "0.8em";
+
+        //set position
+        this.div.style.left = (document.body.offsetWidth-this.div.offsetWidth-100)+"px";
+        this.div.style.top = (document.body.offsetHeight-120-anchor_index*22)+"px";
+      }
+      else if(anchor_name == "center"){ //CENTER
+        //set size
+        this.div.style.width = this.div_label.style.width = (500)+"px";
         this.div_inner.style.height = this.div.style.height = this.div_label.style.height = (20)+"px";
         this.div_label.style.lineHeight = this.div_label.style.height;
 
@@ -73,22 +86,8 @@ ProgressBar.prototype.frame = function(time)
         this.div_label.style.fontSize = "1em";
 
         //set position
-        this.div.style.left = (document.body.offsetWidth-this.div.offsetWidth-45)+"px";
-        this.div.style.top = (document.body.offsetHeight-60-anchor_index*22)+"px";
-		this.div.style.position = "absolute";
-      }
-      else if(anchor_name == "center"){ //CENTER
-        //set size
-        this.div.style.width = this.div_label.style.width = (400)+"px";
-        this.div_inner.style.height = this.div.style.height = this.div_label.style.height = (100)+"px";
-        this.div_label.style.lineHeight = this.div_label.style.height;
-
-        //set label font size
-        this.div_label.style.fontSize = "2em";
-
-        //set position
         this.div.style.left = Math.round(document.body.offsetWidth/2-this.div.offsetWidth/2)+"px";
-        this.div.style.top = (document.body.offsetHeight-500-anchor_index*22)+"px";
+        this.div.style.top = Math.round(document.body.offsetHeight-80-anchor_index*22)+"px";
       }
     }
   }
@@ -122,3 +121,30 @@ ProgressBar.prototype.removeDom = function()
       anchor.splice(i,1);
   }
 }
+
+// PROGRESS BAR DYNAMIC CLASS
+
+defineDynamicClass("dprogressbar", function(el){
+  var value = parseFloat(el.dataset.value); //value: 0 -> 1
+  var color = el.dataset.color; //color: css color
+  var bgcolor = el.dataset.bgcolor; //bgcolor: css color
+  var content = el.innerHTML;
+  el.innerHTML = "";
+
+  var inner = document.createElement("div");
+  inner.classList.add("inner");
+  el.appendChild(inner);
+
+  var label = document.createElement("div");
+  label.classList.add("label");
+  label.innerHTML = content;
+  el.appendChild(label);
+
+  el.style.backgroundColor = bgcolor;
+  inner.style.backgroundColor = color;
+
+  //set label font size
+  label.style.fontSize = "1em";
+
+  inner.style.width = Math.round(value*100)+"%";
+});

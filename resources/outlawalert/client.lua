@@ -20,14 +20,17 @@ local PedModels = {
         's_m_y_sheriff_01',
         's_m_y_ranger_01',
         's_m_m_armoured_01',
-        's_m_m_armoured_01',
         's_f_y_sheriff_01',
         's_f_y_ranger_01',
+		's_m_y_blackops_02',
+		's_m_y_blackops_01',
+		's_m_y_blackops_03',
+		's_m_y_pilot_01',
         --'s_m_m_ciasec_01',
-        --'s_m_m_armoured_01',
-        --'s_m_m_armoured_02',
+        's_m_m_armoured_01',
+        's_m_m_armoured_02',
         --'u_m_m_fibarchitect',
-        --'s_m_y_swat_01',
+        's_m_y_swat_01',
     }
 GetPlayerName()
 RegisterNetEvent('outlawNotify')
