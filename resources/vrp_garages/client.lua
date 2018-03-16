@@ -328,6 +328,7 @@ function StoreVehicle()
   CloseMenu()
 end
 
+
 function ListVehicle(page)
     ped = GetPlayerPed(-1)
 	selectedPage = page
@@ -336,7 +337,7 @@ function ListVehicle(page)
 	local count = 0
     for ind, value in pairs(GVEHICLES) do
 	  if ((count >= (page*10)) and (count < ((page*10)+10))) then
-        Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_name)
+        Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_identify)
 	  end
 	  count = count + 1
     end   

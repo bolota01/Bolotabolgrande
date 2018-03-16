@@ -84,7 +84,7 @@ AddEventHandler("ply_garages:CheckGarageForVeh", function()
       local vehicles = {}
       for k,v in ipairs(pvehicles) do
 		if v.veh_type == "car" or v.veh_type == "bike" then
-		  table.insert(vehicles, {["vehicle_model"] = v.vehicle_model, ["vehicle_name"] = v.vehicle})
+		  table.insert(vehicles, {["vehicle_model"] = v.vehicle_model, ["vehicle_name"] = v.veh_name, ["vehicle_identify"] = v.vehicle})
 		end
       end
       TriggerClientEvent("ply_garages:getVehicles", player, vehicles) 

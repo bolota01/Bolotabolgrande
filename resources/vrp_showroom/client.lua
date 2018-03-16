@@ -438,32 +438,10 @@ function vehSR_ButtonSelected(button)
 		elseif btn == "Motos" then
 			vehSR_OpenMenu('Motos')
 		end
-	elseif this == "Carros" then
-		if btn == "sports" then
-			vehSR_OpenMenu('sports')
-		elseif btn == "sedans" then
-			vehSR_OpenMenu('sedans')
-		elseif btn == "compacts" then
-			vehSR_OpenMenu('compacts')
-		elseif btn == "coupes" then
-			vehSR_OpenMenu('coupes')
-		elseif btn == "sportsclassics" then
-			vehSR_OpenMenu("sportsclassics")
-		elseif btn == "supers" then
-			vehSR_OpenMenu('supers')
-		elseif btn == "muscle" then
-			vehSR_OpenMenu('muscle')
-		elseif btn == "offroad" then
-			vehSR_OpenMenu('offroad')
-		elseif btn == "suvs" then
-			vehSR_OpenMenu('suvs')
-		elseif btn == "vans" then
-			vehSR_OpenMenu('vans')
-		end
-	elseif this == "compacts" or this == "coupes" or this == "sedans" or this == "sports" or this == "sportsclassics" or this == "supers" or this == "muscle" or this == "offroad" or this == "suvs" or this == "vans" or this == "industrial" then
-		TriggerServerEvent('veh_SR:CheckMoneyForVeh',button.model,button.costs, "car")
+	elseif this == "Carros" or this == "compacts" or this == "coupes" or this == "sedans" or this == "sports" or this == "sportsclassics" or this == "supers" or this == "muscle" or this == "offroad" or this == "suvs" or this == "vans" or this == "industrial" then
+		TriggerServerEvent('veh_SR:CheckMoneyForVeh',button.model,button.costs, "car", button.name)
     elseif this == "cycles" or this == "Motos" then
-		TriggerServerEvent('veh_SR:CheckMoneyForVeh',button.model,button.costs, "bike")
+		TriggerServerEvent('veh_SR:CheckMoneyForVeh',button.model,button.costs, "bike", button.name)
 	end
 end
 
