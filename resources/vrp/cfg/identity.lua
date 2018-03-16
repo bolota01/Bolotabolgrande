@@ -2,7 +2,7 @@
 local cfg = {}
 
 -- city hall position
-cfg.city_hall = {236.872360229492, -408.259490966797, 47.9243659973145}
+cfg.city_hall = {-1035.6555175781,-2733.1572265625,13.756643295288}
 
 -- cityhall blip {blipid,blipcolor}
 cfg.blip = {498,4}
