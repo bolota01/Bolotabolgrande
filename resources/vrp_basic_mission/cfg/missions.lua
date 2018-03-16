@@ -16,7 +16,7 @@ cfg.repair = {
   ["mission.repair.satellite_dishes"] = { -- permissao
     chance = 5, -- quantidade de lados do dado 1
     title = "Antenas parabólicas", -- nome
-    steps = 3,
+    steps = 1,
     positions = {
       {1985.55017089844,2929.42211914063,46.5480003356934},
       {1965.38012695313,2917.47241210938,56.1684608459473},
@@ -46,7 +46,7 @@ cfg.repair = {
   },
   ["mission.repair.wind_turbines"] = {
     chance = 5,
-    steps = 3,
+    steps = 1,
     title = "Turbinas eólicas",
     positions = {
       {2363.77880859375,2288.63891601563,94.252693176269},
@@ -60,7 +60,7 @@ cfg.repair = {
       {2299.90209960938,1857.3779296875,106.976081848145},
       {2356.48413085938,1836.69982910156,102.337211608887}
     },
-    reward = 500
+    reward = 450
   }
 }
 
@@ -76,7 +76,7 @@ cfg.bankdriver = {
       {146.99836730957,-1045.0439453125,29.368021011353},
       {-2957.7365722656,481.54229736328,15.697030067444}
     },
-    reward = 500
+    reward = 400
   },
   ["mission.bankdriver.moneybank2"] = {
     chance = 5,
@@ -89,7 +89,7 @@ cfg.bankdriver = {
       {146.99836730957,-1045.0439453125,29.368021011353},
       {-2957.7365722656,481.54229736328,15.697030067444}
     },
-    reward = 550
+    reward = 400
   }
   
 }
@@ -262,13 +262,13 @@ cfg.carjack = {
   }
 }
 
--- EMERGENCY
+ EMERGENCY
 
 cfg.emergency = {
   ["mission.emergency.transfer"] = {
     chance = 10,
     title = "Transferência de Paciente",
-    steps = 2,
+    steps = 1,
     positions = {
 	{295.070617675781,-1440.15832519531,29.4633674621582},
 	{1154.85144042969,-1515.47509765625,34.3529014587402},
@@ -281,25 +281,25 @@ cfg.emergency = {
   },
 }
 
--- TAXI
+ TAXI
 cfg.taxi = {
   ["mission.taxi.passenger"] = {
     chance = 10,
     title = "Passageiro de táxi",
     text = "Vá para o destino.",
-    steps = 2,
+    steps = 1,
     positions = common_delivery_positions,
     reward = 400
   },
 }
  
--- POLICE 
+ POLICE 
 cfg.police = {
   ["mission.police.transfer"] = {
     chance = 10,
     title = "Transferência de prisioneiro",
     text = "Transfira o prisioneiro.",
-    steps = 2,
+    steps = 1,
     positions = {
 	{854.080261230469,-1280.93505859375,26.1412010192871},
 	{452.274810791016,-996.933715820313,25.4266204833984}
@@ -310,7 +310,7 @@ cfg.police = {
     chance = 5,
     title = "Patrulha do Banco da cidade",
     text = "Patrulhe a área.",
-    steps = 3,
+    steps = 1,
     positions = {
 	{317.441223144531,-267.669036865234,53.4438934326172},
 	{-350.306091308594,-28.1077899932861,46.9482803344727},
