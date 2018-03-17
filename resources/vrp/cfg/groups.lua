@@ -159,6 +159,7 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"harvest.weed",
 	"process.weed",
+  "build.weed",
 	"mission.delivery.weed",
 	"mission.delivery.pot"
   },
@@ -166,6 +167,7 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"harvest.metanfetamina",
 	"process.metanfetamina",
+  "build.metanfetamina",
 	"mission.delivery.metanfetamina",
 	"mission.delivery.pot3"
   },  
@@ -173,8 +175,15 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"process.cocaina",
 	"harvest.cocaina",
+  "build.cocaina",
 	"mission.delivery.cocaina",
 	"mission.delivery.pot2"
+  },
+  ["Minerador"] = {
+    _config = { gtype = "job" },
+  "harvest.minerio",
+  "process.minerio",
+  "build.minerio"
   },  
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
@@ -245,6 +254,7 @@ cfg.selectors = {
 	"Transportador de Valores",
     "Mecânico",
 	"Entregador",
+  "Minerador",
     "Desempregado"
   },
   ["Empregos Ilegais"] = {
