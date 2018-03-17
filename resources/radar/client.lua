@@ -19,7 +19,7 @@ Citizen.CreateThread(function()
 	for k,v in pairs(radares) do
 	local player = GetPlayerPed(-1)
 	local coords = GetEntityCoords(player, true)
-	if Vdist2(radares[k].x, radares[k].y, radares[k].z, coords["x"], coords["y"], coords["z"]) < 30 then
+	if Vdist2(radares[k].x, radares[k].y, radares[k].z, coords["x"], coords["y"], coords["z"]) < 50 then
 	Citizen.Trace("Você está passando por um radar! Diminua!")
 		checkSpeed()
 	end

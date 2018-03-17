@@ -2,7 +2,7 @@ local Proxy = module("vrp", "lib/Proxy")
 local Tunnel = module("vrp", "lib/Tunnel")
 
 vRP = Proxy.getInterface("vRP")
-vRPclient = Tunnel.getInterface("vRP","vrp_stationaryRadars")
+vRPclient = Tunnel.getInterface("vRP","radar")
 
 RegisterServerEvent('cobrarMulta')
 AddEventHandler('cobrarMulta', function()
