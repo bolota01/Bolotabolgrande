@@ -28,16 +28,22 @@ cfg.groups = {
     "player.unban",
     "player.noclip",
     "player.custom_emote",
+	"armas.traficante",
     "player.custom_sound",
     "player.display_custom",
+	"police.menu_interaction",
     "player.coords",
     "player.tptome",
+	"radar.pass",
 	"admin.deleteveh",
 	"admin.spawnveh",
 	"admin.godmode",
 	"player.tptowaypoint",
 	"player.cmd_mask",
 	"admin.easy_unjail",
+	"police.door",
+	"police.license",
+	"police.licensearm",
 	"admin.spikes",
     "player.tpto"
   },
@@ -48,8 +54,13 @@ cfg.groups = {
 	"player.whitelist",
 	"player.unwhitelist",
     "player.noclip",
+	"radar.pass",
+	"police.door",
     "player.tptome",
     "player.list",
+	"police.license",
+	"police.licensearm",
+	"police.menu_interaction",
     "player.kick",
     "player.tpto"
   },   
@@ -84,9 +95,12 @@ cfg.groups = {
 	"police.easy_fine",
 	"police.easy_cuff",
 	"police.drag",
+	"police.menu_interaction",
+	"police.door",
     "police.menu",
     "police.cloakroom",
     "police.pc",
+	"radar.pass",
 	"holdup.police",
 	"pm2.garagem",
     "police.handcuff",
@@ -95,6 +109,8 @@ cfg.groups = {
     "police.check",
     "police.service",
     "police.wanted",
+	"police.license",
+	"police.licensearm",
 	"bank.police",
     "police.seize.weapons",
     "police.seize.items",
@@ -103,8 +119,6 @@ cfg.groups = {
     "police.announce",
 	"police.askid",
 	"police.paycheck",
-	"mission.police.transfer",
-    "mission.police.patrol",
 	"police.weapons",
     "-police.store_weapons",
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
@@ -118,14 +132,8 @@ cfg.groups = {
 	"hospital.garagem",
 	"emergency.medkit",
 	"emergency.paycheck",
-	"mission.emergency.transfer",
+	"radar.pass",
 	"samu.cloakroom"
-  },
-    ["ems"] = {
-	"ems.whitelisted"
-  },
-    ["cop"] = {
-	"cop.whitelisted"
   },
   ["Mecânico"] = {
     _config = { gtype = "job"},
@@ -159,7 +167,6 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"harvest.weed",
 	"process.weed",
-  "build.weed",
 	"mission.delivery.weed",
 	"mission.delivery.pot"
   },
@@ -167,7 +174,6 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"harvest.metanfetamina",
 	"process.metanfetamina",
-  "build.metanfetamina",
 	"mission.delivery.metanfetamina",
 	"mission.delivery.pot3"
   },  
@@ -175,15 +181,8 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"process.cocaina",
 	"harvest.cocaina",
-  "build.cocaina",
 	"mission.delivery.cocaina",
 	"mission.delivery.pot2"
-  },
-  ["Minerador"] = {
-    _config = { gtype = "job" },
-  "harvest.minerio",
-  "process.minerio",
-  "build.minerio"
   },  
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
@@ -205,9 +204,10 @@ cfg.groups = {
 	"-player.blips",
 	"mission.hitman"
   },
-  ["hacker"] = {
+  ["Hacker"] = {
     _config = { gtype = "job" },
 	"-player.blips",
+	"mission.hacker.information",
 	"hacker.hack"
   },
   ["mugger"] = {
@@ -254,7 +254,6 @@ cfg.selectors = {
 	"Transportador de Valores",
     "Mecânico",
 	"Entregador",
-  "Minerador",
     "Desempregado"
   },
   ["Empregos Ilegais"] = {
@@ -264,7 +263,8 @@ cfg.selectors = {
 	"Traficante de Maconha",
 	"Traficante de Tartaruga",
 	"Traficante de Cocaina",	
-	"Traficante de Armas"
+	"Traficante de Armas",
+	"Hacker"
   } 
 }
 
