@@ -1,7 +1,7 @@
 -- CONFIG --
 
 -- The watermark text --
-servername = "Portal FiveM Brasil"
+servername = "Minas Roleplay Brasil  -  ALPHA TEST"
 
 -- The x and y offset (starting at the top left corner) --
 -- Default: 0.005, 0.001

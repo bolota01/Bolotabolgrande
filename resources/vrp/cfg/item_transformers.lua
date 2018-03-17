@@ -6,6 +6,7 @@ local cfg = {}
 
 cfg.item_transformers = {
   -- example of harvest item transformer
+    -- LIXEIRA
   {
     name="Trash Can", -- menu name
     -- permissions = {"harvest.water_bottle_tacos"}, -- you can add permissions
@@ -38,6 +39,7 @@ cfg.item_transformers = {
     -- onstep = function(player,recipe) end, -- optional step callback
     -- onstop = function(player,recipe) end -- optional stop callback
   },
+    -- ACADEMIA
   {
     name="Academia", -- menu name
     r=255,g=125,b=0, -- color
@@ -53,19 +55,20 @@ cfg.item_transformers = {
         reagents={}, -- items taken per unit
         products={}, -- items given per unit
         aptitudes={ -- optional
-          ["physical.strength"] = 1 -- "group.aptitude", give 1 exp per unit
+          ["physical.strength"] = 0.6 -- "group.aptitude", give 1 exp per unit
         }
       }
     }
   },
+    -- CAMPO DE MACONHA
   {
     name="Campo de Ervas", -- menu name
     permissions = {"harvest.weed"}, -- you can add permissions
-    r=0,g=200,b=0, -- color
-    max_units=200,
+    r=0,g=255,b=0, -- color
+    max_units=400,
     units_per_minute=5,
-    x=2208.777,y=5578.235,z=53.735, -- pos
-    radius=7.5, height=1.5, -- area
+    x=2222.060546875,y=5577.0146484375,z=53.834770202637, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = {
       ["Colher"] = { -- action name
         description="Colher maconha.", -- action description
@@ -78,15 +81,61 @@ cfg.item_transformers = {
       }
     }
   },
+    -- PROCESSAR MACONHA
+  {
+    name="Processar Ervas", -- menu name
+    permissions = {"process.weed"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=5, -- unidades que o transformador ganha de volta por minuto
+    x=-781.90240478516,y=578.94976806641,z=126.74822235107, -- pos
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Processar"] = { -- action name
+        description="Processador de Maconha.", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["weed"] = 1
+    },
+        products={ -- items given per unit
+      ["cannabis"] = 1
+        }
+      }
+    }
+  },
+    -- VENDER MACONHA
+  {
+    name="Vender Maconha", -- menu name
+    permissions = {"build.weed"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=-765.04040527344,y=556.73400878906,z=128.05986022949, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Maconha"] = { -- action name
+        description="Vender Maconha", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["cannabis"] = 1
+      },
+        products={ -- items given per unit
+          ["dirty_money"] = 100
+        }
+      }
+    }
+  },
   -- CAMPO DE METANFETAMINA    
   {
     name="Campo de Metanfetamina", -- Nome do menu
     permissions = {"harvest.metanfetamina"}, -- Você pode adicionar permissões
     r=0,g=200,b=0, -- cor
-    max_units=200,
+    max_units=400,
     units_per_minute=5,
     x=79.686859130859,y=3705.6840820313,z=41.077156066895, -- Localização
-    radius=7.5, height=1.5, -- area
+    radius=3.5, height=1.5, -- area
     recipes = {
       ["Colher"] = { -- Nome da ação
         description="Colher Crystal Melamine.", -- Descrição do produto a se colher
@@ -104,8 +153,8 @@ cfg.item_transformers = {
     name="Proc. de metanfetamina", -- menu name
     permissions = {"process.metanfetamina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
-    max_units=200, -- unidades maximas do item
-    units_per_minute=200, -- unidades que o transformador ganha de volta por minuto
+    max_units=400, -- unidades maximas do item
+    units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
     x=1251.0190429688,y=-435.5309753418,z=69.309989929199, -- pos
     radius=5.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -117,7 +166,30 @@ cfg.item_transformers = {
           ["crystalmelamine"] = 1
 	    },
         products={ -- items given per unit
-          ["metanfetamina"] = 2
+          ["metanfetamina"] = 1
+        }
+      }
+    }
+  },
+      -- VENDER METANFETAMINA
+  {
+    name="Vender Metanfetamina", -- menu name
+    permissions = {"build.metanfetamina"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=0,y=0,z=0, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Metanfetamina"] = { -- action name
+        description="Vender Metanfetamina", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["metanfetamina"] = 1
+      },
+        products={ -- items given per unit
+          ["dirty_money"] = 190
         }
       }
     }
@@ -127,10 +199,10 @@ cfg.item_transformers = {
     name="Campo de Cocaina", -- Nome do menu
     permissions = {"harvest.cocaina"}, -- Você pode adicionar permissões
     r=0,g=200,b=0, -- cor
-    max_units=200,
+    max_units=400,
     units_per_minute=5,
     x=-41.372623443604,y=3033.3776855469,z=41.020195007324, -- Localização
-    radius=7.5, height=1.5, -- area
+    radius=3.5, height=1.5, -- area
     recipes = {
       ["Colher"] = { -- Nome da ação
         description="Colher folha de Coca.", -- Descrição do produto a se colher
@@ -148,8 +220,8 @@ cfg.item_transformers = {
     name="Processador de cocaina", -- menu name
     permissions = {"process.cocaina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
-    max_units=200, -- unidades maximas do item
-    units_per_minute=200, -- unidades que o transformador ganha de volta por minuto
+    max_units=400, -- unidades maximas do item
+    units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
     x=471.25631713867,y=-1685.3825683594,z=29.381580352783, -- pos
     radius=5.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -161,7 +233,30 @@ cfg.item_transformers = {
           ["folhadecoca"] = 1
 	    },
         products={ -- items given per unit
-          ["cocaina"] = 2
+          ["cocaina"] = 1
+        }
+      }
+    }
+  },
+      -- VENDER COCAÍNA
+  {
+    name="Vender Maconha", -- menu name
+    permissions = {"build.cocaina"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=0,y=0,z=0, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Cocaina"] = { -- action name
+        description="Vender Cocaina", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["cocaina"] = 1
+      },
+        products={ -- items given per unit
+          ["dirty_money"] = 120
         }
       }
     }
@@ -174,7 +269,7 @@ cfg.item_transformers = {
     max_units=200, -- unidades maximas do item
     units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
     x=4095.5485839844,y=4464.8696289063,z=1.9822434186935, -- pos
-    radius=5.5, height=1.5, -- area
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Pescar"] = { -- action name
         description="Pescar Tartaruga com Rede.", -- action description
@@ -200,14 +295,14 @@ cfg.item_transformers = {
     radius=2.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Tartaruga"] = { -- action name
-        description="", -- action description
+        description="Vender Tartaruga", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
           ["Tartaruga"] = 1
       },
         products={ -- items given per unit
-          ["dirty_money"] = 2500
+          ["dirty_money"] = 700
         }
       }
     }
@@ -215,10 +310,10 @@ cfg.item_transformers = {
   -- CAMPO DE MINERIO
   {
     name="Campo de Minerio", -- Nome do menu
-    permissions = {"campodeminerio"}, -- you can add permissions
+    permissions = {"harvest.minerio"}, -- you can add permissions
     r=0,g=200,b=0, -- cor
-    max_units=200,
-    units_per_minute=2,
+    max_units=400,
+    units_per_minute=5,
     x=1534.5666503906,y=6327.1376953125,z=24.215845108032, -- Localização    
     radius=7.5, height=1.5, -- area
     recipes = {
@@ -229,6 +324,52 @@ cfg.item_transformers = {
         reagents={}, -- Itens colhidos por unidade
         products={ -- Nome do produto fornecido por unidade
           ["Pedra"] = 1
+        }
+      }
+    }
+  },
+    -- PROCESSADOR DE MINERIO
+  {
+    name="Lavagem de Minerio", -- menu name
+    permissions = {"process.minerio"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=2, -- unidades que o transformador ganha de volta por minuto
+    x=-553.01434326172,y=5325.3393554688,z=73.599594116211, -- pos
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Lavagem de Pedra"] = { -- action name
+        description="Produzir minerio...", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Pedra"] = 1
+        },
+        products={ -- items given per unit
+          ["Minerio"] = 1
+        }
+      }
+    }
+  },
+      -- VENDER MINÉRIO
+  {
+    name="Vender Minerio", -- menu name
+    permissions = {"build.minerio"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=-584.82446289063,y=5312.9633789063,z=70.214492797852, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=5.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Minerio"] = { -- action name
+        description="Vender Mi", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Minerio"] = 1
+      },
+        products={ -- items given per unit
+          ["minerio_money"] = 130
         }
       }
     }
@@ -255,29 +396,7 @@ cfg.item_transformers = {
       }
     }
   },
-  -- PROCESSADOR DE MINERIO
-  {
-    name="Lavagem de Minerio", -- menu name
-    permissions = {"lavagemdeminerio"}, -- you can add permissions
-    r=0,g=200,b=0, -- cor do menu
-    max_units=200, -- unidades maximas do item
-    units_per_minute=2, -- unidades que o transformador ganha de volta por minuto
-    x=-554.48089599609,y=5324.0986328125,z=73.599700927734, -- pos
-    radius=7.5, height=1.5, -- area
-    recipes = { -- items do menu
-      ["Lavagem de Pedra"] = { -- action name
-        description="Produzir minerio...", -- action description
-        in_money=0, -- money taken per unit
-        out_money=0, -- money earned per unit
-        reagents={  -- items taken per unit
-          ["Pedra"] = 1
-        },
-        products={ -- items given per unit
-          ["Minerio"] = 1
-        }
-      }
-    }
-  },
+    -- Porte de Arma
   {
     name="Porte de Arma", -- menu name
     r=255,g=125,b=0, -- color
@@ -298,6 +417,7 @@ cfg.item_transformers = {
       }
     }
   },
+    -- CARTEIRA DE ADVOGADO
   {
     name="OAB", -- menu name
 	permissions = {"advogado.oab"},
@@ -318,33 +438,8 @@ cfg.item_transformers = {
         aptitudes={} -- optional
       }
     }
-  },  
-  {
-    name="Processar Ervas", -- menu name
-    permissions = {"process.weed"}, -- you can add permissions
-    r=0,g=200,b=0, -- cor do menu
-    max_units=200, -- unidades maximas do item
-    units_per_minute=200, -- unidades que o transformador ganha de volta por minuto
-    x=-781.90240478516,y=578.94976806641,z=126.74822235107, -- pos
-    radius=5.5, height=1.5, -- area
-    recipes = { -- items do menu
-      ["Processar"] = { -- action name
-        description="Processador de Maconha.", -- action description
-        in_money=0, -- money taken per unit
-        out_money=0, -- money earned per unit
-        reagents={  -- items taken per unit
-          ["weed"] = 1
-		},
-        products={ -- items given per unit
-		  ["cannabis"] = 2
-        }
-      }
-    }
   },
-}
-
-
-
+  }
 -- define multiple static transformers with postions list
 local weedplants = {
   {1873.36901855469,3658.46215820313,33.8029747009277},
