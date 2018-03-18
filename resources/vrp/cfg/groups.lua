@@ -183,15 +183,12 @@ cfg.groups = {
 	"harvest.cocaina",
 	"mission.delivery.cocaina",
 	"mission.delivery.pot2"
-<<<<<<< HEAD
   },
   ["Garimpeiro de Diamantes"] = {
     _config = { gtype = "job" },
   "harvest.diamante",
   "process.diamante",
   "build.diamante"
-=======
->>>>>>> 61b4412e6595d1aa43db3a0a2dab94bcd92513c1
   },  
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
@@ -215,17 +212,11 @@ cfg.groups = {
   },
   ["Hacker"] = {
     _config = { gtype = "job" },
-<<<<<<< HEAD
   "-player.blips",
   "sell.clonedcards",
   "pick.toclonecards",
   "clone.cards",
   "hacker.hack"
-=======
-	"-player.blips",
-	"mission.hacker.information",
-	"hacker.hack"
->>>>>>> 61b4412e6595d1aa43db3a0a2dab94bcd92513c1
   },
   ["mugger"] = {
     _config = { gtype = "job" },
