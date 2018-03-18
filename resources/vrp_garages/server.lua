@@ -50,6 +50,11 @@ AddEventHandler('ply_garages:CheckForSpawnVeh', function(vehicle)
 	local player = vRP.getUserSource({user_id})
 	MySQL.query("vRP/ls_customs", {user_id = user_id, vehicle = vehicle}, function(result, affected)
 	  vRP.closeMenu({player})
+	  print(tonumber(result[1].vehicle_mods0))
+      print("teste mod")
+
+      print(tonumber(result[1].vehicle_mods1))
+      print("test mod 1")
       vRPgc.spawnGarageVehicle(player,{result[1].veh_type,vehicle,result[1].vehicle_plate, result[1].vehicle_colorprimary, result[1].vehicle_colorsecondary, result[1].vehicle_pearlescentcolor, result[1].vehicle_wheelcolor, result[1].vehicle_plateindex, result[1].vehicle_neoncolor1, result[1].vehicle_neoncolor2, result[1].vehicle_neoncolor3, result[1].vehicle_windowtint, result[1].vehicle_wheeltype, result[1].vehicle_mods0, result[1].vehicle_mods1, result[1].vehicle_mods2, result[1].vehicle_mods3, result[1].vehicle_mods4, result[1].vehicle_mods5, result[1].vehicle_mods6, result[1].vehicle_mods7, result[1].vehicle_mods8, result[1].vehicle_mods9, result[1].vehicle_mods10, result[1].vehicle_mods11, result[1].vehicle_mods12, result[1].vehicle_mods13, result[1].vehicle_mods14, result[1].vehicle_mods15, result[1].vehicle_mods16, result[1].vehicle_turbo, result[1].vehicle_tiresmoke, result[1].vehicle_xenon, result[1].vehicle_mods23, result[1].vehicle_mods24, result[1].vehicle_neon0, result[1].vehicle_neon1, result[1].vehicle_neon2, result[1].vehicle_neon3, result[1].vehicle_bulletproof, result[1].vehicle_smokecolor1, result[1].vehicle_smokecolor2, result[1].vehicle_smokecolor3, result[1].vehicle_modvariation})
 	end)
 end)
@@ -84,7 +89,7 @@ AddEventHandler("ply_garages:CheckGarageForVeh", function()
       local vehicles = {}
       for k,v in ipairs(pvehicles) do
 		if v.veh_type == "car" or v.veh_type == "bike" then
-		  table.insert(vehicles, {["vehicle_model"] = v.vehicle_model, ["vehicle_name"] = v.veh_name, ["vehicle_identify"] = v.vehicle})
+		  table.insert(vehicles, {["vehicle_model"] = v.vehicle_model, ["vehicle_name"] = v.vehicle})
 		end
       end
       TriggerClientEvent("ply_garages:getVehicles", player, vehicles) 

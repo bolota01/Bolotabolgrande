@@ -16,14 +16,13 @@ local garages = {
     {name="Garage", colour=3, id=357, x=-334.685, y=289.773, z=84.705, h=0.0},
     {name="Garage", colour=3, id=357, x=-55.272, y=-1838.71, z=25.442, h=0.0},
     {name="Garage", colour=3, id=357, x=126.434, y=6610.04, z=30.750, h=0.0},
-    {name="Garage", colour=3, id=357, x=419.85659790039, y=-1029.5887451172, z=29.119018554688, h=0.0},
+    {name="Garage", colour=3, id=357, x=434.91369628906, y=-1013.5029907227, z=28.715585708618, h=0.0},
     {name="Garage", colour=3, id=357, x=-626.11346435547, y=56.508075714111, z=43.727066040039, h=0.0},
 	{name="Garage", colour=3, id=357, x=1387.8536376953, y=-578.04730224609, z=74.338775634766, h=0.0},
     {name="Garage", colour=3, id=357, x=288.9680480957, y=-338.53717041016, z=44.919883728027, h=0.0},
     {name="Garage", colour=3, id=357, x=-1444.3962402344, y=-522.58544921875, z=31.581819534302, h=0.0},
     {name="Garage", colour=3, id=357, x=1410.3022460938, y=1117.7930908203, z=114.83800506592, h=0.0},
 	{name="Garage", colour=3, id=357, x=-189.15110778809, y=501.62377929688, z=134.48828125, h=0.0},
-    {name="Garage", colour=3, id=357, x=-989.31628417969, y=-2707.0415039063, z=13.83068561554, h=0.0},
 	{name="Garage", colour=3, id=357, x=353.81744384766, y=437.37255859375, z=146.6767578125, h=0.0},
 	{name="Garage", colour=3, id=357, x=391.20950317383, y=430.60192871094, z=143.57209777832, h=0.0},
 	{name="Garage", colour=3, id=357, x=-683.9697265625, y=602.63519287109, z=143.52864074707, h=0.0},
@@ -113,11 +112,11 @@ function vRPgt.spawnGarageVehicle(vtype, name, vehicle_plate, vehicle_colorprima
       local plate = plate
       local primarycolor = tonumber(vehicle_colorprimary)
       local secondarycolor = tonumber(vehicle_colorsecondary)
-      local pearlescentcolor = vehicle_pearlescentcolor
-      local wheelcolor = vehicle_wheelcolor
+      local pearlescentcolor = tonumber(vehicle_pearlescentcolor)
+      local wheelcolor = tonumber(vehicle_wheelcolor)
       local plateindex = tonumber(vehicle_plateindex)
-      local neoncolor = {vehicle_neoncolor1,vehicle_neoncolor2,vehicle_neoncolor3}
-      local windowtint = vehicle_windowtint
+      local neoncolor = {tonumber(vehicle_neoncolor1),tonumber(vehicle_neoncolor2),tonumber(vehicle_neoncolor3)}
+      local windowtint = tonumber(vehicle_windowtint)
       local wheeltype = tonumber(vehicle_wheeltype)
       local mods0 = tonumber(vehicle_mods0)
       local mods1 = tonumber(vehicle_mods1)
@@ -146,35 +145,80 @@ function vRPgt.spawnGarageVehicle(vtype, name, vehicle_plate, vehicle_colorprima
       local neon2 = vehicle_neon2
       local neon3 = vehicle_neon3
       local bulletproof = vehicle_bulletproof
-      local smokecolor1 = vehicle_smokecolor1
-      local smokecolor2 = vehicle_smokecolor2
-      local smokecolor3 = vehicle_smokecolor3
+      local smokecolor1 = tonumber(vehicle_smokecolor1)
+      local smokecolor2 = tonumber(vehicle_smokecolor2)
+      local smokecolor3 = tonumber(vehicle_smokecolor3)
       local variation = vehicle_modvariation
 	  
 	  --setting customization
-      SetVehicleColours(nveh, primarycolor, secondarycolor)
-      SetVehicleExtraColours(nveh, tonumber(pearlescentcolor), tonumber(wheelcolor))
-      SetVehicleNumberPlateTextIndex(nveh,plateindex)
-      SetVehicleNeonLightsColour(nveh,tonumber(neoncolor[1]),tonumber(neoncolor[2]),tonumber(neoncolor[3]))
-      SetVehicleTyreSmokeColor(nveh,tonumber(smokecolor1),tonumber(smokecolor2),tonumber(smokecolor3))
+      if primarycolor ~= nil or secondarycolor ~= nil then
+        SetVehicleColours(nveh, primarycolor, secondarycolor)
+      end
+      if pearlescentcolor ~= nil or wheelcolor ~= wheelcolor then
+      SetVehicleExtraColours(nveh, pearlescentcolor, wheelcolor)
+      end
+      if plateindex ~= nil then
+        SetVehicleNumberPlateTextIndex(nveh,plateindex)
+      end
+      if neoncolor[1] ~= nil and neoncolor[2] ~= nil and neoncolor[3] ~= nil then
+        SetVehicleNeonLightsColour(nveh,neoncolor[1],neoncolor[2],neoncolor[3])
+      end
+      if smokecolor1 ~= nil and smokecolor2 ~= nil and smokecolor3 ~= nil then
+        SetVehicleTyreSmokeColor(nveh,smokecolor1,smokecolor2,smokecolor3)
+      end
       SetVehicleModKit(nveh,0)
-      SetVehicleMod(nveh, 0, mods0)
-      SetVehicleMod(nveh, 1, mods1)
-      SetVehicleMod(nveh, 2, mods2)
-      SetVehicleMod(nveh, 3, mods3)
-      SetVehicleMod(nveh, 4, mods4)
-      SetVehicleMod(nveh, 5, mods5)
-      SetVehicleMod(nveh, 6, mods6)
-      SetVehicleMod(nveh, 7, mods7)
-      SetVehicleMod(nveh, 8, mods8)
-      SetVehicleMod(nveh, 9, mods9)
-      SetVehicleMod(nveh, 10, mods10)
+      if mods0 ~= nil then
+        SetVehicleMod(nveh, 0, mods0)
+      end
+      if mods1 ~= nil then
+        SetVehicleMod(nveh, 1, mods1)
+      end
+      if mods2 ~= nil then
+        SetVehicleMod(nveh, 2, mods2)
+      end
+      if mods3 ~= nil then
+        SetVehicleMod(nveh, 3, mods3)
+      end
+      if mods4 ~= nil then
+        SetVehicleMod(nveh, 4, mods4)
+      end
+      if mods5 ~= nil then
+        SetVehicleMod(nveh, 5, mods5)
+      end
+
+      if mods6 ~= nil then
+        SetVehicleMod(nveh, 6, mods6)
+      end
+      if mods7 ~= nil then
+        SetVehicleMod(nveh, 7, mods7)
+      end
+      if mods8 ~= nil then
+        SetVehicleMod(nveh, 8, mods8)
+      end
+      if mods9 ~= nil then
+        SetVehicleMod(nveh, 9, mods9)
+      end
+      if mods10 ~= nil then
+        SetVehicleMod(nveh, 10, mods10)
+      end
+      if mods11 ~= nil then
       SetVehicleMod(nveh, 11, mods11)
+      end
+      if mods12 ~= nil then
       SetVehicleMod(nveh, 12, mods12)
+      end
+      if mods13 ~= nil then
       SetVehicleMod(nveh, 13, mods13)
+      end
+      if mods14~= nil then
       SetVehicleMod(nveh, 14, mods14)
+      end
+      if mods15 ~= nil then
       SetVehicleMod(nveh, 15, mods15)
+      end
+      if mods16 ~= nil then
       SetVehicleMod(nveh, 16, mods16)
+      end
       if turbo == "on" then
         ToggleVehicleMod(nveh, 18, true)
       else          
@@ -190,9 +234,15 @@ function vRPgt.spawnGarageVehicle(vtype, name, vehicle_plate, vehicle_colorprima
       else          
         ToggleVehicleMod(nveh, 22, false)
       end
-		SetVehicleWheelType(nveh, tonumber(wheeltype))
-      SetVehicleMod(nveh, 23, mods23)
-      SetVehicleMod(nveh, 24, mods24)
+      if wheeltype ~= nil then
+		    SetVehicleWheelType(nveh, tonumber(wheeltype))
+      end
+      if mods23 ~= nil then
+        SetVehicleMod(nveh, 23, mods23)
+      end
+      if mods24 ~= nil then
+        SetVehicleMod(nveh, 24, mods24)
+      end
       if neon0 == "on" then
         SetVehicleNeonLightEnabled(nveh,0, true)
       else
@@ -223,7 +273,9 @@ function vRPgt.spawnGarageVehicle(vtype, name, vehicle_plate, vehicle_colorprima
       --else
       --  SetVehicleModVariation(nveh,23, false)
       --end
-      SetVehicleWindowTint(nveh,tonumber(windowtint))
+      if windowtint ~= nil then
+        SetVehicleWindowTint(nveh,windowtint)
+      end
     end
   else
     vRP.notify({"Você só pode ter um "..vtype.." veiculo Fora."})
@@ -329,7 +381,6 @@ function StoreVehicle()
   CloseMenu()
 end
 
-
 function ListVehicle(page)
     ped = GetPlayerPed(-1)
 	selectedPage = page
@@ -338,7 +389,7 @@ function ListVehicle(page)
 	local count = 0
     for ind, value in pairs(GVEHICLES) do
 	  if ((count >= (page*10)) and (count < ((page*10)+10))) then
-        Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_identify)
+        Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_name)
 	  end
 	  count = count + 1
     end   
