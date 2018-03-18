@@ -44,11 +44,11 @@ local vehshop = {
 				{name = "Range Rover Evoque", costs = 90000, description = {}, model = "baller"},
 				{name = "Porsche Cayman", costs = 100000, description = {}, model = "comet2"},
 				{name = "Bugatti Veyron", costs = 1000000, description = {}, model = "adder"},
-				{name = "Lamborghini Centenario", costs = 1595000, description = {}, model = "reaper"},
 				{name = "McLaren P1", costs = 2200000, description = {}, model = "p1"},
-				{name = "Ford Mustang GT", costs = 35000, description = {}, model = "dominator"},
+				{name = "Ford Mustang GT", costs = 35000, description = {}, model = "mgt"},
 				{name = "Opala SS 75", costs = 35000, description = {}, model = "tampa"},
 				{name = "Lamborghini Urus 2018", costs = 47000, description = {}, model = "urus2018"},
+				{name = "Lamborghini Urus 2018", costs = 47000, description = {}, model = "lp770"},
 			}
 		},
 		["Motos"] = {
