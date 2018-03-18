@@ -179,11 +179,11 @@ cfg.groups = {
 	"mission.delivery.cocaina",
 	"mission.delivery.pot2"
   },
-  ["Minerador"] = {
+  ["Garimpeiro de Diamantes"] = {
     _config = { gtype = "job" },
-  "harvest.minerio",
-  "process.minerio",
-  "build.minerio"
+  "harvest.diamante",
+  "process.diamante",
+  "build.diamante"
   },  
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
@@ -205,10 +205,13 @@ cfg.groups = {
 	"-player.blips",
 	"mission.hitman"
   },
-  ["hacker"] = {
+  ["Hacker"] = {
     _config = { gtype = "job" },
-	"-player.blips",
-	"hacker.hack"
+  "-player.blips",
+  "sell.clonedcards",
+  "pick.toclonecards",
+  "clone.cards",
+  "hacker.hack"
   },
   ["mugger"] = {
     _config = { gtype = "job" },
@@ -264,7 +267,8 @@ cfg.selectors = {
 	"Traficante de Maconha",
 	"Traficante de Tartaruga",
 	"Traficante de Cocaina",	
-	"Traficante de Armas"
+	"Traficante de Armas",
+	"Hacker"
   } 
 }
 

@@ -76,7 +76,7 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={ -- items given per unit
-          ["weed"] = 1
+          ["Folha de maconha"] = 1
         }
       }
     }
@@ -88,18 +88,18 @@ cfg.item_transformers = {
     r=0,g=255,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=5, -- unidades que o transformador ganha de volta por minuto
-    x=-781.90240478516,y=578.94976806641,z=126.74822235107, -- pos
-    radius=5.5, height=1.5, -- area
+    x=283.03845214844,y=-1926.1419677734,z=29.670471191406, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Processar"] = { -- action name
         description="Processador de Maconha.", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["weed"] = 1
+          ["Folha de maconha"] = 1
     },
         products={ -- items given per unit
-      ["cannabis"] = 1
+      ["Maconha"] = 1
         }
       }
     }
@@ -112,14 +112,14 @@ cfg.item_transformers = {
     max_units=400, -- unidades maximas do item
     units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
     x=-765.04040527344,y=556.73400878906,z=128.05986022949, -- pos -119.17678833008,-1486.1040039063,36.98205947876
-    radius=5.5, height=1.5, -- area
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Maconha"] = { -- action name
         description="Vender Maconha", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["cannabis"] = 1
+          ["Maconha"] = 1
       },
         products={ -- items given per unit
           ["dirty_money"] = 100
@@ -134,7 +134,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor
     max_units=400,
     units_per_minute=5,
-    x=79.686859130859,y=3705.6840820313,z=41.077156066895, -- Localização
+    x=180.66656494141,y=2461.9802246094,z=55.801990509033, -- Localização
     radius=3.5, height=1.5, -- area
     recipes = {
       ["Colher"] = { -- Nome da ação
@@ -143,7 +143,7 @@ cfg.item_transformers = {
         out_money=0, -- Dinheiro ganho por unidade
         reagents={}, -- Itens colhidos por unidade
         products={ -- Nome do produto fornecido por unidade
-          ["crystalmelamine"] = 1
+          ["Crystal Melamine"] = 1
         }
       }
     }
@@ -155,18 +155,18 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
-    x=1251.0190429688,y=-435.5309753418,z=69.309989929199, -- pos
-    radius=5.5, height=1.5, -- area
+    x=225.42935180664,y=-1982.7048339844,z=19.73999786377, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Processar"] = { -- action name
         description="Processador de Metanfetamina.", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["crystalmelamine"] = 1
+          ["Crystal Melamine"] = 1
 	    },
         products={ -- items given per unit
-          ["metanfetamina"] = 1
+          ["Metanfetamina"] = 1
         }
       }
     }
@@ -178,15 +178,15 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
-    x=0,y=0,z=0, -- pos -119.17678833008,-1486.1040039063,36.98205947876
-    radius=5.5, height=1.5, -- area
+    x=1251.0190429688,y=-435.5309753418,z=69.309989929199, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Metanfetamina"] = { -- action name
         description="Vender Metanfetamina", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["metanfetamina"] = 1
+          ["Metanfetamina"] = 1
       },
         products={ -- items given per unit
           ["dirty_money"] = 190
@@ -210,7 +210,7 @@ cfg.item_transformers = {
         out_money=0, -- Dinheiro ganho por unidade
         reagents={}, -- Itens colhidos por unidade
         products={ -- Nome do produto fornecido por unidade
-          ["folhadecoca"] = 1
+          ["Folha de Coca"] = 1
         }
       }
     }
@@ -222,18 +222,18 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
-    x=471.25631713867,y=-1685.3825683594,z=29.381580352783, -- pos
-    radius=5.5, height=1.5, -- area
+    x=340.14431762695,y=-1853.5443115234,z=27.32195854187, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Processar"] = { -- action name
         description="Processador de Cocaina.", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["folhadecoca"] = 1
+          ["Folha de Coca"] = 1
 	    },
         products={ -- items given per unit
-          ["cocaina"] = 1
+          ["Cocaina"] = 1
         }
       }
     }
@@ -245,18 +245,87 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
-    x=0,y=0,z=0, -- pos -119.17678833008,-1486.1040039063,36.98205947876
-    radius=5.5, height=1.5, -- area
+    x=738.06744384766,y=-292.49114990234,z=63.202449798584, -- pos
+    radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Cocaina"] = { -- action name
         description="Vender Cocaina", -- action description
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["cocaina"] = 1
+          ["Cocaina"] = 1
       },
         products={ -- items given per unit
           ["dirty_money"] = 120
+        }
+      }
+    }
+  },
+      -- Cartões clonáveis
+  {
+    name="Cartões Clonáveis", -- Nome do menu
+    permissions = {"pick.toclonecards"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor
+    max_units=200,
+    units_per_minute=2,
+    x=261.61892700195,y=204.29025268555,z=110.28720855713, -- Localização    
+    radius=2.5, height=1.5, -- area
+    recipes = {
+      ["Pegar"] = { -- Nome da ação
+        description="Pegar cartões clonáveis", -- Descrição do produto a se colher
+        in_money=50, -- Dinheiro dado por unidade
+        out_money=0, -- Dinheiro ganho por unidade
+        reagents={}, -- Itens colhidos por unidade
+        products={ -- Nome do produto fornecido por unidade
+          ["toclonecards"] = 1,
+        }
+      }
+    }
+  },
+  
+    -- CLONAR CARTÕES
+  {
+    name="Clonagem de Cartões", -- menu name
+    permissions = {"clone.cards"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor do menu
+    max_units=200, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=-1054.0205078125,y=-230.26893615723,z=44.020957946777, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=2.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Clonar cartões"] = { -- action name
+        description="", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["toclonecards"] = 1
+      },
+        products={ -- items given per unit
+          ["clonedcards"] = 1
+        }
+      }
+    }
+  },
+  
+    -- VENDER CARTÕES CLONADOS
+  {
+    name="Cartões Clonados", -- menu name
+    permissions = {"sell.clonedcards"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor do menu
+    max_units=200, -- unidades maximas do item
+    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    x=-621.35168457031,y=36.309566497803,z=43.566032409668, -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=2.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Cartões Clonados"] = { -- action name
+        description="", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["clonedcards"] = 1
+      },
+        products={ -- items given per unit
+          ["dirty_money"] = 150
         }
       }
     }
@@ -276,7 +345,7 @@ cfg.item_transformers = {
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["rede"] = 1
+          ["Rede"] = 1
       },
         products={ -- items given per unit
           ["Tartaruga"] = 2
@@ -309,67 +378,69 @@ cfg.item_transformers = {
   },
   -- CAMPO DE MINERIO
   {
-    name="Campo de Minerio", -- Nome do menu
-    permissions = {"harvest.minerio"}, -- you can add permissions
-    r=0,g=200,b=0, -- cor
+    name="Campo de Diamantes", -- Nome do menu
+    permissions = {"harvest.diamante"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor
     max_units=400,
-    units_per_minute=5,
-    x=1534.5666503906,y=6327.1376953125,z=24.215845108032, -- Localização    
-    radius=7.5, height=1.5, -- area
+    units_per_minute=25,
+    x=2593.4228515625,y=2825.0793457031,z=36.088672637939, -- Localização    
+    radius=3.5, height=1.5, -- area
     recipes = {
-      ["Colher"] = { -- Nome da ação
-        description="Colher pedras para lavagem.", -- Descrição do produto a se colher
+      ["Garimpar"] = { -- Nome da ação
+        description="Garimpando diamantes.", -- Descrição do produto a se colher
         in_money=0, -- Dinheiro dado por unidade
         out_money=0, -- Dinheiro ganho por unidade
-        reagents={}, -- Itens colhidos por unidade
-        products={ -- Nome do produto fornecido por unidade
-          ["Pedra"] = 1
-        }
-      }
-    }
-  },
-    -- PROCESSADOR DE MINERIO
-  {
-    name="Lavagem de Minerio", -- menu name
-    permissions = {"process.minerio"}, -- you can add permissions
-    r=0,g=255,b=0, -- cor do menu
-    max_units=400, -- unidades maximas do item
-    units_per_minute=2, -- unidades que o transformador ganha de volta por minuto
-    x=-553.01434326172,y=5325.3393554688,z=73.599594116211, -- pos
-    radius=5.5, height=1.5, -- area
-    recipes = { -- items do menu
-      ["Lavagem de Pedra"] = { -- action name
-        description="Produzir minerio...", -- action description
-        in_money=0, -- money taken per unit
-        out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["Pedra"] = 1
-        },
-        products={ -- items given per unit
-          ["Minerio"] = 1
-        }
-      }
-    }
-  },
-      -- VENDER MINÉRIO
-  {
-    name="Vender Minerio", -- menu name
-    permissions = {"build.minerio"}, -- you can add permissions
-    r=0,g=255,b=0, -- cor do menu
-    max_units=400, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
-    x=-584.82446289063,y=5312.9633789063,z=70.214492797852, -- pos -119.17678833008,-1486.1040039063,36.98205947876
-    radius=5.5, height=1.5, -- area
-    recipes = { -- items do menu
-      ["Vender Minerio"] = { -- action name
-        description="Vender Mi", -- action description
-        in_money=0, -- money taken per unit
-        out_money=0, -- money earned per unit
-        reagents={  -- items taken per unit
-          ["Minerio"] = 1
+          ["Picareta"] = 1
       },
         products={ -- items given per unit
-          ["minerio_money"] = 130
+          ["Diamante Bruto"] = 2
+        }
+      }
+    }
+  },
+    -- PROCESSADOR DE DIAMANTES
+  {
+    name="Lapidação de Diamantes", -- menu name
+    permissions = {"process.diamante"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=-553.01434326172,y=5325.3393554688,z=73.599594116211, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Lapidação de Diamantes"] = { -- action name
+        description="Lapidando diamantes", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Diamante Bruto"] = 1
+        },
+        products={ -- items given per unit
+          ["Diamante"] = 1
+        }
+      }
+    }
+  },
+      -- VENDER DIAMANTES
+  {
+    name="Vender Diamantes", -- menu name
+    permissions = {"build.diamante"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=-619.66058349609,y=-233.47964477539,z=38.057048797607, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Diamante"] = { -- action name
+        description="Vender Diamante", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Diamante"] = 1
+      },
+        products={ -- items given per unit
+          ["money"] = 130
         }
       }
     }
@@ -411,7 +482,7 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={
-		["portedearma"] = 1
+		["Porte de Arma"] = 1
 		}, -- items given per unit
         aptitudes={} -- optional
       }
@@ -433,7 +504,7 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={
-		["oab"] = 1
+		["OAB"] = 1
 		}, -- items given per unit
         aptitudes={} -- optional
       }

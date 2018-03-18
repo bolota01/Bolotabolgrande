@@ -58,6 +58,7 @@ cfg.cloakroom_types = {
 	["ROTA 04"] = uniforme_tatica3,
 	["PM Convencional"] = uniforme_conven,
 	["PM Convencional 02"] = uniforme_conven2,
+	["> s/ farda Mulher"] = surgery_female,
 	
 
 	
@@ -75,6 +76,8 @@ cfg.cloakroom_types = {
       ["p2"] = {2,0}
     }]]
     ["Uniforme SAMU"] = uniforme_samu,
+	["> s/ farda Homem"] = surgery_male,
+	["> s/ farda Mulher"] = surgery_female,
   },
   ["Escolher Sexo"] = {
     _config = { not_uniform = true },

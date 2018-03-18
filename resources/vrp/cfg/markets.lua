@@ -32,16 +32,17 @@ cfg.market_types = {
     ["pdonut"] = 65,
   },
   ["drugstore"] = {
-    _config = {blipid=51, blipcolor=2},
+    _config = {blipid=0, blipcolor=0},
     ["medkit"] = 75,
     ["pills"] = 10
   },
-  ["redes"] = {
-    _config = {blipid=371, blipcolor=1},
-    ["rede"] = 50
+  ["Loja de Ferramentas"] = {
+    _config = {blipid=478, blipcolor=59},
+    ["Rede"] = 50,
+    ["Picareta"] = 50
   },
   ["Feira"] = {
-    _config = {blipid=52, blipcolor=2},
+    _config = {blipid=0, blipcolor=0},
     ["melao"] = 5,
     ["maca"] = 4,
     ["banana"] = 8,
@@ -65,7 +66,7 @@ cfg.market_types = {
 cfg.markets = {
   {"Feira",1042.3732910156,698.3154296875,158.85466003418},
   {"food",128.1410369873, -1286.1120605469, 29.281036376953},
-  {"redes",840.18249511719,-1028.2701416016,28.194843292236},
+  {"Loja de Ferramentas",840.18249511719,-1028.2701416016,28.194843292236},
   {"Bar",-1377.556640625, -626.4072265625, 30.819574356079},
   {"Bar",-1393.5688476563, -606.70288085938, 30.319547653198},
   {"food",-47.522762298584,-1756.85717773438,29.4210109710693},

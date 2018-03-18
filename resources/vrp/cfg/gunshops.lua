@@ -21,7 +21,7 @@ cfg.gunshop_types = {
     ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""},
   },
   ["Loja da Biqueira"] = {
-    _config = {blipid=110,blipcolor=75},
+    _config = {blipid=0,blipcolor=0},
     ["WEAPON_ASSAULTRIFLE"] = {"Ak-47",150000,50,""},
 	["WEAPON_COMBATPISTOL"] = {"Pistola de Combate",25000,50,""},
   } 

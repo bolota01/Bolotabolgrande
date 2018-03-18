@@ -3,7 +3,7 @@ local cfg = {}
 
 -- define customization parts
 local parts = {
-  ["Skins"] = 0,
+  ["Rosto"] = 0,
   ["Desbugar Fardas"] = 3,
   ["Pernas"] = 4,
   ["Capacetes/Boinas"] = "p0",

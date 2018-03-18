@@ -200,6 +200,14 @@ cfg.delivery = {
     items = {
       ["metanfetamina"] = {10,20,250},
     }
+  },
+    ["Hacker"] = {
+    _config = { gtype = "job" },
+  "-player.blips",
+  "sell.clonedcards",
+  "pick.toclonecards",
+  "clone.cards",
+  "hacker.hack"
   },  
   ["mission.delivery.pistol"] = {
     chance = 60,
@@ -262,13 +270,12 @@ cfg.carjack = {
   }
 }
 
- EMERGENCY
-
-cfg.emergency = {
+-- EMERGENCY
+ cfg.emergency = {
   ["mission.emergency.transfer"] = {
     chance = 10,
     title = "Transferência de Paciente",
-    steps = 1,
+    steps = 0,
     positions = {
 	{295.070617675781,-1440.15832519531,29.4633674621582},
 	{1154.85144042969,-1515.47509765625,34.3529014587402},
@@ -281,25 +288,25 @@ cfg.emergency = {
   },
 }
 
- TAXI
-cfg.taxi = {
+-- TAXI
+ cfg.taxi = {
   ["mission.taxi.passenger"] = {
     chance = 10,
     title = "Passageiro de táxi",
     text = "Vá para o destino.",
-    steps = 1,
+    steps = 0,
     positions = common_delivery_positions,
     reward = 400
   },
 }
- 
- POLICE 
-cfg.police = {
+
+-- POLICE 
+ cfg.police = {
   ["mission.police.transfer"] = {
     chance = 10,
     title = "Transferência de prisioneiro",
     text = "Transfira o prisioneiro.",
-    steps = 1,
+    steps = 0,
     positions = {
 	{854.080261230469,-1280.93505859375,26.1412010192871},
 	{452.274810791016,-996.933715820313,25.4266204833984}

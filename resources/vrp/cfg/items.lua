@@ -6,18 +6,22 @@ local cfg = {}
 -- idname = {name or genfunc, description or genfunc, genfunc choices or nil, weight or genfunc}
 -- a good practice is to create your own item pack file instead of adding items here
 cfg.items = {
-  ["weed"] = {"Planta de maconha", "Planta de maconha.", nil, 1.00}, -- no choices
-  ["folhadecoca"] = {"Folha de Coca", "Folha de Coca.", nil, 1.00}, -- no choices
-  ["cocaina"] = {"Cocaina", "Cocaina em po.", nil, 1.00}, -- no choices
-  ["crystalmelamine"] = {"Crystal Melamine", "Crystal Melamine.", nil, 1.00}, -- no choices
-  ["metanfetamina"] = {"Metanfetamina", "Cristal de Metanfetamina.", nil, 1.00}, -- no choices  
-  ["Pedra"] = {"Pedra", "Pedra bruta.", nil, 0.01}, -- no choices
-  ["Minerio"] = {"Minerio", "Minerio refinado.", nil, 0.01}, -- no choices
-  ["portedearma"] = {"Porte de Arma", "licença para arma.", nil, 0.01}, -- no choices
-  ["oab"] = {"OAB", "Carteira de Advogado.", nil, 0.01}, -- no choices
-  ["cannabis"] = {"Maconha", "Processada.", nil, 1.00}, -- no choices
+  ["Folha de maconha"] = {"Planta de maconha", "Planta de maconha.", nil, 0.50}, -- no choices
+  ["Folha de Coca"] = {"Folha de Coca", "Folha de Coca.", nil, 0.50}, -- no choices
+  ["Cocaina"] = {"Cocaina", "Cocaina em po.", nil, 0.50}, -- no choices
+  ["Crystal Melamine"] = {"Crystal Melamine", "Crystal Melamine.", nil, 0.50}, -- no choices
+  ["Metanfetamina"] = {"Metanfetamina", "Cristal de Metanfetamina.", nil, 0.50}, -- no choices  
+  ["Pedra"] = {"Pedra", "Pedra bruta.", nil, 0.50}, -- no choices
+  ["Diamante Bruto"] = {"Diamante Bruto","Diamante sem lapidação", nil, 1.00}, -- no choices
+  ["Diamante"] = {"Diamante", "Diamante", nil, 0.50}, -- no choices
+  ["Picareta"] = {"Picareta","Para garimpar diamante", nil, 0.50},
+  ["toclonecards"] = {"Cartão Clonável", "Para clonar.", nil, 0.01}, -- no choices
+  ["clonedcards"] = {"Cartão clonado", "Para vender.", nil, 0.01}, -- no choices
+  ["Porte de Arma"] = {"Porte de Arma", "licença para arma.", nil, 0.00}, -- no choices
+  ["OAB"] = {"OAB", "Carteira de Advogado.", nil, 0.01}, -- no choices
+  ["Maconha"] = {"Maconha", "Processada.", nil, 0.50}, -- no choices
   ["bank_money"] = {"Dinheiro do Banco", "$.", nil, 0}, -- no choices
-  ["rede"] = {"Rede", "Para pescar Tartaruga", nil, 0.50},
+  ["Rede"] = {"Rede", "Para pescar Tartaruga", nil, 0.50},
   ["Tartaruga"] = {"Tartaruga", ".", nil, 5.00},
 }
 
