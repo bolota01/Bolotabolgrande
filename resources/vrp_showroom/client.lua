@@ -40,22 +40,22 @@ local vehshop = {
 			title = "Carros",
 			name = "Carros",
 			buttons = {
-				{name = "Volkswagem Fusca", costs = 90000, description = {}, model = "sentinel"},
+				{name = "Volkswagem Fusca", costs = 90000, description = {}, model = "fusca"},
 				{name = "Range Rover Evoque", costs = 90000, description = {}, model = "baller"},
 				{name = "Porsche Cayman", costs = 100000, description = {}, model = "comet2"},
 				{name = "Bugatti Veyron", costs = 1000000, description = {}, model = "adder"},
 				{name = "McLaren P1", costs = 2200000, description = {}, model = "p1"},
 				{name = "Ford Mustang GT", costs = 35000, description = {}, model = "mgt"},
-				{name = "Opala SS 75", costs = 35000, description = {}, model = "tampa"},
+				{name = "Volkswagem Jetta 2015", costs = 35000, description = {}, model = "jetta"},
 				{name = "Lamborghini Urus 2018", costs = 47000, description = {}, model = "urus2018"},
-				{name = "Lamborghini Urus 2018", costs = 47000, description = {}, model = "lp770"},
+				{name = "Lamborghini Centenario", costs = 47000, description = {}, model = "lp770"},
 			}
 		},
 		["Motos"] = {
 			title = "Motos",
 			name = "Motos",
 			buttons = {
-				{name = "Akuma", costs = 9000, description = {}, model = "AKUMA"},
+				{name = "Honda CG 160", costs = 9000, description = {}, model = "cg160"},
 				{name = "Bagger", costs = 5000, description = {}, model = "bagger"},
 				{name = "Bati 801", costs = 15000, description = {}, model = "bati"},
 				{name = "Bati 801RR", costs = 15000, description = {}, model = "bati2"},
