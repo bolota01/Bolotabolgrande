@@ -2,8 +2,9 @@ files {
     'index.html',
     'keks.css',
     'bankgothic.ttf',
-    'loadscreen.png',
-    'loadscreen2.png',
+    'minasrp.png',
+    'loadscreen.jpg',
+    'loadscreen2.jpg',
     'music/Loading.ogg'
 }
 

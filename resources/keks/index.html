@@ -10,17 +10,18 @@
      var vid = document.getElementById("Loading");
      vid.volume = 0.2
     </script>    
-        <div class="backdrop">
+        <div class="backdrop"></div>
+        <div class="logo"></div>
+        <div class="content">
             <div class="top">
-                <h1 title="minasrp">minasrp</h1>
-                <h2 title="Not Algonquin">Not Algonquin</h2>
+                <h2>Gama Teste</h2>
             </div>
 
             <div class="letni">
-                <h2 title="carregando">carregando</h2>
+                <h2>Carregando...</h2>
                 <h3></h3>
                 <div class="loadbar"><div class="thingy"></div></div>
-                <p>The Statue of Happiness has no heart. You do.</p>
+                <p></p>
             </div>
             <div class="bottom">
                 <div id="gradient">
@@ -61,14 +62,14 @@ function set_image_background(){
     setTimeout(set_image_background, 5000);
 }
 
-//setTimeout(set_image_background, 5000);
+setTimeout(set_image_background, 5000);
 
 const handlers = {
     startInitFunctionOrder(data)
     {
         count = data.count;
 
-        document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
+       // document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
     },
 
     initFunctionInvoking(data)
