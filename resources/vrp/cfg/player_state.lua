@@ -3,7 +3,7 @@ local cfg = {}
 
 -- define the first spawn position/radius of the player (very first spawn on the server, or after death)
 cfg.spawn_enabled = true -- set to false to disable the feature
-cfg.spawn_position = {237.8358001709, -405.732421875, 47.924308776855}
+cfg.spawn_position = {-1035.6555175781,-2733.1572265625,13.756643295288}
 cfg.spawn_radius = 1
 
 -- customization set when spawning for the first time
