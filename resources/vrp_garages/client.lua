@@ -389,8 +389,8 @@ function ListVehicle(page)
 	local count = 0
     for ind, value in pairs(GVEHICLES) do
 	  if ((count >= (page*10)) and (count < ((page*10)+10))) then
-        Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_name)
-	  end
+    Menu.addButton(tostring(value.vehicle_name), "OptionVehicle", value.vehicle_identity)
+  end
 	  count = count + 1
     end   
     Menu.addButton(lang_string.menu12,"ListVehicle",page+1)
