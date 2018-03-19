@@ -1,7 +1,7 @@
 files {
     'index.html',
     'keks.css',
-    'bankgothic.ttf',
+    'zrnic.ttf',
     'minasrp.png',
     'loadscreen.jpg',
     'loadscreen2.jpg',
