@@ -261,6 +261,26 @@ cfg.item_transformers = {
       }
     }
   },
+    -- Lavagem de dinheiro
+ {
+      name="Lavagem de Dinheiro",
+      r=0,g=200,b=0, ---cores
+      max_units=1000,
+      units_per_minute=1000,
+      x=-1056.4289550781,y=-242.60389709473,z=44.021060943604, -- coordenas mudas aqui
+      radius=2.5, height=1.5, -- area
+      recipes = {
+        ["Lavar Dinheiro"] = { -- action name
+          description="Lavagem de Dinheiro", -- action description
+          in_money=0, -- money taken per unit
+          out_money=350, -- money earned per unit
+          reagents={
+            ["dirty_money"] = 500
+          }, -- items taken per unit
+          products={}, -- items given per unit
+      }
+    }
+  },
       -- Cartões clonáveis
   {
     name="Cartões Clonáveis", -- Nome do menu
@@ -484,6 +504,28 @@ cfg.item_transformers = {
         products={
 		["Porte de Arma"] = 1
 		}, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
+      -- Carteira Militar
+  {
+    name="Carteira Militar", -- menu name
+    permissions = {"police.carteira"},
+    r=255,g=125,b=0, -- color
+    max_units=1,
+    units_per_minute=1,
+    x=441.09622192383,y=-995.81762695313,z=30.689599990845,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Carteira Militar"] = { -- action name
+       description="Comprar carteira militar.", -- action description
+        in_money=1500, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={}, -- items taken per unit
+        products={
+    ["Carteira Militar"] = 1
+    }, -- items given per unit
         aptitudes={} -- optional
       }
     }

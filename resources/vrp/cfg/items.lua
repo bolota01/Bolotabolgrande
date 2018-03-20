@@ -17,6 +17,7 @@ cfg.items = {
   ["Picareta"] = {"Picareta","Para garimpar diamante", nil, 0.50},
   ["toclonecards"] = {"Cartão Clonável", "Para clonar.", nil, 0.01}, -- no choices
   ["clonedcards"] = {"Cartão clonado", "Para vender.", nil, 0.01}, -- no choices
+  ["Carteira Militar"] = {"Carteira Militar","Carteira de permissão para policiais.", nil, 0.01}, -- no choices
   ["Porte de Arma"] = {"Porte de Arma", "licença para arma.", nil, 0.00}, -- no choices
   ["OAB"] = {"OAB", "Carteira de Advogado.", nil, 0.01}, -- no choices
   ["Maconha"] = {"Maconha", "Processada.", nil, 0.50}, -- no choices

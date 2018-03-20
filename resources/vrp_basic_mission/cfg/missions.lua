@@ -150,7 +150,7 @@ cfg.delivery = {
   ["mission.delivery.weed"] = {
     chance = 2,
     items = {
-      ["Cannabis"] = {10,20,200},
+      ["Maconha"] = {10,20,200},
     },
     positions = {
 	  {-1172.09387207031,-1571.91198730469,4.66362237930298},
@@ -184,7 +184,7 @@ cfg.delivery = {
     chance = 2,
     positions = common_delivery_positions,
     items = {
-      ["Cannabis"] = {10,20,200},
+      ["Maconha"] = {10,20,200},
     }
   },
   ["mission.delivery.pot2"] = {
