@@ -245,7 +245,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
-    x=738.06744384766,y=-292.49114990234,z=63.202449798584, -- pos
+    x=737.49060058594,y=-292.61511230469,z=59.257270812988, -- pos ,
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Cocaina"] = { -- action name
