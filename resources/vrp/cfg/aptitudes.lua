@@ -17,9 +17,9 @@ cfg.gaptitudes = {
     ["strength"] = {"Força", 30, 550} -- required, level 3 to 6 (by default, can carry 10kg per level)
   },
   ["science"] = {
-    _title = "Ciencia",
-    ["produtos químicos"] = {"Estudo de produtos químicos", 0, -1}, -- example
-    ["matematica"] = {"Estudo de Matematica", 0, -1} -- example
+    _title = "Ciência",
+    ["chemicals"] = {"Estudo de química", 15, -1}, -- example
+    ["mathematics"] = {"Estudo de Matemática", 15, -1} -- example
   }
 }
 
