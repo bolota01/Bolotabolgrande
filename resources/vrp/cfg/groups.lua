@@ -190,7 +190,8 @@ cfg.groups = {
     _config = { gtype = "job" },
   "harvest.diamante",
   "process.diamante",
-  "build.diamante"
+  "build.diamante",
+  "garimpeiro.paycheck"
   },  
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
@@ -228,6 +229,7 @@ cfg.groups = {
   ["Advogado"] = {
     _config = { gtype = "job" },
 	"advogado.oab",
+  "advogado.paycheck"
   },  
   ["Transportador de Valores"] = {
     _config = { gtype = "job",
@@ -262,9 +264,11 @@ cfg.selectors = {
     _config = {x = -268.363739013672, y = -957.255126953125, z = 31.22313880920410, blipid = 351, blipcolor = 47},
 	"Taxi",
 	"Transportador de Valores",
-    "Mecânico",
+  "Mecânico",
+  "Garimpeiro de Diamantes",
+  "Advogado",
 	"Entregador",
-    "Desempregado"
+  "Desempregado"
   },
   ["Empregos Ilegais"] = {
     _config = {x = 707.324462890625, y = -966.986511230469, z = 30.4128551483154, blipid = 351, blipcolor = 49},

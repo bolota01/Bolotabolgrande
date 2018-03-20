@@ -31,4 +31,8 @@ INTERIORS = {
 	[22] = {id = 22, x = 275.24313354492, y = -1361.2371826172, z = 24.537805557251,  name = "Voltar para o Hospital", destination = {23}},
 	[23] = {id = 23, x = 307.41171264648, y = -1433.6192626953, z = 29.932350158691,  name = "Ir para Veículos SAMU", destination = {22}},
 	
+    -- OAB
+    [24] = {id = 24, x = -66.967155456543, y = -802.18127441406, z = 44.227306365967,  name = "Sair do Escitório", destination = {25}},
+    [25] = {id = 25, x = -77.276000976563, y = -830.19213867188, z = 243.38597106934,  name = "Entrar no Escitório", destination = {24}},
+
 }
