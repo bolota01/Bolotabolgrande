@@ -49,6 +49,9 @@ local vehshop = {
 				{name = "Volkswagem Gol 1.8 93", costs = 47000, description = {}, model = "golquadrado"},
 				{name = "Ford Fiesta", costs = 47000, description = {}, model = "fiesta"},
 				{name = "Honda Civic Tipe R ", costs = 47000, description = {}, model = "hondacivictr"},
+				{name = "Opala SS 75", costs = 47000, description = {}, model = "tampa"},
+				{name = "Chevrolet Silverado 99", costs = 47000, description = {}, model = "silverado99"},
+				{name = "Porsche 911S", costs = 47000, description = {}, model = "911turbos"},
 			}
 		},
 		["Motos"] = {
@@ -59,8 +62,8 @@ local vehshop = {
 				{name = "Yamaha r1", costs = 15000, description = {}, model = "r1"},
 				{name = "BMW S1000", costs = 15000, description = {}, model = "bmws"},
 				{name = "BMW Z1000", costs = 95000, description = {}, model = "Z1000"},
-				{name = "Carbon RS", costs = 40000, description = {}, model = "carbonrs"},
-				{name = "Cliffhanger", costs = 225000, description = {}, model = "cliffhanger"},
+				{name = "KX450F", costs = 40000, description = {}, model = "kx450f"},
+				{name = "Harley Davidson FatBoy", costs = 225000, description = {}, model = "fatboy"},
 				{name = "Daemon", costs = 5000, description = {}, model = "daemon"},
 				{name = "Double T", costs = 12000, description = {}, model = "double"},
 				{name = "Enduro", costs = 48000, description = {}, model = "enduro"},
