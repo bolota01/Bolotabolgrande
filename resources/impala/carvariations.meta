@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVariation>
+  <variationData>
+     <Item>
+      <modelName>impala72</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            0 
+            2
+            0
+            156 
+						93
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            112 
+            112
+            0
+            156
+						10
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            8 
+            2
+            8 
+            156
+						93
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            19 
+            34
+            19
+            156
+						10 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            31 
+            52 
+            31
+            156
+						93
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            34 
+            2
+            34
+            156 
+						10
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            62 
+            61
+            62
+            156 
+						5
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            66 
+            112 
+            66
+            156 
+						5
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            90 
+            153
+            102
+            156 
+						33
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            107 
+            66
+            107
+            156
+						65 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            49 
+            93
+            49
+            156
+						93 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            144 
+            112
+            144
+            156
+						93 
+          </indices>
+        </Item>
+        <Item>
+          <indices content="char_array">
+            72 
+            72
+            72
+            156
+						10 
+          </indices>
+        </Item>
+      </colors>
+      <kits>
+        <Item>0_default_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Blue Plate</Name>
+            <Value value="50" />
+          </Item>
+          <Item>
+            <Name>Yellow Plate</Name>
+            <Value value="50" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="2" />
+      <sirenSettings value="0" />
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>
