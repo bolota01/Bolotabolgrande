@@ -48,7 +48,6 @@ local vehshop = {
 				{name = "Lamborghini Centenario", costs = 47000, description = {}, model = "lp770"},
 				{name = "Volkswagem Gol 1.8 93", costs = 47000, description = {}, model = "golquadrado"},
 				{name = "Ford Fiesta", costs = 47000, description = {}, model = "fiesta"},
-				{name = "Volkswagem Fox ", costs = 47000, description = {}, model = "fox"},
 				{name = "Honda Civic Tipe R ", costs = 47000, description = {}, model = "hondacivictr"},
 			}
 		},
@@ -58,8 +57,8 @@ local vehshop = {
 			buttons = {
 				{name = "Honda CG 160", costs = 9000, description = {}, model = "cg160"},
 				{name = "Yamaha r1", costs = 15000, description = {}, model = "r1"},
-				{name = "Bati 801RR", costs = 15000, description = {}, model = "bati2"},
-				{name = "BF400", costs = 95000, description = {}, model = "bf400"},
+				{name = "BMW S1000", costs = 15000, description = {}, model = "bmws"},
+				{name = "BMW Z1000", costs = 95000, description = {}, model = "Z1000"},
 				{name = "Carbon RS", costs = 40000, description = {}, model = "carbonrs"},
 				{name = "Cliffhanger", costs = 225000, description = {}, model = "cliffhanger"},
 				{name = "Daemon", costs = 5000, description = {}, model = "daemon"},
