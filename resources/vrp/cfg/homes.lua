@@ -5,8 +5,8 @@ local cfg = {}
 local itemtr_study = {
 	name="Biblioteca", -- menu name
 	r=0,g=255,b=0, -- color
-	max_units=20,
-	units_per_minute=10,
+	max_units=1000,
+	units_per_minute=100,
 	x=-811.89361572266,y=182.51545715332,z=76.740768432617, -- pos (doesn't matter as home component)
 	radius=1.1, height=1.5, -- area
 	recipes = {

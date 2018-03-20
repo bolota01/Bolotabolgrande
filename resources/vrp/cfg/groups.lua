@@ -119,6 +119,7 @@ cfg.groups = {
 	"police.paycheck",
 	"police.weapons",
     "-police.store_weapons",
+    "police.carteira",
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
   ["Paramédico"] = {

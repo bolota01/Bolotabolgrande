@@ -488,6 +488,28 @@ cfg.item_transformers = {
       }
     }
   },
+      -- Carteira Militar
+  {
+    name="Carteira Militar", -- menu name
+    permissions = {"police.carteira"},
+    r=255,g=125,b=0, -- color
+    max_units=1,
+    units_per_minute=1,
+    x=441.09622192383,y=-995.81762695313,z=30.689599990845,
+    radius=2, height=1.0, -- area
+    recipes = {
+      ["Carteira Militar"] = { -- action name
+       description="Comprar carteira militar.", -- action description
+        in_money=1500, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={}, -- items taken per unit
+        products={
+    ["Carteira Militar"] = 1
+    }, -- items given per unit
+        aptitudes={} -- optional
+      }
+    }
+  },
     -- CARTEIRA DE ADVOGADO
   {
     name="OAB", -- menu name
