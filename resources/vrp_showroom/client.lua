@@ -53,7 +53,7 @@ local vehshop = {
 				{name = "Chevrolet Silverado 99", costs = 47000, description = {}, model = "silverado99"},
 				{name = "Porsche 911S", costs = 47000, description = {}, model = "911turbos"},
 				{name = "Shelby GT500", costs = 47000, description = {}, model = "boss429"},
-				{name = "Impala 72", costs = 47000, description = {}, model = "impala78"},
+				{name = "Impala 72", costs = 47000, description = {}, model = "impala72"},
 				{name = "La Ferrari 2017", costs = 47000, description = {}, model = "aperta"},
 			}
 		},
