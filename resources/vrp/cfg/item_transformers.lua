@@ -261,6 +261,26 @@ cfg.item_transformers = {
       }
     }
   },
+    -- Lavagem de dinheiro
+ {
+      name="Lavagem de Dinheiro",
+      r=0,g=200,b=0, ---cores
+      max_units=1000,
+      units_per_minute=1000,
+      x=-1056.4289550781,y=-242.60389709473,z=44.021060943604, -- coordenas mudas aqui
+      radius=2.5, height=1.5, -- area
+      recipes = {
+        ["Lavar Dinheiro"] = { -- action name
+          description="Lavagem de Dinheiro", -- action description
+          in_money=0, -- money taken per unit
+          out_money=350, -- money earned per unit
+          reagents={
+            ["dirty_money"] = 500
+          }, -- items taken per unit
+          products={}, -- items given per unit
+      }
+    }
+  },
       -- Cartões clonáveis
   {
     name="Cartões Clonáveis", -- Nome do menu
