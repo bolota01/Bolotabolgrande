@@ -491,7 +491,7 @@ cfg.item_transformers = {
     -- CARTEIRA DE ADVOGADO
   {
     name="OAB", -- menu name
-	permissions = {"advogado.oab"},
+	  permissions = {"advogado.oab"},
     r=255,g=125,b=0, -- color
     max_units=1,
     units_per_minute=1,
@@ -504,13 +504,14 @@ cfg.item_transformers = {
         out_money=0, -- money earned per unit
         reagents={}, -- items taken per unit
         products={
-		["OAB"] = 1
-		}, -- items given per unit
+		      ["OAB"] = 1
+		    }, -- items given per unit
         aptitudes={} -- optional
       }
     }
   },
-  }
+
+}
 -- define multiple static transformers with postions list
 local weedplants = {
   {1873.36901855469,3658.46215820313,33.8029747009277},

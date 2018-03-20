@@ -148,7 +148,7 @@ cfg.delivery = {
     }
   },
   ["mission.delivery.weed"] = {
-    chance = 5,
+    chance = 2,
     items = {
       ["Cannabis"] = {10,20,200},
     },
@@ -159,7 +159,7 @@ cfg.delivery = {
 	}
   },
   ["mission.delivery.cocaina"] = {
-    chance = 5,
+    chance = 2,
     items = {
       ["Cocaina"] = {10,20,200},
     },
@@ -170,7 +170,7 @@ cfg.delivery = {
     }
   },
   ["mission.delivery.metanfetamina"] = {
-    chance = 5,
+    chance = 2,
     items = {
       ["Metanfetamina"] = {10,20,250},
     },
@@ -181,21 +181,21 @@ cfg.delivery = {
     }
   },  
   ["mission.delivery.pot"] = {
-    chance = 5,
+    chance = 2,
     positions = common_delivery_positions,
     items = {
       ["Cannabis"] = {10,20,200},
     }
   },
   ["mission.delivery.pot2"] = {
-    chance = 5,
+    chance = 2,
     positions = common_delivery_positions,
     items = {
       ["Cocaina"] = {10,20,200},
     }
   },
   ["mission.delivery.pot3"] = {
-    chance = 5,
+    chance = 2,
     positions = common_delivery_positions,
     items = {
       ["Metanfetamina"] = {10,20,250},

@@ -7,11 +7,11 @@ local itemtr_study = {
 	r=0,g=255,b=0, -- color
 	max_units=20,
 	units_per_minute=10,
-	x=0,y=0,z=0, -- pos (doesn't matter as home component)
+	x=-811.89361572266,y=182.51545715332,z=76.740768432617, -- pos (doesn't matter as home component)
 	radius=1.1, height=1.5, -- area
 	recipes = {
-    	["Livro de metanfetamina"] = { -- action name
-      		description = "Leia o livro de metanfetamina", -- action description
+    	["Livro de Química"] = { -- action name
+      		description = "Leia o livro de Química", -- action description
       		in_money=0, -- money taken per unit
       		out_money=0, -- money earned per unit
       		reagents={}, -- items taken per unit
@@ -20,8 +20,8 @@ local itemtr_study = {
         		["science.chemicals"] = 1 -- "group.aptitude", give 1 exp per unit
     		}
     	},
-    	["Livro de matemática"] = { -- action name
-      		description="Leia o livro de matemática", -- action description
+    	["Livro de Matemática"] = { -- action name
+      		description="Leia o livro de Matemática", -- action description
       		in_money=0, -- money taken per unit
       		out_money=0, -- money earned per unit
       		reagents={}, -- items taken per unit
