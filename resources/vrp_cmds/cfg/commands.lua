@@ -75,6 +75,7 @@ cfg.commands = {
 	  end
 	end
   },
+	
   ["/tp"] = {
     -- /tp to create linked areas that teleport to each other like doors
 	action = function(p,color,msg) 
@@ -268,7 +269,598 @@ cfg.commands = {
 	  end
 	end
   },
-  --HERE GOES YOUR COMMANDS
+  --- comandos aq
+  -- MASCARAS
+        -- MASCARAS
+        ["/mascara"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.colocaMascara(p)
+    end
+    },
+	
+	["/mascaraabobora"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraabobora(p)
+    end
+    },
+	
+	["/mascaradegas"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradegas(p)
+    end
+    },
+	
+	["/mascaradegas2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradegas2(p)
+    end
+    },
+	
+	["/mascarakawai"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarakawai(p)
+    end
+    },
+	
+	["/mascarazumbi"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarazumbi(p)
+    end
+    },
+	
+	["/mascaraswat"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraswat(p)
+    end
+    },
+	
+	["/mascaraaguia"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraaguia(p)
+    end
+    },
+	
+	["/mascaratexugo"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaratexugo(p)
+    end
+    },
+	
+	["/mascaragato"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaragato(p)
+    end
+    },
+	
+	["/mascaradeneve"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradeneve(p)
+    end
+    },
+	
+	["/mascaranoel"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaranoel(p)
+    end
+    },
+	
+	["/mascaraorc"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraorc(p)
+    end
+    },
+	
+	["/mascaramacaco"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaramacaco(p)
+    end
+    },
+	
+	["/mascaracaveira"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracaveira(p)
+    end
+    },
+	
+	["/mascaraporco"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraporco(p)
+    end
+    },
+	
+	["/mascaraespiao"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraespiao(p)
+    end
+    },
+
+	["/mascaraswat2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraswat2(p)
+    end
+    },
+	
+	["/mascarabolacha"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarabolacha(p)
+    end
+    },
+	
+	["/mascaraespiao2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraespiao2(p)
+    end
+    },
+	
+	["/mascarafone"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarafone(p)
+    end
+    },
+	
+	["/mascaraassalto"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraassalto(p)
+    end
+    },
+	
+	["/mascarassalto2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarassalto2(p)
+    end
+    },
+	
+	["/mascaraprotesto"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraprotesto(p)
+    end
+    },
+	
+	["/mascaraprotesto2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraprotesto2(p)
+    end
+    },
+	
+	["/mascaraprotesto3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraprotesto3(p)
+    end
+    },
+	
+	["/mascaraprotesto4"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraprotesto4(p)
+    end
+    },
+	
+	["/mascaragas3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaragas3(p)
+    end
+    },
+	
+	["/mascaragang"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaragang(p)
+    end
+    },
+	
+	["/mascaracaveira2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracaveira2(p)
+    end
+    },
+	
+	["/mascaraaviador"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraaviador(p)
+    end
+    },
+	
+	["/mascaracaveira3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracaveira3(p)
+    end
+    },
+	
+	["/mascaradoende2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradoende2(p)
+    end
+    },
+	
+	["/mascarapug"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarapug(p)
+    end
+	},
+	
+	["/mascaralutalivre"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralutalivre(p)
+    end
+	},
+	
+	["/mascaraunicornio"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraunicornio(p)
+    end
+	},
+	
+	["/mascaracavalo"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracavalo(p)
+    end
+	},
+	
+	["/mascaragorilla"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaragorilla(p)
+    end
+	},
+	
+	["/mascarapalhaco"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarapalhaco(p)
+    end
+	},
+	
+	["/mascaradinossauro"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradinossauro(p)
+    end
+	},
+	
+	["/mascaraalien"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraalien(p)
+    end
+	},
+	
+	["/mascaravovo"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaravovo(p)
+    end
+	},
+	
+	["/mascaradoende3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradoende3(p)
+    end
+	},
+	
+	["/mascaravovocreepy"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaravovocreepy(p)
+    end
+	},
+	
+	["/mascaravovocreepy"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaravovocreepy(p)
+    end
+	},
+	
+	["/mascarafrango"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarafrango(p)
+    end
+	},
+	
+	["/mascarayeti"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarayeti(p)
+    end
+	},
+	
+	["/mascaralobisomen5"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen5(p)
+    end
+	},
+	
+	["/mascaralobisomen6"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen6(p)
+    end
+	},
+	
+	["/mascaralobisomen4"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen4(p)
+    end
+	},
+	
+	["/mascaralobisomen3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen3(p)
+    end
+	},
+	
+	["/mascaralobisomen2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen2(p)
+    end
+	},
+	
+	["/mascaralobisomen"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobisomen(p)
+    end
+	},
+	
+	["/mascaranatal"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaranatal(p)
+    end
+	},
+	
+	["/mascaranatal2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaranatal2(p)
+    end
+	},
+	
+	["/mascaracookie"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracookie(p)
+    end
+	},
+	
+	["/mascaracookie2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracookie2(p)
+    end
+	},
+	
+	["/mascarabruxa"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarabruxa(p)
+    end
+	},
+	
+	["/mascarazumbi2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarazumbi2(p)
+    end
+	},
+	
+	["/mascaramosca"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaramosca(p)
+    end
+	},
+	
+	["/mascaracaveira4"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracaveira4(p)
+    end
+	},
+	
+	["/mascarasempele"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarasempele(p)
+    end
+	},
+	
+	["/mascaracreepy"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracreepy(p)
+    end
+	},
+	
+	["/mascaracreepy2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracreepy2(p)
+    end
+	},
+	
+	["/mascaraassalto3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraassalto3(p)
+    end
+	},
+	
+	["/mascaraassalto4"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraassalto4(p)
+    end
+	},
+	
+	["/mascaraassalto5"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraassalto5(p)
+    end
+	},
+	
+	["/mascaraassalto6"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraassalto6(p)
+    end
+	},
+	
+	["/mascaraterrorista"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraterrorista(p)
+    end
+	},
+	
+	["/mascaraterrorista2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraterrorista2(p)
+    end
+	},
+	
+	["/mascaracontraterrorista"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracontraterrorista(p)
+    end
+	},
+	
+	["/mascaragang2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaragang2(p)
+    end
+	},
+	
+	["/mascaradepapel"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaradepapel(p)
+    end
+	},
+	
+	["/mascaraprotesto5"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraprotesto5(p)
+    end
+	},
+	
+	["/mascaracreepy3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracreepy3(p)
+    end
+	},
+	
+	["/mascaracreepy4"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracreepy4(p)
+    end
+	},
+	
+	["/mascarazumbi3"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarazumbi3(p)
+    end
+	},
+	
+	["/mascaraaviador2"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraaviador2(p)
+    end
+	},
+	
+	["/mascaralobo"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaralobo(p)
+    end
+	},
+	
+	["/mascarapombo"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascarapombo(p)
+    end
+	},
+	
+	["/mascaratouro"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaratouro(p)
+    end
+	},
+	
+	["/mascaraurso"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaraurso(p)
+    end
+	},
+	
+	["/mascaracoruja"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascaracoruja(p)
+    end
+	},
+	
+	["/mascararaposa"] = {
+    -- /mask toggles mask on and off
+    action = function(p,color,msg)
+        CMDclient.mascararaposa(p)
+    end
+    },
+	
+	
   
 }
 

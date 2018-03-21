@@ -60,7 +60,7 @@ local vehshop = {
 			title = "Motos",
 			name = "Motos",
 			buttons = {
-				{name = "Honda CG 160", costs = 11000, description = {}, model = "cg160"},
+				{name = "Honda CG 160", costs = 11000, description = {}, model = "titan60"},
 				{name = "Yamaha r1", costs = 150000, description = {}, model = "r1"},
 				{name = "BMW S1000", costs = 30000, description = {}, model = "bmws"},
 				{name = "BMW Z1000", costs = 100000, description = {}, model = "Z1000"},
