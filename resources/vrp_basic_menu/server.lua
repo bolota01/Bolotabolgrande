@@ -217,7 +217,7 @@ local ch_hack = {function(player,choice)
       local nbank = vRP.getBankMoney({nuser_id})
           local amount = math.floor(nbank*0.01)
       local nvalue = nbank - amount
-      if math.random(1,100) == 1 then
+      if math.random(1,100) == 40 then
       vRP.setBankMoney({nuser_id,nvalue})
             vRPclient.notify(nplayer,{"Hackeado ~r~".. amount .."$."})
         vRP.giveInventoryItem({user_id,"dirty_money",amount,true})
