@@ -59,7 +59,7 @@ cfg.garage_types = {
     
   ["Delivery"] = {
     _config = {vtype="bike",blipid=355,blipcolor=4,permissions={"delivery.garagem"}},
-    ["enduro"] = {"Enduro",8000, ""},
+    ["enduro"] = {"Enduro",1500, ""},
   }
 }
 
