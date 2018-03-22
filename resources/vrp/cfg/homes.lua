@@ -1090,15 +1090,6 @@ cfg.homes = {
     blipid=374,
     blipcolor=5
   },
-  ["Apartamento De Luxo"] = {
-    slot = "luxo",
-    entry_point = {-84.218826293945,-823.48309326172,36.028102874756},
-    buy_price = 5000000,
-    sell_price = 1000000,
-    max = 5,
-    blipid=374,
-    blipcolor=5
-  },
   ["Mansão #02"] = {
     slot = "mansion2",
     entry_point = {8.5883893966675,541.60162353516,176.02816772461},
