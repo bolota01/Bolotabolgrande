@@ -26,13 +26,34 @@ body{
 -- list of static menu types (map of name => {.title,.blipid,.blipcolor,.permissions (optional)})
 -- static menus are menu with choices defined by vRP.addStaticMenuChoices(name, choices)
 cfg.static_menu_types = {
-   ["police_weapons"] = {
-      title = "Police Weapons", 
+   ["rota_weapons"] = {
+      title = "Armas da ROTA", 
       blipcolor = 0,
 	  permissions = {
-	    "police.weapons"
+	    "rota.weapons"
 	  }
 	},
+     ["pmespof_weapons"] = {
+      title = "Armas da PMESP", 
+      blipcolor = 0,
+    permissions = {
+      "pmespof.weapons"
+    }
+  },
+       ["pmespsub_weapons"] = {
+      title = "Armas da PMESP", 
+      blipcolor = 0,
+    permissions = {
+      "pmespsub.weapons"
+    }
+  },
+         ["rocam_weapons"] = {
+      title = "Armas da ROCAM", 
+      blipcolor = 0,
+    permissions = {
+      "rocam.weapons"
+    }
+  },
    ["emergency_heal"] = {
       title = "Atendimento Médico", 
       blipcolor = 0,
@@ -51,7 +72,10 @@ cfg.static_menu_types = {
 
 -- list of static menu points
 cfg.static_menus = {
-  {"police_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"rota_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"pmespof_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"pmespsub_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"rocam_weapons", 461.31414794922,-981.15582275391,30.689588546753},
   {"emergency_medkit", 268.22784423828,-1364.8872070313,24.537782669067},
   {"emergency_heal", 260.49597167969,-1358.4555664063,24.537788391113}
 }

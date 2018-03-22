@@ -124,14 +124,52 @@ end, "Ativar função do servidor."}
 
 --police weapons // comment out the weapons if you dont want to give weapons.
 
--- ARMAS DA POLICIA MILITAR
-local police_weapons = {}
-police_weapons["Equip"] = {function(player,choice)
+-- ARMAS DA ROTA
+local rota_weapons = {}
+rota_weapons["Equip"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
     ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_PUMPSHOTGUN"] = {ammo=200},
+    ["WEAPON_STUNGUN "] = {ammo=200},
+    ["WEAPON_SPECIALCARBINE"] = {ammo=200},
+    ["WEAPON_CARBINERIFLE"] = {ammo=200},
+    ["WEAPON_PUMPSHOTGUN"] = {ammo=200}
+  }, true})
+  BMclient.setArmour(player,{100,true})
+end}
+
+--PMESP
+local pmespof_weapons = {}
+pmespof_weapons["Equip"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
     ["WEAPON_NIGHTSTICK"] = {ammo=200},
-    ["WEAPON_STUNGUN"] = {ammo=200}
+    ["WEAPON_STUNGUN"] = {ammo=200},
+    ["WEAPON_COMBATPISTOL"] = {ammo=200},
+    ["WEAPON_PUMPSHOTGUN"] = {ammo=200},
+    ["WEAPON_ASSAULTSMG"] = {ammo=200},
+    ["WEAPON_SMG"] = {ammo=200}
+  }, true})
+  BMclient.setArmour(player,{100,true})
+end}
+
+local pmespsub_weapons = {}
+pmespsub_weapons["Equip"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+    ["WEAPON_NIGHTSTICK"] = {ammo=200},
+    ["WEAPON_STUNGUN"] = {ammo=200},
+    ["WEAPON_COMBATPISTOL"] = {ammo=200},
+    ["WEAPON_SMG"] = {ammo=200}
+  }, true})
+  BMclient.setArmour(player,{100,true})
+end}
+
+--ROCAM
+local rocam_weapons = {}
+rocam_weapons["Equip"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+    ["WEAPON_NIGHTSTICK"] = {ammo=200},
+    ["WEAPON_STUNGUN"] = {ammo=200},
+    ["WEAPON_COMBATPISTOL"] = {ammo=200},
+    ["WEAPON_SMG"] = {ammo=200}
   }, true})
   BMclient.setArmour(player,{100,true})
 end}
@@ -217,7 +255,7 @@ local ch_hack = {function(player,choice)
       local nbank = vRP.getBankMoney({nuser_id})
           local amount = math.floor(nbank*0.01)
       local nvalue = nbank - amount
-      if math.random(1,100) == 40 then
+      if math.random(1,3) == 1 then
       vRP.setBankMoney({nuser_id,nvalue})
             vRPclient.notify(nplayer,{"Hackeado ~r~".. amount .."$."})
         vRP.giveInventoryItem({user_id,"dirty_money",amount,true})
@@ -875,7 +913,11 @@ end,
 5.00})
 
 -- ADD STATIC MENU CHOICES // STATIC MENUS NEED TO BE ADDED AT vRP/cfg/gui.lua
-vRP.addStaticMenuChoices({"police_weapons", police_weapons}) -- police gear
+--vRP.addStaticMenuChoices({"police_weapons", police_weapons}) -- police gear
+vRP.addStaticMenuChoices({"rota_weapons", rota_weapons}) -- police gear
+vRP.addStaticMenuChoices({"pmespof_weapons", pmespof_weapons}) -- police gear
+vRP.addStaticMenuChoices({"pmespsub_weapons", pmespsub_weapons}) -- police gear
+vRP.addStaticMenuChoices({"rocam_weapons", rocam_weapons}) -- police gear
 vRP.addStaticMenuChoices({"emergency_medkit", emergency_medkit}) -- pills and medkits
 vRP.addStaticMenuChoices({"emergency_heal", emergency_heal}) -- heal button
 

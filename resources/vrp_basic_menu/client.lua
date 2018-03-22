@@ -1,3 +1,21 @@
+--[[
+    FiveM Scripts
+    Copyright C 2018  Sighmir
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    at your option any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
 --bind client tunnel interface
 vRPbm = {}
 Tunnel.bindInterface("vRP_basic_menu",vRPbm)
@@ -11,7 +29,7 @@ local unfrozen = false
 function vRPbm.loadFreeze(notify,god,ghost)
 	if not frozen then
 	  if notify then
-	    vRP.notify({"~r~You've been frozen."})
+	    vRP.notify({"~r~Você foi congelado."})
 	  end
 	  frozen = true
 	  invincible = god
@@ -19,7 +37,7 @@ function vRPbm.loadFreeze(notify,god,ghost)
 	  unfrozen = false
 	else
 	  if notify then
-	    vRP.notify({"~g~You've been unfrozen."})
+	    vRP.notify({"~g~Você foi descongelado."})
 	  end
 	  unfrozen = true
 	  invincible = false
@@ -50,17 +68,17 @@ function vRPbm.lockpickVehicle(wait,any)
 			end 
 			ClearPedTasksImmediately(GetPlayerPed(-1))
 			
-			vRP.notify({"~g~Vehicle unlocked."})
+			vRP.notify({"~g~Veículo destrancado."})
 			
 			-- ties to the hotkey lock system
 			local plate = GetVehicleNumberPlateText(vehicleHandle)
 			HKserver.lockSystemUpdate({1, plate})
 			HKserver.playSoundWithinDistanceOfEntityForEveryone({vehicleHandle, 10, "unlock", 1.0})
 		  else
-			vRP.notify({"~g~Vehicle already unlocked."})
+			vRP.notify({"~g~Veículo já está destrancado."})
 		  end
 		else
-			vRP.notify({"~r~Too far away from vehicle."})
+			vRP.notify({"~r~Você está muito longe do veículo."})
 		end
 	end)
 end
@@ -71,7 +89,7 @@ function vRPbm.spawnVehicle(model)
     local mhash = GetHashKey(model)
     while not HasModelLoaded(mhash) and i < 1000 do
 	  if math.fmod(i,100) == 0 then
-	    vRP.notify({"~b~Loading vehicle model."})
+	    vRP.notify({"~b~Carregando modelo do veículo."})
 	  end
       RequestModel(mhash)
       Citizen.Wait(30)
@@ -88,9 +106,9 @@ function vRPbm.spawnVehicle(model)
       Citizen.InvokeNative(0xAD738C3085FE7E11, nveh, true, true) -- set as mission entity
       SetVehicleHasBeenOwnedByPlayer(nveh,true)
       SetModelAsNoLongerNeeded(mhash)
-	  vRP.notify({"~g~Vehicle spawned."})
+	  vRP.notify({"~g~Veículo spawnado."})
 	else
-	  vRP.notify({"~r~Vehicle model invalid."})
+	  vRP.notify({"~r~Modelo de veículo inválido."})
 	end
 end
 
@@ -135,9 +153,9 @@ function vRPbm.deleteVehicleInFrontOrInside(offset)
     Citizen.InvokeNative(0xAD738C3085FE7E11, veh, false, true) -- set not as mission entity
     SetVehicleAsNoLongerNeeded(Citizen.PointerValueIntInitialized(veh))
     Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(veh))
-    vRP.notify({"~g~Vehicle deleted."})
+    vRP.notify({"~g~Veículo deletado."})
   else
-    vRP.notify({"~r~Too far away from vehicle."})
+    vRP.notify({"~r~Você está muito longe do veículo."})
   end
 end
 
@@ -150,9 +168,9 @@ function vRPbm.deleteNearestVehicle(radius)
     Citizen.InvokeNative(0xAD738C3085FE7E11, veh, false, true) -- set not as mission entity
     SetVehicleAsNoLongerNeeded(Citizen.PointerValueIntInitialized(veh))
     Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(veh))
-    vRP.notify({"~g~Vehicle deleted."})
+    vRP.notify({"~g~Veículo deletado."})
   else
-    vRP.notify({"~r~Too far away from vehicle."})
+    vRP.notify({"~r~Você está muito longe do veículo."})
   end
 end
 
