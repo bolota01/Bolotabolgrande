@@ -54,6 +54,7 @@ local vehshop = {
 				{name = "Shelby GT500", costs = 250000, description = {}, model = "boss429"},
 				{name = "Impala 72", costs = 200000, description = {}, model = "impala72"},
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
+				{name = "La Ferrari 2017", costs = 150000, description = {}, model = "silverado"},
 			}
 		},
 		["Motos"] = {
