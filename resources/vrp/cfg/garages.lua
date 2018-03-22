@@ -19,9 +19,9 @@ cfg.garage_types = {
   
   ["pm"] = {
     _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
-    ["police"] = {"Fiesta Sedan",0, ""},
-	["police3"] = {"Corsa Hatch",0, ""},
-	["sheriff"] = {"Trailblazer",0, ""},
+    ["police"] = {"Renault Duster",0, ""},
+	["police3"] = {"Palio Weekend",0, ""},
+  ["policet"] = {"Mercedes Sprinter",0,""},
   },    
   
   ["heliponto PM"] = {
