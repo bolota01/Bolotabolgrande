@@ -1,7 +1,7 @@
 -- CONFIG --
 
 -- The watermark text --
-servername = "Minas Roleplay Brasil  -  ALPHA TEST"
+servername = "Minas Roleplay Brasil  -  BETA 1.0"
 
 -- The x and y offset (starting at the top left corner) --
 -- Default: 0.005, 0.001
