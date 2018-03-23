@@ -8,11 +8,11 @@ RegisterServerEvent('cobrarMulta')
 AddEventHandler('cobrarMulta', function()
 	local user_id = vRP.getUserId({source})
 	local player = vRP.getUserSource({user_id})
-	local multa = 1000
+	local multa = 500
 	if vRP.hasPermission({user_id,"radar.pass"}) then
         vRPclient.notify(player,{"Você está passando por um radar! Diminua!"}) 		
 	else
---TriggerClientEvent('Radar:notify', source, 'Você foi multado em $1000 por excesso de velocidade.')
+--TriggerClientEvent('Radar:notify', source, 'Você foi multado em $500 por excesso de velocidade.')
     vRP.tryFullPayment({user_id,multa})
     end
 end)
