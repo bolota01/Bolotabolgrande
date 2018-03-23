@@ -189,7 +189,7 @@ cfg.item_transformers = {
           ["Metanfetamina"] = 1
       },
         products={ -- items given per unit
-          ["dirty_money"] = 190
+          ["dirty_money"] = 150
         }
       }
     }
