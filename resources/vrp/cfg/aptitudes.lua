@@ -14,7 +14,7 @@ local cfg = {}
 cfg.gaptitudes = {
   ["physical"] = {
     _title = "Fisico",
-    ["strength"] = {"Força", 30, 550} -- required, level 3 to 6 (by default, can carry 10kg per level)
+    ["strength"] = {"Força", 30, 280} -- required, level 3 to 6 (by default, can carry 10kg per level)
   },
   ["science"] = {
     _title = "Ciência",
