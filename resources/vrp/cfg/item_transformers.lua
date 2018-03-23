@@ -66,7 +66,7 @@ cfg.item_transformers = {
     permissions = {"harvest.weed"}, -- you can add permissions
     r=0,g=255,b=0, -- color
     max_units=400,
-    units_per_minute=5,
+    units_per_minute=100,
     x=2222.060546875,y=5577.0146484375,z=53.834770202637, -- pos
     radius=3.5, height=1.5, -- area
     recipes = {
@@ -87,7 +87,7 @@ cfg.item_transformers = {
     permissions = {"process.weed"}, -- you can add permissions
     r=0,g=255,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=5, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=283.03845214844,y=-1926.1419677734,z=29.670471191406, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -110,7 +110,7 @@ cfg.item_transformers = {
     permissions = {"build.weed"}, -- you can add permissions
     r=0,g=255,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=-765.04040527344,y=556.73400878906,z=128.05986022949, -- pos -119.17678833008,-1486.1040039063,36.98205947876
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -133,7 +133,7 @@ cfg.item_transformers = {
     permissions = {"harvest.metanfetamina"}, -- Você pode adicionar permissões
     r=0,g=200,b=0, -- cor
     max_units=400,
-    units_per_minute=5,
+    units_per_minute=100,
     x=180.66656494141,y=2461.9802246094,z=55.801990509033, -- Localização
     radius=3.5, height=1.5, -- area
     recipes = {
@@ -154,7 +154,7 @@ cfg.item_transformers = {
     permissions = {"process.metanfetamina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=225.42935180664,y=-1982.7048339844,z=19.73999786377, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -177,7 +177,7 @@ cfg.item_transformers = {
     permissions = {"build.metanfetamina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=1251.0190429688,y=-435.5309753418,z=69.309989929199, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -200,7 +200,7 @@ cfg.item_transformers = {
     permissions = {"harvest.cocaina"}, -- Você pode adicionar permissões
     r=0,g=200,b=0, -- cor
     max_units=400,
-    units_per_minute=5,
+    units_per_minute=100,
     x=-41.372623443604,y=3033.3776855469,z=41.020195007324, -- Localização
     radius=3.5, height=1.5, -- area
     recipes = {
@@ -221,7 +221,7 @@ cfg.item_transformers = {
     permissions = {"process.cocaina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=50, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=340.14431762695,y=-1853.5443115234,z=27.32195854187, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -244,7 +244,7 @@ cfg.item_transformers = {
     permissions = {"build.cocaina"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=737.49060058594,y=-292.61511230469,z=59.257270812988, -- pos ,
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -287,7 +287,7 @@ cfg.item_transformers = {
     permissions = {"pick.toclonecards"}, -- you can add permissions
     r=0,g=200,b=0, -- cor
     max_units=200,
-    units_per_minute=2,
+    units_per_minute=100,
     x=261.61892700195,y=204.29025268555,z=110.28720855713, -- Localização    
     radius=2.5, height=1.5, -- area
     recipes = {
@@ -309,7 +309,7 @@ cfg.item_transformers = {
     permissions = {"clone.cards"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=200, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=-1054.0205078125,y=-230.26893615723,z=44.020957946777, -- pos -119.17678833008,-1486.1040039063,36.98205947876
     radius=2.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -333,7 +333,7 @@ cfg.item_transformers = {
     permissions = {"sell.clonedcards"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=200, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
     x=-621.35168457031,y=36.309566497803,z=43.566032409668, -- pos -119.17678833008,-1486.1040039063,36.98205947876
     radius=2.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -356,7 +356,7 @@ cfg.item_transformers = {
     permissions = {"harvest.tartaruga"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=200, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=80, -- unidades que o transformador ganha de volta por minuto
     x=4095.5485839844,y=4464.8696289063,z=1.9822434186935, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -379,7 +379,7 @@ cfg.item_transformers = {
     permissions = {"process.Tartaruga"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=200, -- unidades maximas do item
-    units_per_minute=20, -- unidades que o transformador ganha de volta por minuto
+    units_per_minute=80, -- unidades que o transformador ganha de volta por minuto
     x=-119.17678833008,y=-1486.1040039063,z=36.98205947876, -- pos -119.17678833008,-1486.1040039063,36.98205947876
     radius=2.5, height=1.5, -- area
     recipes = { -- items do menu
@@ -402,7 +402,7 @@ cfg.item_transformers = {
     permissions = {"harvest.diamante"}, -- you can add permissions
     r=0,g=255,b=0, -- cor
     max_units=400,
-    units_per_minute=25,
+    units_per_minute=100,
     x=2593.4228515625,y=2825.0793457031,z=36.088672637939, -- Localização    
     radius=3.5, height=1.5, -- area
     recipes = {
