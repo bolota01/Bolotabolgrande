@@ -22,6 +22,9 @@ cfg.garage_types = {
     ["police"] = {"Renault Duster",0, ""},
 	["police3"] = {"Palio Weekend",0, ""},
   ["policet"] = {"Mercedes Sprinter",0,""},
+  ["fbi"] = {"L200 Policia Federal",0,""},
+  ["sheriff"] = {"Evoque Policia Militar",0,""},
+  ["CHARGERPF"] = {"Charger Policia Federal",0,""},
   },    
   
   ["heliponto PM"] = {
