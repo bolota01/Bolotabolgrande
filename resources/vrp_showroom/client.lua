@@ -55,9 +55,9 @@ local vehshop = {
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
 				{name = "Chevrolet Silverado 2017", costs = 150000, description = {}, model = "silverado"},
 				{name = "Audio A4 2017", costs = 80000, description = {}, model = "A4"},
-				{name = "Saveiro Cross", costs = 90000, description = {}, model = "17magotan"},
+				{name = "Volkswagem Passat", costs = 65000, description = {}, model = "17magotan"},
 				{name = "Chevrolet Chevette", costs = 10000, description = {}, model = "casco"},
-				{name = "Volkswagem Passat", costs = 65000, description = {}, model = "cavalcade"}
+				{name = "Saveiro Cross", costs = 90000, description = {}, model = "cavalcade"}
 			}
 		},
 		["Motos"] = {
