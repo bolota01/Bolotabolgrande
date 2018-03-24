@@ -41,11 +41,11 @@ local vehshop = {
 			name = "Carros",
 			buttons = {
 				{name = "Volkswagem Fusca", costs = 9000, description = {}, model = "fusca"},
-				{name = "McLaren P1", costs = 1,50000, description = {}, model = "p1"},
+				{name = "McLaren P1", costs = 1500000, description = {}, model = "p1"},
 				{name = "Ford Mustang GT", costs = 250000, description = {}, model = "mgt"},
 				{name = "Volkswagem Jetta 2015", costs = 80000, description = {}, model = "jetta"},
-				{name = "Lamborghini Urus 2018", costs = 1,10000, description = {}, model = "urus2018"},
-				{name = "Lamborghini Centenario", costs = 300000, description = {}, model = "lp770"},
+				{name = "Lamborghini Urus 2018", costs = 110000, description = {}, model = "urus2018"},
+				{name = "Lamborghini Centenario", costs = 3000000, description = {}, model = "lp770"},
 				{name = "Volkswagem Gol 1.8 93", costs = 11000, description = {}, model = "golquadrado"},
 				{name = "Ford Fiesta", costs = 30000, description = {}, model = "fiesta"},
 				{name = "Honda Civic Tipe R ", costs = 180000, description = {}, model = "hondacivictr"},
@@ -54,7 +54,7 @@ local vehshop = {
 				{name = "Shelby GT500", costs = 250000, description = {}, model = "boss429"},
 				{name = "Impala 72", costs = 200000, description = {}, model = "impala72"},
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
-				{name = "La Ferrari 2017", costs = 150000, description = {}, model = "silverado"},
+				{name = "Chevrolet Silverado 2017", costs = 150000, description = {}, model = "silverado"},
 			}
 		},
 		["Motos"] = {
@@ -63,7 +63,7 @@ local vehshop = {
 			buttons = {
 				{name = "Honda CG 160", costs = 11000, description = {}, model = "titan60"},
 				{name = "Yamaha r1", costs = 150000, description = {}, model = "r1"},
-				{name = "BMW S1000", costs = 30000, description = {}, model = "bmws"},
+				{name = "BMW S1000", costs = 300000, description = {}, model = "bmws"},
 				{name = "BMW Z1000", costs = 100000, description = {}, model = "Z1000"},
 				{name = "KX450F", costs = 40000, description = {}, model = "kx450f"},
 				{name = "Harley Davidson FatBoy", costs = 150000, description = {}, model = "fatboy"},

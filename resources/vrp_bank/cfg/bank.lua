@@ -71,7 +71,7 @@ cfg.banks = { -- list of banks
 		lastrobbed = 0
 	},
 	["bancoprincipal"] = {
-		position = { ['x'] = 254.75250244141, ['y'] = 225.86184692383, ['z'] = 101.87574768066 },
+		position = { ['x'] = 253.44123840332, ['y'] = 229.32112121582, ['z'] = 101.68326568604 },
 		reward = 150000 + math.random(100000,200000),
 		nameofbank = "Banco do Brasil (Centro da Cidade)",
 		lastrobbed = 0

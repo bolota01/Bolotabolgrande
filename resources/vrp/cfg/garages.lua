@@ -19,9 +19,12 @@ cfg.garage_types = {
   
   ["pm"] = {
     _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
-    ["police"] = {"Fiesta Sedan",0, ""},
-	["police3"] = {"Corsa Hatch",0, ""},
-	["sheriff"] = {"Trailblazer",0, ""},
+    ["police"] = {"Renault Duster",0, ""},
+	["police3"] = {"Palio Weekend",0, ""},
+  ["policet"] = {"Mercedes Sprinter",0,""},
+  ["fbi"] = {"L200 Policia Federal",0,""},
+  ["sheriff"] = {"Evoque Policia Militar",0,""},
+  ["CHARGERPF"] = {"Charger Policia Federal",0,""},
   },    
   
   ["heliponto PM"] = {
@@ -59,7 +62,7 @@ cfg.garage_types = {
     
   ["Delivery"] = {
     _config = {vtype="bike",blipid=355,blipcolor=4,permissions={"delivery.garagem"}},
-    ["enduro"] = {"Enduro",8000, ""},
+    ["enduro"] = {"Enduro",1500, ""},
   }
 }
 

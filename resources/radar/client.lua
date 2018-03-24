@@ -40,7 +40,7 @@ end)
 			TriggerServerEvent('cobrarMulta')
 			exports.pNotify:SetQueueMax("left", 1)
             exports.pNotify:SendNotification({
-            text = "<h2><center>Radar</center></h2>" .. "</br>Você foi multado por ultrapassagem de velocidade." .. "</br>Placa: " .. plate .. "</br>Multa: R$ 1.000" .. "</br>Velocidade permitida:" .. maxspeed .. "</br>Sua velocidade:" ..kmhspeed,
+            text = "<h2><center>Radar</center></h2>" .. "</br>Você foi multado por ultrapassagem de velocidade." .. "</br>Placa: " .. plate .. "</br>Multa: R$ 500" .. "</br>Velocidade permitida:" .. maxspeed .. "</br>Sua velocidade:" ..kmhspeed,
             type = "error",
             timeout = 5000,
             layout = "centerLeft",
