@@ -1091,7 +1091,11 @@ cfg.groups = {
     _config = { gtype = "job" },
 	"advogado.oab",
   "advogado.paycheck"
-  },  
+  },
+  ["Prefeito"] = {
+    _config = { gtype = "job" },
+  "prefeito.paycheck"
+  },
   ["Transportador de Valores"] = {
     _config = { gtype = "job",
 	onspawn = function(player) vRPclient.notify(player,{"Você é um piloto de carro forte."}) end

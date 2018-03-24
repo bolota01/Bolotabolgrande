@@ -18,6 +18,7 @@ cfg.bill_picture = "CHAR_MP_MORS_MUTUAL" -- define bill notification picture wan
 
 cfg.paycheck = { -- ["permission"] = paycheck
   ["police.paycheck"] = 2300,
+  ["prefeito.paycheck"] = 10000,
   ["coronelrota.paycheck"] = 9500,
   ["tenentecoronelrota.paycheck"] = 8000,
   ["capitaorota.paycheck"] = 7000,
