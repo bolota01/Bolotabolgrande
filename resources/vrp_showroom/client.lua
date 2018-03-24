@@ -43,8 +43,7 @@ local vehshop = {
 				{name = "Volkswagem Fusca", costs = 9000, description = {}, model = "fusca"},
 				{name = "McLaren P1", costs = 1500000, description = {}, model = "p1"},
 				{name = "Ford Mustang GT", costs = 250000, description = {}, model = "mgt"},
-				{name = "Volkswagem Jetta 2015", costs = 80000, description = {}, model = "jetta"},
-				{name = "Lamborghini Urus 2018", costs = 110000, description = {}, model = "urus2018"},
+				{name = "Lamborghini Urus 2018", costs = 1100000, description = {}, model = "urus2018"},
 				{name = "Lamborghini Centenario", costs = 3000000, description = {}, model = "lp770"},
 				{name = "Volkswagem Gol 1.8 93", costs = 11000, description = {}, model = "golquadrado"},
 				{name = "Ford Fiesta", costs = 30000, description = {}, model = "fiesta"},
@@ -56,7 +55,9 @@ local vehshop = {
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
 				{name = "Chevrolet Silverado 2017", costs = 150000, description = {}, model = "silverado"},
 				{name = "Audio A4 2017", costs = 80000, description = {}, model = "A4"},
-				{name = "Volkswagem Passat 2017", costs = 150000, description = {}, model = "17magotan"}
+				{name = "Saveiro Cross", costs = 90000, description = {}, model = "17magotan"},
+				{name = "Chevrolet Chevette", costs = 10000, description = {}, model = "casco"},
+				{name = "Volkswagem Passat", costs = 65000, description = {}, model = "cavalcade"}
 			}
 		},
 		["Motos"] = {
@@ -69,6 +70,7 @@ local vehshop = {
 				{name = "BMW Z1000", costs = 100000, description = {}, model = "Z1000"},
 				{name = "KX450F", costs = 40000, description = {}, model = "kx450f"},
 				{name = "Harley Davidson FatBoy", costs = 150000, description = {}, model = "fatboy"},
+				{name = "XT 660", costs = 15000, description = {}, model = "xt66"},
 			}
 		},
 	}
