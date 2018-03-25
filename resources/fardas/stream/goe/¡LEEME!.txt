@@ -1,0 +1,11 @@
+Nueva Versión - GEO
+
+Sustituir el uniforme en esta ruta
+
+Raiz GTA V \mods\x64e\models\cdimages\componentpeds_s_m_y.rpf
+
+Recomiendo eliminar la gorra ya que no hará falta. Lo puedes encontrar en la siguiente ruta
+
+x64e\models\cdimages\pedprops.rpf
+
+CNPjesus

@@ -55,7 +55,28 @@ cfg.item_transformers = {
         reagents={}, -- items taken per unit
         products={}, -- items given per unit
         aptitudes={ -- optional
-          ["physical.strength"] = 0.6 -- "group.aptitude", give 1 exp per unit
+          ["physical.strength"] = 0.5 -- "group.aptitude", give 1 exp per unit
+        }
+      }
+    }
+  },
+  -- PROGRAMAÇÃO
+  {
+    name="Programação", -- menu name
+    r=255,g=125,b=0, -- color
+    max_units=400,
+    units_per_minute=100,
+    x=-1050.2086181641,y=-241.20635986328,z=44.021064758301, -- pos
+    radius=2.5, height=1.5, -- area
+    recipes = {
+      ["Curso de Programação"] = { -- action name
+        description="Aprendendo programação", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={}, -- items taken per unit
+        products={}, -- items given per unit
+        aptitudes={ -- optional
+          ["science.coding"] = 0.5 -- "group.aptitude", give 1 exp per unit
         }
       }
     }
@@ -261,13 +282,33 @@ cfg.item_transformers = {
       }
     }
   },
-    -- Lavagem de dinheiro
+  -- LAVAGEM DE DINHEIRO
  {
       name="Lavagem de Dinheiro",
       r=0,g=200,b=0, ---cores
       max_units=1000,
       units_per_minute=1000,
-      x=-1056.4289550781,y=-242.60389709473,z=44.021060943604, -- coordenas mudas aqui
+      x=-719.72680664063,y=-2234.7529296875,z=7.23442029953, -- coordenas mudas aqui
+      radius=2.5, height=1.5, -- area
+      recipes = {
+        ["Lavar Dinheiro"] = { -- action name
+          description="Lavagem de Dinheiro", -- action description
+          in_money=0, -- money taken per unit
+          out_money=350, -- money earned per unit
+          reagents={
+            ["dirty_money"] = 500
+          }, -- items taken per unit
+          products={}, -- items given per unit
+      }
+    }
+  },
+  -- Lavagem 2
+  {
+      name="Lavagem de Dinheiro",
+      r=0,g=200,b=0, ---cores
+      max_units=1000,
+      units_per_minute=1000,
+      x=132.82469177246,y=-2203.8046875,z=7.1863832473755, -- coordenas mudas aqui
       radius=2.5, height=1.5, -- area
       recipes = {
         ["Lavar Dinheiro"] = { -- action name

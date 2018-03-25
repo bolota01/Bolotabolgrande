@@ -74,7 +74,7 @@ function vRPgt.spawnGarageVehicle(vtype, name, vehicle_plate, vehicle_colorprima
     SetVehicleHasBeenOwnedByPlayer(vehicle[3],false)
     Citizen.InvokeNative(0xAD738C3085FE7E11, vehicle[3], false, true) -- set not as mission entity
     SetVehicleAsNoLongerNeeded(Citizen.PointerValueIntInitialized(vehicle[3]))
-    Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(vehicle[3]))
+    --Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(vehicle[3]))
 	TriggerEvent("vrp_garages:setVehicle", vtype, nil)
   end
 

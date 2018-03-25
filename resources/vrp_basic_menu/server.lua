@@ -246,23 +246,29 @@ end,"Saquear corpo mais próximo"}
 local ch_hack = {function(player,choice)
   -- get nearest player
   local user_id = vRP.getUserId({player})
+
   if user_id ~= nil then
-    vRPclient.getNearestPlayer(player,{25},function(nplayer)
+    local aptitudes = vRP.getUserAptitudes(user_id)
+    local expCoding = aptitudes.science.coding[3]
+
+    vRPclient.getNearestPlayer(player,{10},function(nplayer)
       if nplayer ~= nil then
         local nuser_id = vRP.getUserId({nplayer})
         if nuser_id ~= nil then
-          -- prompt number
-      local nbank = vRP.getBankMoney({nuser_id})
-          local amount = math.floor(nbank*0.01)
-      local nvalue = nbank - amount
-      if math.random(1,3) == 1 then
-      vRP.setBankMoney({nuser_id,nvalue})
-            vRPclient.notify(nplayer,{"Hackeado ~r~".. amount .."$."})
-        vRP.giveInventoryItem({user_id,"dirty_money",amount,true})
-      else
-            vRPclient.notify(nplayer,{"~g~Tentativa de hackear falhou."})
-            vRPclient.notify(player,{"~r~Tentativa de hackear falhou."})
-      end
+            -- prompt number
+            local nbank = vRP.getBankMoney({nuser_id})
+            local amount = math.floor(nbank*0.01)
+            local nvalue = nbank - amount
+            local probability = (expCoding / 270) * 10
+
+            if math.random(1, 100) <= probality then
+              vRP.setBankMoney({nuser_id,nvalue})
+              vRPclient.notify(nplayer,{"Hackeado ~r~".. amount .."$."})
+              vRP.giveInventoryItem({user_id,"dirty_money",amount,true})
+            else
+              vRPclient.notify(nplayer,{"~g~Tentativa de hackear falhou."})
+              vRPclient.notify(player,{"~r~Tentativa de hackear falhou."})
+            end
         else
           vRPclient.notify(player,{lang.common.no_player_near()})
         end

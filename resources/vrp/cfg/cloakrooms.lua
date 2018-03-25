@@ -9,7 +9,6 @@ local surgery_female = { model = "mp_f_freemode_01" }
 local uniforme_pm = { model = "s_m_y_hwaycop_01" }
 local uniforme_pmf = { model = "s_m_m_armoured_01" }
 local uniforme_capitao = { model = "s_m_m_armoured_02" }
-local uniforme_aguia = { model = "s_m_y_cop_01" }
 local uniforme_rocam = { model = "s_m_y_pilot_01" }
 local uniforme_bope = { model = "s_m_y_ranger_01" }
 local uniforme_tatica = { model = "s_m_y_sheriff_01" }
@@ -19,6 +18,8 @@ local uniforme_conven = { model = "s_m_y_blackops_02" }
 local uniforme_conven2 = { model = "s_m_y_blackops_03" }
 local uniforme_samu = { model = "s_m_m_paramedic_01" }
 local uniforme_federal = { model = "s_m_m_fibsec_01" }
+local uniforme_aguia = { model = "s_m_m_pilot_02" }
+local uniforme_goe = { model = "s_m_y_cop_01"}
 
 
 for i=0,19 do
@@ -32,6 +33,7 @@ for i=0,19 do
   uniforme_tatica[i] = {0,0}
   surgery_female[i] = {0,0}
   uniforme_federal[i] = {0,0}
+  uniforme_goe[i] = {0,0}
   surgery_male[i] = {0,0}
 end
 
@@ -64,6 +66,20 @@ cfg.cloakroom_types = {
   ["FARDAMENTO PM 02"] = uniforme_conven2,  
   },
   
+  ["policiafederal"] = {
+    _config = { permissions = {"federal.cloakroom"} },
+    --[[["Uniform"] = {
+      [3] = {30,0},
+      [4] = {25,2},
+      [6] = {24,0},
+      [8] = {58,0},
+      [11] = {55,0},
+      ["p2"] = {2,0}
+    },]]
+  ["Farda GOE"] = uniforme_goe,
+  ["Farda Federal"] = uniforme_federal,
+  ["Farda Aguia 1"] = uniforme_aguia,
+  },
   -- FARDAS DA ROTA 
   ["coronelfardas"] = {
     _config = { permissions = {"coronelfardas.cloakroom"} },
@@ -169,6 +185,7 @@ cfg.cloakroom_types = {
 cfg.cloakrooms = {
   {"police",457.53500366211,-991.83148193359,30.689584732056},
   {"coronelfardas",457.53500366211,-991.83148193359,30.689584732056},
+  {"policiafederal",457.43515014648,-988.44866943359,30.689599990845},
   {"fardamentorota",457.53500366211,-991.83148193359,30.689584732056},
   {"rocam",457.53500366211,-991.83148193359,30.689584732056},
   {"coronelpm",457.53500366211,-991.83148193359,30.689584732056},

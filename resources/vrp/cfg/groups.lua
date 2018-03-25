@@ -370,7 +370,7 @@ cfg.groups = {
   "police.menu_interaction",
   "police.door",
     "police.menu",
-    "pffardas.cloakroom",
+    "federal.cloakroom",
     "police.pc",
   "radar.pass",
   "holdup.police",

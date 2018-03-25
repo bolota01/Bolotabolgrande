@@ -14,12 +14,13 @@ local cfg = {}
 cfg.gaptitudes = {
   ["physical"] = {
     _title = "Fisico",
-    ["strength"] = {"Força", 30, 280} -- required, level 3 to 6 (by default, can carry 10kg per level)
+    ["strength"] = {"Força", 30, 270} -- required, level 3 to 6 (by default, can carry 10kg per level)
   },
   ["science"] = {
     _title = "Ciência",
-    ["chemicals"] = {"Estudo de química", 15, -1}, -- example
-    ["mathematics"] = {"Estudo de Matemática", 15, -1} -- example
+    ["chemicals"] = {"Estudo de química", 15, 270}, -- example
+    ["mathematics"] = {"Estudo de Matemática", 15, 270}, -- example
+    ["coding"] = {"Estudo de Programação", 30, 270}
   }
 }
 
