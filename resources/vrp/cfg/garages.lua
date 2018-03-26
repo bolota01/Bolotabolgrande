@@ -31,6 +31,11 @@ cfg.garage_types = {
     _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
     ["as350"] = {"Águia PMESP",0, ""},
 
+  },
+
+  ["Garagem de barcos"] = {
+    _config = {vtype="bike",blipid=455,blipcolor=67},
+    ["dinghy2"] = {"Bote de Pesca",100, ""}
   },    
   
   ["Veículos Aéreos"] = {
