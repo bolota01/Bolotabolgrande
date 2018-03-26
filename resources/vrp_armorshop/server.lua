@@ -1,21 +1,3 @@
---[[
-    FiveM Scripts
-    Copyright C 2018  Sighmir
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as published
-    by the Free Software Foundation, either version 3 of the License, or
-    at your option any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-]]
-
 -- a basic gunshop implementation
 local Tunnel = module("vrp", "lib/Tunnel")
 local Proxy = module("vrp", "lib/Proxy")
@@ -66,9 +48,9 @@ for gtype,weapons in pairs(gunshop_types) do
         -- payment
         if user_id ~= nil and vRP.tryFullPayment({user_id,price}) then
           ASclient.setArmour(player,{100,true})
-          vRPclient.notify(player,{lang.money.paid({price})})
+          TriggerClientEvent("pNotify:SendNotification",player,{text = "Pagou <span color='red'>" ..price.. "R$</span>", type = "success", timeout = (3000),layout = "centerLeft"})
         else
-          vRPclient.notify(player,{lang.money.not_enough()})
+          TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Você não tem dinheiro suficiente</span>", type = "error", timeout = (3000),layout = "centerLeft"})
         end
 	  else
         -- get player weapons to not rebuy the body
@@ -76,7 +58,8 @@ for gtype,weapons in pairs(gunshop_types) do
           -- prompt amount
           vRP.prompt({player,lang.gunshop.prompt_ammo({choice}),"",function(player,amount)
             local amount = parseInt(amount)
-            if amount >= 0 then
+            if amount > 1000 then return end
+			if amount >= 0 then
               local total = math.ceil(parseFloat(price_ammo)*parseFloat(amount))
             
               if weapons[string.upper(weapon)] == nil then -- add body price if not already owned
@@ -89,12 +72,12 @@ for gtype,weapons in pairs(gunshop_types) do
                   [weapon] = {ammo=amount}
                 }})
 
-                vRPclient.notify(player,{lang.money.paid({total})})
+               TriggerClientEvent("pNotify:SendNotification",player,{text = "Pagou <span color='red'>" ..total.. "R$</span>", type = "success", timeout = (3000),layout = "centerLeft"})
               else
-                vRPclient.notify(player,{lang.money.not_enough()})
+               TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Você não tem dinheiro suficiente</span>", type = "error", timeout = (3000),layout = "centerLeft"})
               end
             else
-              vRPclient.notify(player,{lang.common.invalid_value()})
+              TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Valor inválido</span>", type = "error", timeout = (3000),layout = "centerLeft"})
             end
           end})
         end)
