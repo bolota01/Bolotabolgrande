@@ -512,7 +512,7 @@ cfg.item_transformers = {
 	permissions = {"bankdriver.money"}, -- you can add permissions
     r=255,g=125,b=0, -- color
     max_units=1,
-    units_per_minute=1,
+    units_per_minute=10,
     x=253.90089416504,y=225.21408081055,z=101.87578582764,
     radius=2, height=1.0, -- area
     recipes = {

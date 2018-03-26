@@ -34,8 +34,8 @@ cfg.garage_types = {
   },
 
   ["Garagem de barcos"] = {
-    _config = {vtype="bike",blipid=455,blipcolor=67},
-    ["dinghy2"] = {"Bote de Pesca",100, ""}
+    _config = {vtype="car",blipcolor=4,permissions={"tartaruga.garagem"}},
+    ["dinghy2"] = {"Bote de Pesca",200, ""}
   },    
   
   ["Veículos Aéreos"] = {
@@ -76,6 +76,7 @@ cfg.garages = {
   {"pm",453.24819946289,-1019.3926391602,28.396326065063},
   {"heliponto PM",449.32727050781,-981.21728515625,43.691673278809},
   {"heliponto SAMU",313.24923706055,-1465.1434326172,46.509502410889},
+  {"Garagem de barcos",3850.7595214844,4446.2465820313,-0.4746036529541},
   {"Taxi",-339.02719116211,-1023.7808837891,30.380908966064},
   {"Delivery",141.74586486816,-1458.0601806641,29.141620635986},
   {"Mecanico",401.42602539063,-1631.7053222656,29.291942596436},
