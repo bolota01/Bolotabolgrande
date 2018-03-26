@@ -234,6 +234,8 @@ transformers_tick()
 local function transformers_regen()
   for k,tr in pairs(transformers) do
     tr.units = tr.units+tr.itemtr.units_per_minute
+    print(tr.units)
+    print(tr.itemtr.units_per_minute)
     if tr.units >= tr.itemtr.max_units then tr.units = tr.itemtr.max_units end
   end
 

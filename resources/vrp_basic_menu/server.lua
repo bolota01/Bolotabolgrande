@@ -248,8 +248,8 @@ local ch_hack = {function(player,choice)
   local user_id = vRP.getUserId({player})
 
   if user_id ~= nil then
-    local aptitudes = vRP.getUserAptitudes(user_id)
-    local expCoding = aptitudes.science.coding[3]
+    local expCoding = vRP.getExp(user_id,"science","coding")
+    print(expCoding)
 
     vRPclient.getNearestPlayer(player,{10},function(nplayer)
       if nplayer ~= nil then

@@ -40,10 +40,11 @@ cfg.paycheck = { -- ["permission"] = paycheck
   ["paramedico.paycheck"] = 7000,
   ["socorrista.paycheck"] = 5300,
   ["enfermeiro.paycheck"] = 3700,
-  ["advogado.paycheck"] = 2000,
+  ["advogado.paycheck"] = 3000,
   ["emergency.paycheck"] = 2400,
   ["taxi.paycheck"] = 1800,
   ["garimpeiro.paycheck"] = 1600,
+  ["jornalista.paycheck"] = 3000,
   ["repair.paycheck"] = 1800,
   ["bankdriver.paycheck"] = 1200,
   ["diretorchefe.paycheck"] = 15000,
@@ -52,11 +53,12 @@ cfg.paycheck = { -- ["permission"] = paycheck
 
 cfg.bill = { -- ["permission"] = withdrawal
   ["police.paycheck"] = 500,
-  ["advogado.paycheck"] = 250,
+  ["advogado.paycheck"] = 150,
   ["emergency.paycheck"] = 480,
   ["taxi.paycheck"] = 125,
   ["garimpeiro.paycheck"] = 100,
   ["repair.paycheck"] = 100,
+  ["jornalista.paycheck"] = 150,
   ["bankdriver.paycheck"] = 220,
   ["diretorchefe.paycheck"] = 2500,
   ["delivery.paycheck"] = 120

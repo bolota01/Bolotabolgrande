@@ -1093,6 +1093,10 @@ cfg.groups = {
 	"advogado.oab",
   "advogado.paycheck"
   },
+  ["Jornalista"] = {
+    _config = { gtype = "job" },
+  "jornalista.paycheck"
+  },
   ["Prefeito"] = {
     _config = { gtype = "job" },
   "prefeito.paycheck"
