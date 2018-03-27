@@ -45,7 +45,7 @@ local vehshop = {
 				{name = "Volkswagem Gol 1.8 93", costs = 11000, description = {}, model = "golquadrado"},
 				{name = "Ford Fiesta", costs = 30000, description = {}, model = "fiesta"},
 				{name = "Volkswagem Passat", costs = 65000, description = {}, model = "17magotan"},	
-				{name = "Audio A4 2017", costs = 80000, description = {}, model = "A4"},
+				{name = "Audi A4 2017", costs = 80000, description = {}, model = "A4"},
 				{name = "Saveiro Cross", costs = 90000, description = {}, model = "cavalcade"},
 				{name = "Chevrolet Silverado 2017", costs = 150000, description = {}, model = "silverado"},	
 				{name = "Opala SS 75", costs = 150000, description = {}, model = "tampa"},
