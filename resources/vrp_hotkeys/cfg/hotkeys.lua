@@ -159,21 +159,8 @@ cfg.hotkeys = {
 	  -- Do nothing on release because it's toggle.
 	end,
   },
-  [311] = {
-    -- K toggle Vehicle Engine
-    group = 1, 
-	pressed = function() 
-      if not IsPauseMenuActive() and IsPedInAnyVehicle(GetPlayerPed(-1), false) then
-		engine = not engine
-		SetVehicleEngineOn(GetVehiclePedIsIn(GetPlayerPed(-1), false), engine, false, false)
-	  end
-	end,
-	released = function()
-	  -- Do nothing on release because it's toggle.
-	end,
-  },
-  [244] = {
-    -- W starts Vehicle Engine
+  [48] = {
+    -- Z starts Vehicle Engine
     group = 1, 
 	pressed = function() 
       if not IsPauseMenuActive() and IsPedInAnyVehicle(GetPlayerPed(-1), false) then
