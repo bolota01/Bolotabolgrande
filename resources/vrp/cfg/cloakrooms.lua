@@ -19,7 +19,8 @@ local uniforme_conven2 = { model = "s_m_y_blackops_03" }
 local uniforme_samu = { model = "s_m_m_paramedic_01" }
 local uniforme_federal = { model = "s_m_m_fibsec_01" }
 local uniforme_aguia = { model = "s_m_m_pilot_02" }
-local uniforme_goe = { model = "s_m_y_cop_01"}
+local uniforme_goe = { model = "s_m_y_cop_01" }
+local uniforme_pmfeminino = { model = "s_f_y_cop_01" }
 
 
 for i=0,19 do
@@ -33,6 +34,7 @@ for i=0,19 do
   uniforme_tatica[i] = {0,0}
   surgery_female[i] = {0,0}
   uniforme_federal[i] = {0,0}
+  uniforme_pmfeminino[i] = {0,0}
   uniforme_goe[i] = {0,0}
   surgery_male[i] = {0,0}
 end
@@ -53,17 +55,20 @@ cfg.cloakroom_types = {
       [11] = {55,0},
       ["p2"] = {2,0}
     },]]
-    ["ROCAM"] = uniforme_pm,
-    ["Força Tática"] = uniforme_pmf,
-  ["Força Tática 02"] = uniforme_capitao,
-  ["Força Tática 03"] = uniforme_aguia,
-  ["GRPAe"] = uniforme_rocam,
-  ["FARDAMENTO 01"] = uniforme_bope,
-  ["CORONEL 01"] = uniforme_tatica,
-  ["FARDAMENTO 02"] = uniforme_tatica2,
-  ["CORONEL 02"] = uniforme_tatica3,
-  ["FARMAMENTO PM 01"] = uniforme_conven,
-  ["FARDAMENTO PM 02"] = uniforme_conven2,  
+["Farda 01"] = uniforme_pm,
+["Farda 02"] = uniforme_pmf,
+["Farda 03"] = uniforme_capitao,
+["Farda 04"] = uniforme_rocam,
+["Farda 05"] = uniforme_bope,
+["Farda 06"] = uniforme_tatica,
+["Farda 07"] = uniforme_tatica2,
+["Farda 08"] = uniforme_tatica3,
+["Farda 09"] = uniforme_conven,
+["Farda 10"] = uniforme_conven2,
+["Farda Federal"] = uniforme_federal,
+["Farda Águia"] = uniforme_aguia,
+["Farda GOE"] = uniforme_goe,
+["Farda Feminina"] = uniforme_pmfeminino, 
   },
   
   ["policiafederal"] = {
@@ -79,6 +84,7 @@ cfg.cloakroom_types = {
   ["Farda GOE"] = uniforme_goe,
   ["Farda Federal"] = uniforme_federal,
   ["Farda Aguia 1"] = uniforme_aguia,
+  ["Farda Teste"] = uniforme_pmfeminino,
   },
   -- FARDAS DA ROTA 
   ["coronelfardas"] = {

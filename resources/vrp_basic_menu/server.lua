@@ -124,52 +124,43 @@ end, "Ativar função do servidor."}
 
 --police weapons // comment out the weapons if you dont want to give weapons.
 
--- ARMAS DA ROTA
-local rota_weapons = {}
-rota_weapons["Equip"] = {function(player,choice)
-    vRPclient.giveWeapons(player,{{
-    ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_STUNGUN "] = {ammo=200},
-    ["WEAPON_SPECIALCARBINE"] = {ammo=200},
-    ["WEAPON_CARBINERIFLE"] = {ammo=200},
-    ["WEAPON_PUMPSHOTGUN"] = {ammo=200}
-  }, true})
-  BMclient.setArmour(player,{100,true})
-end}
-
---PMESP
-local pmespof_weapons = {}
-pmespof_weapons["Equip"] = {function(player,choice)
+-- PRAÇAS PMESP
+local recruta_weapons = {}
+recruta_weapons["Equip"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
     ["WEAPON_NIGHTSTICK"] = {ammo=200},
     ["WEAPON_STUNGUN"] = {ammo=200},
     ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_PUMPSHOTGUN"] = {ammo=200},
-    ["WEAPON_ASSAULTSMG"] = {ammo=200},
-    ["WEAPON_SMG"] = {ammo=200}
+    ["WEAPON_SMG"] = {ammo=200},
+    ["ARMOR"] = {ammo=200}
   }, true})
   BMclient.setArmour(player,{100,true})
 end}
 
-local pmespsub_weapons = {}
-pmespsub_weapons["Equip"] = {function(player,choice)
+-- SUPERIORES PMESP
+local superiores_weapons = {}
+superiores_weapons["Equip"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
+    ["WEAPON_ADVANCEDRIFLE"] = {ammo=200},
     ["WEAPON_NIGHTSTICK"] = {ammo=200},
     ["WEAPON_STUNGUN"] = {ammo=200},
     ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_SMG"] = {ammo=200}
+    ["WEAPON_SMG"] = {ammo=200},
+    ["ARMOR"] = {ammo=200}
   }, true})
   BMclient.setArmour(player,{100,true})
 end}
 
---ROCAM
-local rocam_weapons = {}
-rocam_weapons["Equip"] = {function(player,choice)
+-- ÁGUIA PMESP
+local aguia_weapons = {}
+aguia_weapons["Equip"] = {function(player,choice)
     vRPclient.giveWeapons(player,{{
+    ["WEAPON_ADVANCEDRIFLE"] = {ammo=200},
+    ["WEAPON_SNIPERRIFLE"] = {ammo=200},
     ["WEAPON_NIGHTSTICK"] = {ammo=200},
     ["WEAPON_STUNGUN"] = {ammo=200},
     ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_SMG"] = {ammo=200}
+    ["ARMOR"] = {ammo=200}
   }, true})
   BMclient.setArmour(player,{100,true})
 end}
@@ -198,6 +189,17 @@ local emergency_heal = {}
 emergency_heal["Heal"] = {function(player,choice)
   local user_id = vRP.getUserId({player}) 
   vRPclient.setHealth(player,{1000})
+end}
+
+local emergency_weapons = {}
+emergency_weapons["Equip"] = {function(player,choice)
+    vRPclient.giveWeapons(player,{{
+    ["WEAPON_STUNGUN"] = {ammo=200},
+    ["WEAPON_FLARE"] = {ammo=200},
+    ["WEAPON_FLASHLIGHT"] = {ammo=200},
+    ["WEAPON_FLAREGUN"] = {ammo=200}
+  }, true})
+  BMclient.setArmour(player,{100,true})
 end}
 
 --loot corpse
@@ -920,10 +922,10 @@ end,
 
 -- ADD STATIC MENU CHOICES // STATIC MENUS NEED TO BE ADDED AT vRP/cfg/gui.lua
 --vRP.addStaticMenuChoices({"police_weapons", police_weapons}) -- police gear
-vRP.addStaticMenuChoices({"rota_weapons", rota_weapons}) -- police gear
-vRP.addStaticMenuChoices({"pmespof_weapons", pmespof_weapons}) -- police gear
-vRP.addStaticMenuChoices({"pmespsub_weapons", pmespsub_weapons}) -- police gear
-vRP.addStaticMenuChoices({"rocam_weapons", rocam_weapons}) -- police gear
+vRP.addStaticMenuChoices({"recruta_weapons", recruta_weapons}) -- police gear
+vRP.addStaticMenuChoices({"superiores_weapons", superiores_weapons}) -- police gear
+vRP.addStaticMenuChoices({"aguia_weapons", aguia_weapons}) -- police gear
+vRP.addStaticMenuChoices({"emergency_weapons", emergency_weapons}) -- police gear
 vRP.addStaticMenuChoices({"emergency_medkit", emergency_medkit}) -- pills and medkits
 vRP.addStaticMenuChoices({"emergency_heal", emergency_heal}) -- heal button
 

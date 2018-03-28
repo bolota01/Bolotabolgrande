@@ -26,56 +26,56 @@ body{
 -- list of static menu types (map of name => {.title,.blipid,.blipcolor,.permissions (optional)})
 -- static menus are menu with choices defined by vRP.addStaticMenuChoices(name, choices)
 cfg.static_menu_types = {
-   ["rota_weapons"] = {
-      title = "Armas da ROTA", 
-      blipcolor = 0,
-	  permissions = {
-	    "rota.weapons"
-	  }
-	},
-     ["pmespof_weapons"] = {
-      title = "Armas da PMESP", 
+   ["recruta_weapons"] = {
+      title = "Arsenal da PMESP", 
       blipcolor = 0,
     permissions = {
-      "pmespof.weapons"
+      "recruta.weapons"
     }
   },
-       ["pmespsub_weapons"] = {
-      title = "Armas da PMESP", 
+  ["superiores_weapons"] = {
+      title = "Arsenal PMESP", 
       blipcolor = 0,
     permissions = {
-      "pmespsub.weapons"
+      "superiores.weapons"
     }
   },
-         ["rocam_weapons"] = {
-      title = "Armas da ROCAM", 
+    ["aguia_weapons"] = {
+      title = "Arsenal PMESP", 
       blipcolor = 0,
     permissions = {
-      "rocam.weapons"
+      "aguia.weapons"
+    }
+  },
+  ["emergency_weapons"] = {
+      title = "Arsenal SAMU", 
+      blipcolor = 0,
+    permissions = {
+      "emergency.weapons"
     }
   },
    ["emergency_heal"] = {
       title = "Atendimento Médico", 
       blipcolor = 0,
-	  permissions = {
-	    "emergency_heal"
-	  }
-	},
+    permissions = {
+      "emergency_heal"
+    }
+  },
    ["emergency_medkit"] = {
       title = "Emergência", 
       blipcolor = 0,
-	  permissions = {
-	    "emergency.medkit"
-	  }
-	}
+    permissions = {
+      "emergency.medkit"
+    }
+  }
 }
 
 -- list of static menu points
 cfg.static_menus = {
-  {"rota_weapons", 461.31414794922,-981.15582275391,30.689588546753},
-  {"pmespof_weapons", 461.31414794922,-981.15582275391,30.689588546753},
-  {"pmespsub_weapons", 461.31414794922,-981.15582275391,30.689588546753},
-  {"rocam_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"recruta_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"superiores_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"aguia_weapons", 461.31414794922,-981.15582275391,30.689588546753},
+  {"emergency_weapons", 266.0016784668,-1364.5970458984,24.537784576416},
   {"emergency_medkit", 268.22784423828,-1364.8872070313,24.537782669067},
   {"emergency_heal", 260.49597167969,-1358.4555664063,24.537788391113}
 }

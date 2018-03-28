@@ -16,15 +16,25 @@ cfg.garage_types = {
     _config = {vtype="car",blipid=67,blipcolor=4,permissions={"bankdriver.vehicle"}},
     ["stockade"] = {"Carro Forte",0, ""}
   },
-  
+  ["GOE"] = {
+    _config = {vtype="car",blipcolor=4,permissions={"goe.garagem"}}, 
+  ["riot"] = {"Caveirao da GOE",0,""},
+  ["CHARGERPF"] = {"Charger Policia Federal",0,""}
+  }, 
+ 
+  ["Policia Federal"] = {
+    _config = {vtype="car",blipcolor=4,permissions={"pf.garagem"}},
+  ["CHARGERPF"] = {"Charger Policia Federal",0,""},
+  ["fbi"] = {"L200 Policia Federal",0,""}
+  }, 
+
   ["pm"] = {
     _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
-    ["police"] = {"Renault Duster",0, ""},
+  ["police"] = {"Renault Duster",0, ""},
 	["police3"] = {"Palio Weekend",0, ""},
   ["policet"] = {"Mercedes Sprinter",0,""},
-  ["fbi"] = {"L200 Policia Federal",0,""},
   ["sheriff"] = {"Evoque Policia Militar",0,""},
-  ["CHARGERPF"] = {"Charger Policia Federal",0,""},
+  ["pbus"] = {"Onibus Policia Militar",0,""}
   },    
   
   ["heliponto PM"] = {
@@ -34,7 +44,7 @@ cfg.garage_types = {
   },
 
   ["Garagem de barcos"] = {
-    _config = {vtype="car",blipcolor=4,permissions={"tartaruga.garagem"}},
+    _config = {vtype="bike",blipid=355,blipcolor=4,permissions={"tartaruga.garagem"}},
     ["dinghy2"] = {"Bote de Pesca",200, ""}
   },    
   
@@ -74,9 +84,11 @@ cfg.garage_types = {
 -- {garage_type,x,y,z}
 cfg.garages = {
   {"pm",453.24819946289,-1019.3926391602,28.396326065063},
+  {"Policia Federal",453.24819946289,-1019.3926391602,28.396326065063},
+  {"GOE",453.24819946289,-1019.3926391602,28.396326065063},
   {"heliponto PM",449.32727050781,-981.21728515625,43.691673278809},
   {"heliponto SAMU",313.24923706055,-1465.1434326172,46.509502410889},
-  {"Garagem de barcos",3850.7595214844,4446.2465820313,-0.4746036529541},
+  {"Garagem de barcos",3856.1257324218,4458.0517578125,1.8837773799896},
   {"Taxi",-339.02719116211,-1023.7808837891,30.380908966064},
   {"Delivery",141.74586486816,-1458.0601806641,29.141620635986},
   {"Mecanico",401.42602539063,-1631.7053222656,29.291942596436},
