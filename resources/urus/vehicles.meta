@@ -8,16 +8,16 @@
 <Item>
       <modelName>urus2018</modelName>
       <txdName>urus2018</txdName>
-      <handlingId>ASTEROPE</handlingId>
-      <gameName>ASTROPE</gameName>
-      <vehicleMakeName>KARIN</vehicleMakeName>
+      <handlingId>URUS2018</handlingId>
+      <gameName>URUS</gameName>
+      <vehicleMakeName>LAMBORGHINI URUS</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
       <animConvRoofDictName>null</animConvRoofDictName>
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>BALLER</audioNameHash>
+      <audioNameHash>COQUETTE3</audioNameHash>
       <layout>LAYOUT_STANDARD</layout>
       <coverBoundOffsets>ASTEROPE_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -97,7 +97,7 @@
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
       <vehicleClass>VC_SEDAN</vehicleClass>
-      <wheelType>VWT_SPORT</wheelType>
+      <wheelType>VWT_HIEND</wheelType>
       <trailers />
       <additionalTrailers />
       <drivers />
