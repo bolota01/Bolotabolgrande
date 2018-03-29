@@ -442,7 +442,7 @@ cfg.groups = {
   },
   
   -- GRUPO DE OPERAÇÕES ESPECIAIS
-    ["★ GOE"] = {
+    ["GOE"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -489,7 +489,7 @@ cfg.groups = {
   },
   
   -- PATENTES PMESP
-  ["★ Comandante PMESP"] = {
+  ["Comandante PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -535,7 +535,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ Tenente Coronel PMESP"] = {
+  ["Tenente Coronel PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -581,7 +581,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ Major PMESP"] = {
+  ["Major PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -627,7 +627,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ Capitão PMESP"] = {
+  ["Capitão PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -673,7 +673,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ Tenente PMESP"] = {
+  ["Tenente PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -719,7 +719,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★1° Tenente PMESP"] = {
+  ["1° Tenente PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -765,7 +765,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★2° Tenente PMESP"] = {
+  ["2° Tenente PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -811,7 +811,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ SubTenente PMESP"] = {
+  ["SubTenente PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
@@ -857,7 +857,7 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
 
-  ["★ Sargento PMESP"] = {
+  ["Sargento PMESP"] = {
     _config = { 
       gtype = "job",
       onjoin = function(player) vRPclient.setCop(player,{true}) end,
