@@ -1181,7 +1181,7 @@ cfg.groups = {
   "samuchefe.paycheck",
   "radar.pass",
     "emergency.weapons",
-  "samu.cloakroom"
+  "samuchefe.cloakroom"
   },
   
   ["Doutor"] = {

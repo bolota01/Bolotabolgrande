@@ -1,0 +1,1 @@
+instal in folder patchday3ng x64 models cdimages patchday3ng paste files

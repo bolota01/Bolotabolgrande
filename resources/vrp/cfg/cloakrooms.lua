@@ -21,6 +21,8 @@ local uniforme_federal = { model = "s_m_m_fibsec_01" }
 local uniforme_aguia = { model = "s_m_m_pilot_02" }
 local uniforme_goe = { model = "s_m_y_cop_01" }
 local uniforme_pmfeminino = { model = "s_f_y_cop_01" }
+local uniforme_samuchefe = { model = "s_m_m_doctor_01" }
+local uniforme_samufeminino = { model = "s_f_y_scrubs_01" }
 
 
 for i=0,19 do
@@ -35,6 +37,8 @@ for i=0,19 do
   surgery_female[i] = {0,0}
   uniforme_federal[i] = {0,0}
   uniforme_pmfeminino[i] = {0,0}
+  uniforme_samuchefe[i] = {0,0}
+  uniforme_samufeminino[i] = {0,0}
   uniforme_goe[i] = {0,0}
   surgery_male[i] = {0,0}
 end
@@ -155,8 +159,8 @@ cfg.cloakroom_types = {
   },
   
   --UNIFORME PF
-    ["pffardas"] = {
-    _config = { permissions = {"pffardas.cloakroom"} },
+    ["samuchefe"] = {
+    _config = { permissions = {"samuchefe.cloakroom"} },
     --[[["Uniform"] = {
       [3] = {30,0},
       [4] = {25,2},
@@ -165,7 +169,7 @@ cfg.cloakroom_types = {
       [11] = {55,0},
       ["p2"] = {2,0}
     },]]
-  ["Uniforme PF"] = uniforme_federal, 
+  ["Chefe SAMU"] = uniforme_samuchefe, 
   },
   
     
@@ -179,7 +183,8 @@ cfg.cloakroom_types = {
       [11] = {13,3},
       ["p2"] = {2,0}
     }]]
-    ["Uniforme SAMU"] = uniforme_samu,
+    ["Uniforme SAMU Masculino"] = uniforme_samu,
+    ["Uniforme SAMU Feminino"] = uniforme_samufeminino,
   },
   ["Escolher Sexo"] = {
     _config = { not_uniform = true },
@@ -195,7 +200,7 @@ cfg.cloakrooms = {
   {"fardamentorota",457.53500366211,-991.83148193359,30.689584732056},
   {"rocam",457.53500366211,-991.83148193359,30.689584732056},
   {"coronelpm",457.53500366211,-991.83148193359,30.689584732056},
-  {"fardamentopm",457.53500366211,-991.83148193359,30.689584732056},
+  {"samuchefe",269.77987670898,-1363.4407958984,24.537780761719},
   {"Escolher Sexo",-1039.087890625,-2729.4045410156,13.756636619568},
   {"emergency",269.77987670898,-1363.4407958984,24.537780761719}
 }
