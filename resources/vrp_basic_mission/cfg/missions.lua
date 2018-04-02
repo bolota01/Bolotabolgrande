@@ -313,7 +313,7 @@ cfg.hacker = {
     chance = 10,
     title = "Passageiro de táxi",
     text = "Vá para o destino.",
-    steps = 0,
+    steps = 1,
     positions = common_delivery_positions,
     reward = 400
   },
