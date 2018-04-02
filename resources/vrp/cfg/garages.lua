@@ -51,9 +51,9 @@ cfg.garage_types = {
   
   ["Veículos Aéreos"] = {
     _config = {vtype="bike",blipid=43,blipcolor=5},
-    ["luxor"] = {"Luxor",500000, ""},
-    ["shamal"] = {"Shamal",650000, ""},
-    ["volatus"] = {"Volatus",400000, ""}
+    ["luxor"] = {"Luxor",5000000, ""},
+    ["shamal"] = {"Shamal",6500000, ""},
+    ["volatus"] = {"Volatus",4000000, ""}
   },  
   
   ["hospital"] = {
