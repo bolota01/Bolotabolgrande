@@ -310,7 +310,7 @@ cfg.hacker = {
 -- TAXI
  cfg.taxi = {
   ["mission.taxi.passenger"] = {
-    chance = 10,
+    chance = 20,
     title = "Passageiro de táxi",
     text = "Vá para o destino.",
     steps = 1,
