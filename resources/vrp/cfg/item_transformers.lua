@@ -199,7 +199,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- cor do menu
     max_units=400, -- unidades maximas do item
     units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
-    x=1251.0190429688,y=-435.5309753418,z=69.309989929199, -- pos
+    x=1408.28125,y=-765.998046875,z=74.190063476562, -- pos
     radius=3.5, height=1.5, -- area
     recipes = { -- items do menu
       ["Vender Metanfetamina"] = { -- action name

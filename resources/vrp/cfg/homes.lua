@@ -842,21 +842,21 @@ cfg.homes = {
     entry_point = {1337.0686035156,-743.58239746094,66.896667480469},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
     ["Barraco Helipa 5"] = {
     slot = "helipa5",
     entry_point = {1372.0064697266,-757.55908203125,67.190277099609},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
     ["Barraco Helipa 6"] = {
     slot = "helipa6",
     entry_point = {1346.8712158203,-721.78070068359,66.987609863281},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
   ["Barraco Helipa 7"] = {
     slot = "helipa7",
@@ -884,21 +884,21 @@ cfg.homes = {
     entry_point = {1365.5888671875,-782.32000732422,67.177703857422},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
   ["Barraco Helipa 11"] = {
     slot = "helipa11",
     entry_point = {1388.2696533203,-794.68029785156,67.428787231445},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
   ["Barraco Helipa 12"] = {
     slot = "helipa12",
     entry_point = {1414.0897216797,-779.65924072266,66.454849243164},
     buy_price = 30000,
     sell_price = 25000,
-    max = 1
+    max = 2
   },
   ["Barraco Helipa 13"] = {
     slot = "helipa13",
