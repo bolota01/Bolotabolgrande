@@ -33,12 +33,13 @@ cfg.garage_types = {
   ["police"] = {"Renault Duster",0, ""},
 	["police3"] = {"Palio Weekend",0, ""},
   ["policet"] = {"Mercedes Sprinter",0,""},
+  ["police2"] = {"Lexus PMESP",0,""},
   ["sheriff"] = {"Evoque Policia Militar",0,""},
   ["pbus"] = {"Onibus Policia Militar",0,""}
   },    
   
   ["heliponto PM"] = {
-    _config = {vtype="car",blipcolor=4,permissions={"pm2.garagem"}},
+    _config = {vtype="car",blipcolor=4,permissions={"aguia.garagem"}},
     ["as350"] = {"Águia PMESP",0, ""},
 
   },

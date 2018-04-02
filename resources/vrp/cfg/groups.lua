@@ -148,7 +148,7 @@ cfg.groups = {
   "radar.pass",
   "holdup.police",
   "coronel.door",
-  "pf.garagem",
+  "aguia.garagem",
     "police.handcuff",
     "police.putinveh",
     "police.getoutveh",
