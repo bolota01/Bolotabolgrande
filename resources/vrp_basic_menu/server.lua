@@ -145,7 +145,6 @@ superiores_weapons["Equip"] = {function(player,choice)
     ["WEAPON_NIGHTSTICK"] = {ammo=200},
     ["WEAPON_STUNGUN"] = {ammo=200},
     ["WEAPON_COMBATPISTOL"] = {ammo=200},
-    ["WEAPON_SMG"] = {ammo=200},
     ["ARMOR"] = {ammo=200}
   }, true})
   BMclient.setArmour(player,{100,true})
