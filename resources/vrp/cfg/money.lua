@@ -26,25 +26,6 @@ cfg.display_css = [[
   color: green;
 }
 
-.div_bankmoney{
-  position: absolute;
-  top: 115px;
-  right: 20px;
-  font-family: "pcdown";
-  font-size: 1.6em;
-  font-weight: bold;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
-.div_bankmoney .symbol{
-  font-size: 1.2em;
-  content: url('https://i.imgur.com/ZNFMaoO.png');
-}
 ]]
 
 return cfg

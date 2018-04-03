@@ -10,16 +10,16 @@ local cfg = {}
 --- (you have direct access to vRP and vRPclient, the tunnel to client, in the config callbacks)
 
 cfg.groups = {
-  ["pica"] = {
-    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um Superpiquinha."}) end},
+  ["superadmin"] = {
+    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um Superadmin."}) end},
     "player.group.add",
     "player.group.remove",
     "player.givemoney",
     "player.giveitem"
   },
-  ["piquinha"] = {
-    "piquinha.tickets",
-    "piquinha.announce",
+  ["admin"] = {
+    "admin.tickets",
+    "admin.announce",
     "player.list",
     "player.whitelist",
     "player.unwhitelist",
@@ -34,20 +34,20 @@ cfg.groups = {
 	"police.menu_interaction",
     "player.coords",
     "player.tptome",
-	"piquinha.deleteveh",
-	"piquinha.spawnveh",
-	"piquinha.godmode",
+	"admin.deleteveh",
+	"admin.spawnveh",
+	"admin.godmode",
 	"player.tptowaypoint",
 	"player.cmd_mask",
-	"piquinha.easy_unjail",
+	"admin.easy_unjail",
 	"police.door",
 	"police.license",
 	"police.licensearm",
-	"piquinha.spikes",
+	"admin.spikes",
     "player.tpto"
   },
-  ["pingolinha"] = {
-    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um ~r~pingolinha."}) end},
+  ["moderador"] = {
+    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um ~r~moderador."}) end},
     "player.group.add",
     "player.group.remove",
 	"player.whitelist",
@@ -74,7 +74,7 @@ cfg.groups = {
     "player.store_weapons",
     "player.check",
     "police.check",
-    "player.callpiquinha",
+    "player.calladmin",
 	"emergency_heal",
     "police.seizable" -- can be seized
   }, 
@@ -1379,9 +1379,9 @@ cfg.groups = {
 
 -- groups are added dynamically using the API or the menu, but you can add group when an user join here
 cfg.users = {
-  [1] = { -- give superpiquinha and piquinha group to the first created user on the database
-    "superpiquinha",
-    "piquinha"
+  [1] = { -- give superadmin and admin group to the first created user on the database
+    "superadmin",
+    "admin"
   }
 }
 
