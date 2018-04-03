@@ -10,16 +10,16 @@ local cfg = {}
 --- (you have direct access to vRP and vRPclient, the tunnel to client, in the config callbacks)
 
 cfg.groups = {
-  ["superadmin"] = {
-    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um SuperAdmin."}) end},
+  ["pica"] = {
+    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um Superpiquinha."}) end},
     "player.group.add",
     "player.group.remove",
     "player.givemoney",
     "player.giveitem"
   },
-  ["admin"] = {
-    "admin.tickets",
-    "admin.announce",
+  ["piquinha"] = {
+    "piquinha.tickets",
+    "piquinha.announce",
     "player.list",
     "player.whitelist",
     "player.unwhitelist",
@@ -34,20 +34,20 @@ cfg.groups = {
 	"police.menu_interaction",
     "player.coords",
     "player.tptome",
-	"admin.deleteveh",
-	"admin.spawnveh",
-	"admin.godmode",
+	"piquinha.deleteveh",
+	"piquinha.spawnveh",
+	"piquinha.godmode",
 	"player.tptowaypoint",
 	"player.cmd_mask",
-	"admin.easy_unjail",
+	"piquinha.easy_unjail",
 	"police.door",
 	"police.license",
 	"police.licensearm",
-	"admin.spikes",
+	"piquinha.spikes",
     "player.tpto"
   },
-  ["moderador"] = {
-    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um ~r~moderador."}) end},
+  ["pingolinha"] = {
+    _config = {onspawn = function(player) vRPclient.notify(player,{"Você é um ~r~pingolinha."}) end},
     "player.group.add",
     "player.group.remove",
 	"player.whitelist",
@@ -74,7 +74,7 @@ cfg.groups = {
     "player.store_weapons",
     "player.check",
     "police.check",
-    "player.calladmin",
+    "player.callpiquinha",
 	"emergency_heal",
     "police.seizable" -- can be seized
   }, 
@@ -1379,9 +1379,9 @@ cfg.groups = {
 
 -- groups are added dynamically using the API or the menu, but you can add group when an user join here
 cfg.users = {
-  [1] = { -- give superadmin and admin group to the first created user on the database
-    "superadmin",
-    "admin"
+  [1] = { -- give superpiquinha and piquinha group to the first created user on the database
+    "superpiquinha",
+    "piquinha"
   }
 }
 
