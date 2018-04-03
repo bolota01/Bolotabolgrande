@@ -49,6 +49,14 @@ cfg.garage_types = {
     ["dinghy2"] = {"Bote de Pesca",200, ""}
   },    
   
+  ["Garagem de Bikes"] = {
+    _config = {vtype="bike",blipid=495,blipcolor=24,permissions={}},
+    ["tribike"] = {"Bike 01",200, ""},
+    ["tribike2"] = {"Bike 02",200, ""},
+    ["tribike3"] = {"Bike 03",200, ""},
+    ["fixter"] = {"Bike 04",200, ""},
+  },
+
   ["Veículos Aéreos"] = {
     _config = {vtype="bike",blipid=43,blipcolor=5},
     ["luxor"] = {"Luxor",5000000, ""},
@@ -93,6 +101,7 @@ cfg.garages = {
   {"Taxi",-339.02719116211,-1023.7808837891,30.380908966064},
   {"Delivery",141.74586486816,-1458.0601806641,29.141620635986},
   {"Mecanico",401.42602539063,-1631.7053222656,29.291942596436},
+  {"Garagem de Bikes",-1107.0447998046,-1692.5594482422,4.3741044998168},
   {"Transporte de Valores",232.78034973145,117.23257446289,102.60144042969},
   {"Veículos Aéreos",-991.98779296875,-2990.5654296875,13.945069313049},
   {"hospital",299.75296020508,-1442.3692626953,29.79154586792}
