@@ -86,8 +86,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -131,8 +129,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -264,8 +260,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -310,8 +304,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -356,8 +348,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -402,8 +392,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -449,8 +437,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -496,8 +482,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -542,8 +526,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -588,8 +570,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -634,8 +614,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -680,8 +658,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -726,8 +702,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -772,8 +746,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -818,8 +790,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -864,8 +834,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -910,8 +878,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -956,8 +922,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -1002,8 +966,6 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
-    "player.group.add",
-    "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
