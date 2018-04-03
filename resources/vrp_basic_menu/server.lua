@@ -249,8 +249,8 @@ local ch_hack = {function(player,choice)
   local user_id = vRP.getUserId({player})
 
   if user_id ~= nil then
-    local expCoding = vRP.getExp(user_id,"science","coding")
-    print(expCoding)
+    --local expCoding = vRP.getExp(user_id,"science","coding")
+    --print(expCoding)
 
     vRPclient.getNearestPlayer(player,{10},function(nplayer)
       if nplayer ~= nil then
@@ -260,9 +260,8 @@ local ch_hack = {function(player,choice)
             local nbank = vRP.getBankMoney({nuser_id})
             local amount = math.floor(nbank*0.01)
             local nvalue = nbank - amount
-            local probability = (expCoding / 270) * 10
 
-            if math.random(1, 100) <= probality then
+            if math.random(1, 100) < 3 then
               vRP.setBankMoney({nuser_id,nvalue})
               vRPclient.notify(nplayer,{"Hackeado ~r~".. amount .."$."})
               vRP.giveInventoryItem({user_id,"dirty_money",amount,true})
