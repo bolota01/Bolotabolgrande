@@ -28,7 +28,6 @@ RegisterServerEvent('delivery:success')
 AddEventHandler('delivery:success', function(price)
 	local player = source
 	local user_id = vRP.getUserId(player)
-    vRP.giveMoney(user_id, price)
-	
-	vRPclient._notify(player,"Recebido ~g~"..price..".")
+    	vRP.giveMoney(user_id, price)
+	vRPclient.notify(player,{"Recebido ~g~"..price.."."})
 end)
