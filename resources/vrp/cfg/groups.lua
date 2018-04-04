@@ -1366,7 +1366,7 @@ cfg.selectors = {
   "Advogado",
 	"Entregador",
   "Desempregado",
-  "Entregador do Sedex"
+  "Entregador Sedex"
   },
   ["Empregos Ilegais"] = {
     _config = {x = 707.324462890625, y = -966.986511230469, z = 30.4128551483154, blipid = 351, blipcolor = 49},
