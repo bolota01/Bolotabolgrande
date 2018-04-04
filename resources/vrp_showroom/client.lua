@@ -55,7 +55,7 @@ local vehshop = {
 				{name = "Ford Mustang GT", costs = 250000, description = {}, model = "mgt"},
 				{name = "Porsche 911S", costs = 900000, description = {}, model = "911turbos"},				
 				{name = "Lamborghini Urus 2018", costs = 1100000, description = {}, model = "urus2018"},
-				{name = "McLaren P1", costs = 1500000, description = {}, model = "p1"},
+				{name = "McLaren P1", costs = 2000000, description = {}, model = "p1"},
 				{name = "Lamborghini Centenario", costs = 3000000, description = {}, model = "lp770"},
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
 			}
