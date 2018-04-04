@@ -235,6 +235,10 @@ local function transformers_regen()
   SetTimeout(60000,transformers_regen)
 
   for k,tr in pairs(transformers) do
+    if tr.itemtr.units_per_minute == nil do
+        tr.itemtr.units_per_minute = 100
+    end
+
     tr.units = tr.units+tr.itemtr.units_per_minute
     if tr.units >= tr.itemtr.max_units then tr.units = tr.itemtr.max_units end
   end
