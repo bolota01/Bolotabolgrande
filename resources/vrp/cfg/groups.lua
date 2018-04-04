@@ -1241,6 +1241,11 @@ cfg.groups = {
   "mission.delivery.food",
 	"delivery.garagem"
   },
+  ["Entregador Sedex"] = {
+    _config = { gtype = "job" },
+  "delivery.gopostal",
+  "delivery.paycheck",
+  },
   ["Ladrão de Carros"] = {
     _config = { gtype = "job" },
     "mission.carjack.vehicle"
@@ -1360,7 +1365,8 @@ cfg.selectors = {
   "Garimpeiro de Diamantes",
   "Advogado",
 	"Entregador",
-  "Desempregado"
+  "Desempregado",
+  "Entregador do Sedex"
   },
   ["Empregos Ilegais"] = {
     _config = {x = 707.324462890625, y = -966.986511230469, z = 30.4128551483154, blipid = 351, blipcolor = 49},
