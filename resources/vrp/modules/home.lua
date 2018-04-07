@@ -157,6 +157,8 @@ end
 local function leave_slot(user_id,player,stype,sid) -- called when a player leave a slot
   print(user_id.." leave slot "..stype.." "..sid)
   local slot = uslots[stype][sid]
+  print(slot)
+  print(slot.home_name)
   local home = cfg.homes[slot.home_name]
 
   -- record if inside a home slot
@@ -257,6 +259,7 @@ local function enter_slot(user_id,player,stype,sid) -- called when a player ente
         vRP.setArea(player,nid,x,y,z,1,1.5,entry_enter,entry_leave)
       else -- load regular component
         local component = components[v[1]]
+        print(v)
         if component then
           -- oncreate(owner_id, slot_type, slot_id, cid, config, x, y, z, player)
           component[1](slot.owner_id, stype, sid, k, v._config or {}, x, y, z, player)
