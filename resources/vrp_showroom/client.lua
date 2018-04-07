@@ -58,6 +58,10 @@ local vehshop = {
 				{name = "McLaren P1", costs = 2000000, description = {}, model = "p1"},
 				{name = "Lamborghini Centenario", costs = 3000000, description = {}, model = "lp770"},
 				{name = "La Ferrari 2017", costs = 3000000, description = {}, model = "aperta"},
+				{name = "BMW 1M", costs = 400000, description = {}, model = "1m2011"},
+				{name = "Mini Cooper S", costs = 280000, description = {}, model = "miniroads"},
+				{name = "Veloster N 2018", costs = 200000, description = {}, model = "veln"},
+                {name = "Lancer Evolution 2010", costs = 380000, description = {}, model = "evo10"},
 			}
 		},
 		["Motos"] = {
