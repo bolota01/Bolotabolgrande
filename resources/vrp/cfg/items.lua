@@ -12,7 +12,7 @@ cfg.items = {
   ["Crystal Melamine"] = {"Crystal Melamine", "Crystal Melamine.", nil, 1.00}, -- no choices
   ["Metanfetamina"] = {"Metanfetamina", "Cristal de Metanfetamina.", nil, 0.75}, -- no choices  
   ["Pedra"] = {"Pedra", "Pedra bruta.", nil, 0.50}, -- no choices
-  ["Diamante Bruto"] = {"Diamante Bruto","Diamante sem lapidação", nil, 2.00}, -- no choices
+  ["Diamante Bruto"] = {"Diamante Bruto","Diamante sem lapidação", nil, 5.00}, -- no choices
   ["Diamante"] = {"Diamante", "Diamante", nil, 1.00}, -- no choices
   ["Picareta"] = {"Picareta","Para garimpar diamante", nil, 0.50},
   ["toclonecards"] = {"Cartão Clonável", "Para clonar.", nil, 0.01}, -- no choices
@@ -22,8 +22,15 @@ cfg.items = {
   ["OAB"] = {"OAB", "Carteira de Advogado.", nil, 0.01}, -- no choices
   ["Maconha"] = {"Maconha", "Processada.", nil, 0.75}, -- no choices
   ["bank_money"] = {"Dinheiro do Banco", "$.", nil, 0}, -- no choices
-  ["Rede"] = {"Rede", "Para pescar Tartaruga", nil, 0.50},
-  ["Tartaruga"] = {"Tartaruga", ".", nil, 5.00},
+  ["Rede"] = {"Rede", "Para pescar Tartaruga", nil, 0.50}, -- no choices
+  ["Tartaruga"] = {"Tartaruga", ".", nil, 5.00}, -- no choices
+  ["Cadaver"] = {"Cadaver.","Corpo morto", nil, 20.00}, -- no choices
+  ["Rim"] = {"Rim","orgao", nil, 3.00}, -- no choices
+  ["Coracao"] = {"Coracao","orgao", nil, 5.00}, -- no choices
+  ["Figado"] = {"Figado","orgao", nil, 3.00}, -- no choices
+  ["Sal"] = {"Sal","Sal sem refino", nil, 5.00}, -- no choices
+  ["Sal Refinado"] = {"Sal Refinado","Sal Refinado", nil, 2.00}, -- no choices
+  ["Pa"] = {"Pa","Para coleta", nil, 0.50}, -- no choices
 }
 
 -- load more items function

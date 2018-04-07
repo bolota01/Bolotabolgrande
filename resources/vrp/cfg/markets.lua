@@ -39,7 +39,8 @@ cfg.market_types = {
   ["Loja de Ferramentas"] = {
     _config = {blipid=478, blipcolor=59},
     ["Rede"] = 50,
-    ["Picareta"] = 50
+    ["Picareta"] = 50,
+    ["Pa"] = 50
   },
   ["Feira"] = {
     _config = {blipid=0, blipcolor=0},

@@ -1258,6 +1258,12 @@ cfg.groups = {
 	"mission.delivery.weed",
 	"mission.delivery.pot"
   },
+    ["Traficante de Orgaos"] = {
+    _config = { gtype = "job" },
+	"harvest.bodies",
+	"process.orgaos",
+    "build.orgaos"
+  },
   ["Traficante de Metanfetamina"] = {
     _config = { gtype = "job" },
 	"harvest.metanfetamina",
@@ -1280,7 +1286,14 @@ cfg.groups = {
   "process.diamante",
   "build.diamante",
   "garimpeiro.paycheck"
-  },  
+  },
+    ["Garimpeiro de Sal"] = {
+    _config = { gtype = "job" },
+  "harvest.sal",
+  "process.sal",
+  "build.sal",
+  "garimpeiro.paycheck"
+  }, 
   ["Traficante de Tartaruga"] = {
     _config = { gtype = "job" },
   "harvest.tartaruga",
@@ -1375,7 +1388,6 @@ cfg.selectors = {
 	"Traficante de Maconha",
 	"Traficante de Tartaruga",
 	"Traficante de Cocaina",
-	"Hacker"
   } 
 }
 

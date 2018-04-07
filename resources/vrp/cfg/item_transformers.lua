@@ -147,6 +147,79 @@ cfg.item_transformers = {
         }
       }
     }
+  },  
+      -- TRAFICANTE DE ORGAOS
+  {
+    name="Colheita de corpos", -- menu name
+    permissions = {"harvest.bodies"}, -- you can add permissions
+    r=0,g=255,b=0, -- color
+    max_units=400,
+    units_per_minute=100,
+    x=-1658.144897461,y=-151.1180267334,z=58.22900390625, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = {
+      ["Cavando"] = { -- action name
+        description="Retirando Cadaver.", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={ -- items taken per unit
+          ["Pa"] = 1
+      },
+        products={ -- items given per unit
+          ["Cadaver"] = 1
+        }
+      }
+    }
+  },
+    -- RETIRANDO ORGAOS
+  {
+    name="Retirando Orgaos", -- menu name
+    permissions = {"process.orgaos"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=985.33715820312,y=-2122.0207519532,z=30.475383758544, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Retirando"] = { -- action name
+        description="Retirar Orgaos.", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Cadaver"] = 1,
+    },
+        products={ -- items given per unit
+      ["Figado"] = 1,
+      ["Rim"] = 1,
+      ["Coracao"] = 1,
+        }
+      }
+    }
+  },
+    -- VENDER ORGAOS
+  {
+    name="Venda de Orgaos", -- menu name
+    permissions = {"build.orgaos"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=318.76275634766,y=-559.39227294922,z=28.74377822876 , -- pos -119.17678833008,-1486.1040039063,36.98205947876
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Orgaos"] = { -- action name
+        description="Vender Orgaos", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Figado"] = 1,
+          ["Rim"] = 1,
+          ["Coracao"] = 1,
+      },
+        products={ -- items given per unit
+          ["dirty_money"] = 2500
+        }
+      }
+    }
   },
   -- CAMPO DE METANFETAMINA    
   {
@@ -501,7 +574,76 @@ cfg.item_transformers = {
           ["Diamante"] = 1
       },
         products={ -- items given per unit
-          ["money"] = 130
+          ["money"] = 340
+        }
+      }
+    }
+  },
+      -- CAMPO DE SAL
+  {
+    name="Salinas", -- Nome do menu
+    permissions = {"harvest.sal"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor
+    max_units=400,
+    units_per_minute=100,
+    x=-1604.5249023438,y=5257.400390625,z=2.0777244567872, -- Localização    
+    radius=3.5, height=1.5, -- area
+    recipes = {
+      ["Garimpar"] = { -- Nome da ação
+        description="Garimpando Sal.", -- Descrição do produto a se colher
+        in_money=0, -- Dinheiro dado por unidade
+        out_money=0, -- Dinheiro ganho por unidade
+        reagents={  -- items taken per unit
+          ["Pa"] = 1
+      },
+        products={ -- items given per unit
+          ["Sal"] = 5
+        }
+      }
+    }
+  },
+    -- TRATAMENTO DE SAL
+  {
+    name="Tratamento de Sal", -- menu name
+    permissions = {"process.sal"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=2775.625,y=1526.2257080078,z=30.791330337524, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Tratamento de Sal"] = { -- action name
+        description="Tratando Sal", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Sal"] = 1
+        },
+        products={ -- items given per unit
+          ["Sal Refinado"] = 1
+        }
+      }
+    }
+  },
+      -- VENDER SAL
+  {
+    name="Vender Sal", -- menu name
+    permissions = {"build.sal"}, -- you can add permissions
+    r=0,g=255,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=259.34127807618,y=893.51550292968,z=209.20135498046, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Vender Sal"] = { -- action name
+        description="Vender Sal", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Sal Refinado"] = 1
+      },
+        products={ -- items given per unit
+          ["money"] = 270
         }
       }
     }
