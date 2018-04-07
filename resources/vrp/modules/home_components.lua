@@ -226,6 +226,7 @@ local function itemtr_create(owner_id, stype, sid, cid, config, x, y, z, player)
     itemtr.y = y
     itemtr.z = z
 
+    print(itemtr)
     vRP.setItemTransformer(nid, itemtr)
   else
     itemtrs[nid] = itemtrs[nid]+1
