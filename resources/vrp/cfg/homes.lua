@@ -32,6 +32,51 @@ local itemtr_study = {
 		}
 	}
 }
+
+local itemtr_laboratory = {
+	name="Laboratório", -- menu name
+	r=0,g=255,b=0, -- color
+	max_units=1000,
+	units_per_minute=100,
+	x=-811.89361572266,y=182.51545715332,z=76.740768432617, -- pos (doesn't matter as home component)
+	radius=1.1, height=1.5, -- area
+	recipes = {
+		["Livro de Química"] = { -- action name
+			description = "Leia o livro de Química", -- action description
+			in_money=0, -- money taken per unit
+			out_money=0, -- money earned per unit
+			reagents={}, -- items taken per unit
+			products={}, -- items given per unit
+			aptitudes={ -- optional
+				["science.chemicals"] = 1 -- "group.aptitude", give 1 exp per unit
+			}
+		}
+	}
+}
+
+	
+local itemtr_hacker = {
+	name="Biblioteca", -- menu name
+	r=0,g=255,b=0, -- color
+	max_units=1000,
+	units_per_minute=100,
+	x=-811.89361572266,y=182.51545715332,z=76.740768432617, -- pos (doesn't matter as home component)
+	radius=1.1, height=1.5, -- area
+	recipes = {
+		["Livro de Programação"] = { -- action name
+			description = "Leia o livro de programação", -- action description
+			in_money=0, -- money taken per unit
+			out_money=0, -- money earned per unit
+			reagents={}, -- items taken per unit
+			products={}, -- items given per unit
+			aptitudes={ -- optional
+				["science.coding"] = 0.5 -- "group.aptitude", give 1 exp per unit
+			}
+		},
+	}
+}
+
+
 -- default flats positions from https://github.com/Nadochima/HomeGTAV/blob/master/List
 
 -- define the home slots (each entry coordinate should be unique for ALL types)
