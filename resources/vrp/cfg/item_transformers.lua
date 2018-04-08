@@ -487,10 +487,33 @@ cfg.item_transformers = {
       }
     }
   },
+   -- LIMPEZA DE TARTARUGA
+  {
+    name="Limpeza de Tartaruga", -- menu name
+    permissions = {"limpar.tartaruga"}, -- you can add permissions
+    r=0,g=200,b=0, -- cor do menu
+    max_units=400, -- unidades maximas do item
+    units_per_minute=100, -- unidades que o transformador ganha de volta por minuto
+    x=-286.98696899414,y=2535.6901855468,z=75.254959106446, -- pos
+    radius=3.5, height=1.5, -- area
+    recipes = { -- items do menu
+      ["Limpar"] = { -- action name
+        description="Limpar Tartaruga", -- action description
+        in_money=0, -- money taken per unit
+        out_money=0, -- money earned per unit
+        reagents={  -- items taken per unit
+          ["Tartaruga"] = 1
+	    },
+        products={ -- items given per unit
+          ["Tartaruga Limpa"] = 1
+        }
+      }
+    }
+  },
   -- VENDER TARTARUGA
   {
     name="Vender Tartaruga", -- menu name
-    permissions = {"process.Tartaruga"}, -- you can add permissions
+    permissions = {"build.tartaruga"}, -- you can add permissions
     r=0,g=200,b=0, -- cor do menu
     max_units=200, -- unidades maximas do item
     units_per_minute=80, -- unidades que o transformador ganha de volta por minuto
@@ -502,7 +525,7 @@ cfg.item_transformers = {
         in_money=0, -- money taken per unit
         out_money=0, -- money earned per unit
         reagents={  -- items taken per unit
-          ["Tartaruga"] = 1
+          ["Tartaruga Limpa"] = 1
       },
         products={ -- items given per unit
           ["dirty_money"] = 700

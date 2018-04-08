@@ -31,6 +31,7 @@ cfg.items = {
   ["Sal"] = {"Sal","Sal sem refino", nil, 5.00}, -- no choices
   ["Sal Refinado"] = {"Sal Refinado","Sal Refinado", nil, 2.00}, -- no choices
   ["Pa"] = {"Pa","Para coleta", nil, 0.50}, -- no choices
+  ["Tartaruga Limpa"] = {"Tartaruga Limpa","Tartaruga Limpa", nil, 5.00}, -- no choices
 }
 
 -- load more items function

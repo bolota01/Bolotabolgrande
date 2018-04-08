@@ -1298,7 +1298,8 @@ cfg.groups = {
     _config = { gtype = "job" },
   "harvest.tartaruga",
   "tartaruga.garagem",
-	"process.Tartaruga"
+	"limpar.tartaruga",
+  "build.tartaruga"
   },
   ["Traficante de Armas"] = {
     _config = { gtype = "job" },
