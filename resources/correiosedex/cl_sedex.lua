@@ -570,10 +570,12 @@ function SpawnVan()
 	local coords = GetOffsetFromEntityInWorldCoords(GetPlayerPed(-1), 0, 5.0, 0)
 	local spawned_car = CreateVehicle(vehicle, coords, 180, true, false)
 	SetVehicleOnGroundProperly(spawned_car)
-	SetVehicleNumberPlateText(spawned_car, "VICTORKILLER"..plate)
+	SetPedIntoVehicle(GetPlayerPed(-1),spawned_car,-1)
+	SetVehicleNumberPlateText(spawned_car, "PCORREIOS"..plate)
 	SetPedIntoVehicle(myPed, spawned_car, - 1)
 	SetModelAsNoLongerNeeded(vehicle)
 	Citizen.InvokeNative(0xB736A491E64A32CF, Citizen.PointerValueIntInitialized(spawned_car))
+	SetVehicleHasBeenOwnedByPlayer(spawned_car,true)
 	startjob()
 	end
 end
