@@ -72,7 +72,7 @@ cfg.cloakroom_types = {
 ["Farda Federal"] = uniforme_federal,
 ["Farda Águia"] = uniforme_aguia,
 ["Farda GOE"] = uniforme_goe,
-["Farda Feminina"] = uniforme_pmfeminino, 
+["Farda Feminina"] = uniforme_pmfeminino,
   },
   
   ["policiafederal"] = {

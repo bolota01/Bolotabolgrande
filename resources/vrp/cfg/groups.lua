@@ -614,6 +614,8 @@ cfg.groups = {
       onspawn = function(player) vRPclient.setCop(player,{true}) end,
       onleave = function(player) vRPclient.setCop(player,{false}) end
     },
+  "player.group.add",
+  "player.group.remove",
     "player.list",
   "police.easy_jail",
   "police.easy_unjail",
@@ -1380,7 +1382,8 @@ cfg.selectors = {
   "Advogado",
 	"Entregador",
   "Desempregado",
-  "Entregador Sedex"
+  "Entregador Sedex",
+  "Garimpeiro de Sal"
   },
   ["Empregos Ilegais"] = {
     _config = {x = 707.324462890625, y = -966.986511230469, z = 30.4128551483154, blipid = 351, blipcolor = 49},
@@ -1389,6 +1392,7 @@ cfg.selectors = {
 	"Traficante de Maconha",
 	"Traficante de Tartaruga",
 	"Traficante de Cocaina",
+	"Traficante de Orgaos"
   } 
 }
 
